@@ -1,0 +1,27 @@
+._container {
+    max-width: 1424px;
+    margin: 0 auto;
+}
+
+
+@font-face {
+    font-family: 'prata';
+    src: url(../../font/prata/Prata-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(../../font/poppins/Poppins-Regular.otf);
+    font-style: normal
+}
+
+
+
+body {
+    font-family: "poppins";
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "prata";
+}

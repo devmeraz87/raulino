@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./assets/style/tailwind.style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Project || </title>
+</head>
+<body style="background-color: #fff;">
+
+
+    <!-- // >> Loading Start // -->
+    <div class="_loading">
+        <div id="_first_loading" class="_loading_name">
+            <h1>Loading...</h1>
+        </div>
+        <div id="_second_loading" class="_loading_logo">
+            <img src="./assets/img/logo/Logo Dr.png" alt="">
+        </div>
+    </div>
+    <!-- // >> Loading End / -->
+
+    <!-- // >> OffCanva Start // -->
+    <div class="_offCanva">
+        <div class="_offCanvaContent">
+            <div class="_offCanva_left_and_right_container">
+                <div id="_gsap_offCanvaLeft" class="_offCanva_left_element"></div>
+                <div id="_gsap_offCanvaRight" class="_offCanva_right_element" style="background: url(./assets/img/offcanva/offcanva.png);"></div>
+            </div>
+            <div id="_gsap_offCanva_links" class="_offCanva_links">
+                <div class="_container px-3">
+                    <div class="_offCanva_links_content">
+                        <ul id="_offCanvaSplitText" class="_links">
+                            <li class="_links_item"><a data-cursor="-icon" href="/">Home</a></li>
+                            <li class="_links_item"><a data-cursor="-icon" href="/">About</a></li>
+                            <li class="_links_item"><a data-cursor="-icon" href="/">Lipo</a></li>
+                            <li class="_links_item"><a data-cursor="-icon" href="/">Contactg</a></li>
+                        </ul>
+                        <div class="_offCanvaContact">
+                            <div class="_contact_item">
+                                <span class="_contact_title">This is off Canva title</span>
+                                <ul id="_offCanvaSplitText" class="_contact_details">
+                                    <li class="_contact_details_item">nav contact item 1</li>
+                                    <li class="_contact_details_item">nav contact item 2</li>
+                                    <li class="_contact_details_item">nav contact item 3</li>
+                                    <li class="_contact_details_item">nav contact item 4</li>
+                                </ul>
+                            </div>
+                            <div class="_contact_item">
+                                <span class="_contact_title">This is off Canva title</span>
+                                <ul id="_offCanvaSplitText" class="_contact_details">
+                                    <li class="_contact_details_item">nav contact item 1</li>
+                                    <li class="_contact_details_item">nav contact item 2</li>
+                                    <li class="_contact_details_item">nav contact item 3</li>
+                                    <li class="_contact_details_item">nav contact item 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- // >> MainNav start // -->
+    <nav class="mainNav">
+        <div class="_container px-3">
+           <div class="mainNavContent">
+            <div class="_burger">
+                <div data-cursor="-icon" class="_burger_btn _active">
+                    <div class="_burger_icon"></div>
+                </div>
+            </div>
+            <div class="_logo">
+                <img src="./assets/img/logo/Logo Dr.png" alt="">
+            </div>
+            <dig class="_lang_flags">
+                <div class="_lang_flags_items">
+                    <div data-cursor="-icon" class="_flag">
+                        <img src="./assets/img/flag/flag-1.png" alt="">
+                    </div>
+                    <div data-cursor="-icon" class="_flag">
+                        <img src="./assets/img/flag/flag-2.png" alt="">
+                    </div>
+                    <div data-cursor="-icon" class="_flag">
+                        <img src="./assets/img/flag/flag-3.png" alt="">
+                    </div>
+                </div>
+            </dig>
+           </div>
+        </div>
+    </nav>
+    <!-- // >> MainNav End // -->
+
+
+
+    <!-- // >> TailWindCss config / -->
+    <script src="./tailwind.config.js"></script>
+
+    <!-- // >> Gsap Plugins // -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/EaselPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+
+    <!-- // >> Split Text /  -->
+    <script src="./assets/js/pakeges/SplitText.min.js"></script>
+
+    <!-- // >> Mouse follower pakeges / -->
+    <script src="./assets/js/pakeges/mouseFollower.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+
+    <!-- // From All / -->
+    <script src="./assets/js/components/all/cursor.js"></script>
+    <script src="./assets/js/components/all/loading.js"></script>
+    <script src="./assets/js/components/all/offcanva.js"></script>
+    <script src="./assets/js/components/all/heroCircleLogoTween.js"></script>
+    <script src="./assets/js/components/all/hideSomthingScrollPosition.js"></script>
+    <script src="./assets//js/components//all/wrapperImgScale.js"></script>
+    <script src="./assets//js/components//all/testimonial.js"></script>
+    
+    <!-- // From Home js / -->
+    <script src="./assets/js/components/home/homeSplitTextAnimationFunction.js"></script>
+    <!-- <script src="./assets/js/components/home/homeMarquee.js"></script> -->
+    <!-- <script src="./assets/js/components/home/homeHorizontalScroll.js"></script> -->
+
+</body>
+</html>
+
+
+<!-- 
+    // >> ===============
+               Finish
+    // >> ===============
+-->

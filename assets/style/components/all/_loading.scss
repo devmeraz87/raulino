@@ -1,0 +1,39 @@
+._loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    ._loading_name,
+    ._loading_logo {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._loading_name {
+        background-color: rgb(49, 33, 65);
+
+        h1 {
+            padding: 8px 0;
+            border-bottom: 2px solid coral;
+            font-size: 22px;
+        }
+    }
+
+    ._loading_logo {
+        background-color: rgb(49, 70, 117);
+
+        img {
+            width: 200px;
+            height: auto;
+        }
+    }
+}
