@@ -156,7 +156,7 @@
             }
 
             ._button_container {
-                margin-bottom: 1.5rem;
+                margin-bottom: 3.5rem;
 
                 ._button {
                     padding: 0.75rem 1.2rem;
@@ -247,5 +247,42 @@
            
         }
 
+    }
+}
+
+
+
+
+@media only screen and (max-width: 414px) {
+    ._hero {
+        background-position-x: -990px !important;
+    }
+}
+
+
+@media only screen and (max-width: 412px) {
+    ._hero {
+        background-position-x: -1060px !important;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    ._hero {
+        background-position-x: -1000px !important;
+
+        &._about_page {
+            background-position-x: -650px !important;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    ._hero {
+        background-position-x: -700px !important;
+
+        &._about_page {
+            background-position-x: -480px !important;
+        }
     }
 }

@@ -32,7 +32,7 @@
             ._offCanva_left_element {
                 flex: 1.5;
                 height: 0%;
-                background-color: rgb(26, 31, 29);
+                background-color: #3b3027;
             }
 
             ._offCanva_right_element {
@@ -67,6 +67,7 @@
                     margin-bottom: 5rem;
 
                     ._links_item {
+                        margin-bottom: 0.75rem;
 
                         a {
                             font-family: "prata";
@@ -85,10 +86,11 @@
                             margin-left: 10rem;
                         }
 
-                        ._contact_titel {
+                        ._contact_title {
                             margin-bottom: 1.5rem;
                             font-size: 17px;
                             color: #fff;
+                            display: block;
                         }
 
                         ._contact_details {
@@ -97,6 +99,7 @@
                                 font-size: 15px;
                                 font-weight: 100;
                                 color: #fff;
+                                margin-bottom: 0.5rem;
                             }
                         }
                     }

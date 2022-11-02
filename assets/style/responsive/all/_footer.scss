@@ -92,6 +92,11 @@
 @media only screen and (min-width: 375px) and (max-width: 768px) {
     ._footer {
 
+
+        ._container {
+            padding: 0 !important;
+        }
+
         // >> Section testimonials
         ._testimonials {
 

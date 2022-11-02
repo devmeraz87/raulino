@@ -1,0 +1,316 @@
+// >> XL ...>>
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+
+    // >> Horizontal scroll
+    ._horizontal_scroll {
+
+
+        ._horizontal_scroll_container_first_panel_ {
+            transform: scale(2.2) translateY(-268px) !important;
+        }
+
+        ._horizontal_scroll_container_panel {
+            width: 345vw;
+
+            ._figure {
+
+               &._figure_1 {
+                     // >> in figure //
+                     padding: 5rem 5rem 5rem 8rem;
+
+                     ._firstImg {
+                        img {
+                            width: 500px;
+                        }
+                    } 
+               } 
+
+               &._figure_2 {
+
+                    .marquee {
+
+                        ._gsap_marquee {
+                            font-size: 120px !important;
+                        }
+                    }
+               }
+
+               &._figure_3 {
+
+                    ._top_img,
+                    ._bottom_img {
+                        padding: 4rem 6rem 4rem 4rem;
+
+                        img {
+                            width: 600px;
+                        }
+                    }
+
+                    ._center_2_img {
+                        padding: 5rem 8rem 5rem 8rem;
+
+                        ._center_2_img_parent {
+                            width: 500px;
+                        }
+                    }
+
+                    ._center_video {
+                        margin-right: 8rem;
+
+                        ._video {
+                            width: 1000px;
+
+                            video {
+                                width: 1000px;
+                            }
+                        }
+                    }
+               }
+            }
+        }
+    }
+
+
+}
+
+
+// >> LG ...>>
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+   
+ 
+
+    // >> Horizontal scroll
+    ._horizontal_scroll {
+
+
+        ._horizontal_scroll_container_first_panel_ {
+
+        }
+
+        ._horizontal_scroll_container_panel {
+            width: 442vw;
+
+            ._figure {
+
+               &._figure_1 {
+                     // >> in figure //
+                     padding: 3.5rem 4rem 3.5rem 6rem;
+
+                     ._firstImg {
+                        img {
+                            width: 500px;
+                        }
+                    } 
+               } 
+
+               &._figure_2 {
+
+                    .marquee {
+
+                        ._gsap_marquee {
+                            font-size: 105px !important;
+                        }
+                    }
+               }
+
+               &._figure_3 {
+
+                    ._top_img,
+                    ._bottom_img {
+                        padding: 3.5rem 5rem 3.5rem 4rem;
+
+                        img {
+                            width: 600px;
+                        }
+                    }
+
+                    ._center_2_img {
+                        padding: 3.5rem 6rem 3.5rem 6rem;
+
+                        ._center_2_img_parent {
+                            width: 500px;
+                        }
+                    }
+
+                    ._center_video {
+                        margin-right: 8rem;
+
+                        ._video {
+                            width: 900px;
+
+                            video {
+                                width: 900px;
+                            }
+                        }
+                    }
+               }
+            }
+        }
+    }
+
+
+}
+
+
+
+// >> MD ...>>
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+ 
+
+
+    // >> Horizontal scroll
+    ._horizontal_scroll {
+
+
+        ._horizontal_scroll_container_first_panel_ {
+
+        }
+
+        ._horizontal_scroll_container_panel {
+            width: 550vw;
+
+            ._figure {
+
+               &._figure_1 {
+                     // >> in figure //
+                     padding: 3.5rem 4rem 3.5rem 6rem;
+
+                     ._firstImg {
+                        img {
+                            width: 500px;
+                        }
+                    } 
+               } 
+
+               &._figure_2 {
+
+                    .marquee {
+
+                        ._gsap_marquee {
+                            font-size: 105px !important;
+                        }
+                    }
+               }
+
+               &._figure_3 {
+
+                    ._top_img,
+                    ._bottom_img {
+                        padding: 3.5rem 5rem 3.5rem 4rem;
+
+                        img {
+                            width: 600px;
+                        }
+                    }
+
+                    ._center_2_img {
+                        padding: 3.5rem 6rem 3.5rem 6rem;
+
+                        ._center_2_img_parent {
+                            width: 500px;
+                        }
+                    }
+
+                    ._center_video {
+                        margin-right: 8rem;
+
+                        ._video {
+                            width: 900px;
+
+                            video {
+                                width: 900px;
+                            }
+                        }
+                    }
+               }
+            }
+        }
+    }
+
+
+ 
+}
+
+
+
+// >> SM ... >> 
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+
+
+    // >> Horizontal scroll
+    ._horizontal_scroll {
+
+
+        ._horizontal_scroll_container_first_panel_ {
+            background-position: -600px !important;
+        }
+
+        ._horizontal_scroll_container_panel {
+            width: 780vw;
+
+            ._figure {
+
+               &._figure_1 {
+                     // >> in figure //
+                     padding: 3.5rem 4rem 3.5rem 6rem;
+
+                     ._firstImg {
+                        img {
+                            width: 500px;
+                        }
+                    } 
+               } 
+
+               &._figure_2 {
+
+                    .marquee {
+
+                        ._gsap_marquee {
+                            font-size: 105px !important;
+                        }
+                    }
+               }
+
+               &._figure_3 {
+
+                    ._top_img,
+                    ._bottom_img {
+                        padding: 3.5rem 5rem 3.5rem 4rem;
+
+                        img {
+                            width: 600px;
+                        }
+                    }
+
+                    ._center_2_img {
+                        padding: 3.5rem 6rem 3.5rem 6rem;
+
+                        ._center_2_img_parent {
+                            width: 500px;
+                        }
+                    }
+
+                    ._center_video {
+                        margin-right: 8rem;
+
+                        ._video {
+                            width: 900px;
+
+                            video {
+                                width: 900px;
+                            }
+                        }
+                    }
+               }
+            }
+        }
+    }
+
+
+}
+
+
+// >> EXTRA SMALL IF NEED
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    
+}

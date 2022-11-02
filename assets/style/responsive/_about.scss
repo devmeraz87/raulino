@@ -256,4 +256,26 @@
             }
         }
     }
+
+
+    ._Experience {
+
+        ._experience_content  {
+            padding: 5rem 0;
+
+            ._experience_content_heading {
+                font-size: 36px;
+            }
+
+            .collapsible {
+
+
+                .collapsible-header {
+                    padding: 1rem 0 !important;
+                    font-size: 15px !important;
+                }
+            }
+
+        }
+    }
 }

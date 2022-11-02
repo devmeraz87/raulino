@@ -274,7 +274,7 @@ h1, h2, h3, h4, h5 {
 ._offCanva ._offCanvaContent ._offCanva_left_and_right_container ._offCanva_left_element {
   flex: 1.5;
   height: 0%;
-  background-color: rgb(26, 31, 29);
+  background-color: #3b3027;
 }
 ._offCanva ._offCanvaContent ._offCanva_left_and_right_container ._offCanva_right_element {
   flex: 1;
@@ -303,6 +303,9 @@ h1, h2, h3, h4, h5 {
 ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._links {
   margin-bottom: 5rem;
 }
+._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._links ._links_item {
+  margin-bottom: 0.75rem;
+}
 ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._links ._links_item a {
   font-family: "prata";
   font-size: 55px;
@@ -314,15 +317,17 @@ h1, h2, h3, h4, h5 {
 ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item:not(:first-child) {
   margin-left: 10rem;
 }
-._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item ._contact_titel {
+._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item ._contact_title {
   margin-bottom: 1.5rem;
   font-size: 17px;
   color: #fff;
+  display: block;
 }
 ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item ._contact_details ._contact_details_item {
   font-size: 15px;
   font-weight: 100;
   color: #fff;
+  margin-bottom: 0.5rem;
 }
 
 ._loading {
@@ -345,7 +350,7 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
 }
 ._loading ._loading_name {
-  background-color: rgb(49, 33, 65);
+  background-color: #15151d;
 }
 ._loading ._loading_name h1 {
   padding: 8px 0;
@@ -353,7 +358,7 @@ h1, h2, h3, h4, h5 {
   font-size: 22px;
 }
 ._loading ._loading_logo {
-  background-color: rgb(49, 70, 117);
+  background-color: #9a8a68;
 }
 ._loading ._loading_logo img {
   width: 200px;

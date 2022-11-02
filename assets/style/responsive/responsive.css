@@ -41,7 +41,7 @@
     display: none;
   }
   ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._links ._links_item a {
-    font-size: 32px !important;
+    font-size: 28px !important;
   }
   ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item ._contact_title {
     font-size: 13px;
@@ -128,7 +128,7 @@
     margin-bottom: 2rem;
   }
   ._hero ._hero_content ._button_container {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
   }
   ._hero ._hero_content ._button_container ._button {
     padding: 0.75rem 1.2rem;
@@ -183,6 +183,32 @@
   ._hero ._hero_content ._button_container ._button {
     padding: 0.75rem 1.2rem;
     font-size: 15px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  ._hero {
+    background-position-x: -990px !important;
+  }
+}
+@media only screen and (max-width: 412px) {
+  ._hero {
+    background-position-x: -1060px !important;
+  }
+}
+@media only screen and (max-width: 390px) {
+  ._hero {
+    background-position-x: -1000px !important;
+  }
+  ._hero._about_page {
+    background-position-x: -650px !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  ._hero {
+    background-position-x: -700px !important;
+  }
+  ._hero._about_page {
+    background-position-x: -480px !important;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
@@ -372,6 +398,16 @@
   ._about_video ._about_video_context ._video_thumb ._video_context ._play_button {
     height: 90px;
     width: 90px;
+  }
+  ._Experience ._experience_content {
+    padding: 5rem 0;
+  }
+  ._Experience ._experience_content ._experience_content_heading {
+    font-size: 36px;
+  }
+  ._Experience ._experience_content .collapsible .collapsible-header {
+    padding: 1rem 0 !important;
+    font-size: 15px !important;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
@@ -641,7 +677,7 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     height: 80vh;
-    background-position-x: -1000px !important;
+    background-position-x: -600px !important;
     background-position-y: 0px !important;
     background-size: contain;
   }
@@ -664,6 +700,199 @@
     font-size: 12px;
     font-weight: 100;
     padding: 0.75rem 0.85rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 500px) {
+  ._marquee_section {
+    overflow: hidden;
+    padding: 0;
+    padding-top: 10rem;
+    height: 120vh;
+  }
+  ._marquee_section .wrapper_img .wrapper_img_card {
+    background-position-x: -850px !important;
+    background-position-y: 0px !important;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+  ._marquee_section {
+    overflow: hidden;
+    padding: 0;
+    padding-top: 10rem;
+    height: 120vh;
+  }
+  ._marquee_section .wrapper_img .wrapper_img_card {
+    background-position-x: -950px !important;
+    background-position-y: 0px !important;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 375px) {
+  ._marquee_section {
+    overflow: hidden;
+    padding: 0;
+    padding-top: 10rem;
+    height: 120vh;
+  }
+  ._marquee_section .wrapper_img .wrapper_img_card {
+    background-position-x: -950px !important;
+    background-position-y: 0px !important;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+  ._horizontal_scroll ._horizontal_scroll_container_first_panel_ {
+    transform: scale(2.2) translateY(-268px) !important;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel {
+    width: 345vw;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_1 {
+    padding: 5rem 5rem 5rem 8rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_1 ._firstImg img {
+    width: 500px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_2 .marquee ._gsap_marquee {
+    font-size: 120px !important;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._top_img,
+._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._bottom_img {
+    padding: 4rem 6rem 4rem 4rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._top_img img,
+._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._bottom_img img {
+    width: 600px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_2_img {
+    padding: 5rem 8rem 5rem 8rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_2_img ._center_2_img_parent {
+    width: 500px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video {
+    margin-right: 8rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video ._video {
+    width: 1000px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video ._video video {
+    width: 1000px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  ._horizontal_scroll ._horizontal_scroll_container_panel {
+    width: 442vw;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_1 {
+    padding: 3.5rem 4rem 3.5rem 6rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_1 ._firstImg img {
+    width: 500px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_2 .marquee ._gsap_marquee {
+    font-size: 105px !important;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._top_img,
+._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._bottom_img {
+    padding: 3.5rem 5rem 3.5rem 4rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._top_img img,
+._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._bottom_img img {
+    width: 600px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_2_img {
+    padding: 3.5rem 6rem 3.5rem 6rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_2_img ._center_2_img_parent {
+    width: 500px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video {
+    margin-right: 8rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video ._video {
+    width: 900px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video ._video video {
+    width: 900px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  ._horizontal_scroll ._horizontal_scroll_container_panel {
+    width: 550vw;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_1 {
+    padding: 3.5rem 4rem 3.5rem 6rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_1 ._firstImg img {
+    width: 500px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_2 .marquee ._gsap_marquee {
+    font-size: 105px !important;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._top_img,
+._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._bottom_img {
+    padding: 3.5rem 5rem 3.5rem 4rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._top_img img,
+._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._bottom_img img {
+    width: 600px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_2_img {
+    padding: 3.5rem 6rem 3.5rem 6rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_2_img ._center_2_img_parent {
+    width: 500px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video {
+    margin-right: 8rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video ._video {
+    width: 900px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video ._video video {
+    width: 900px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  ._horizontal_scroll ._horizontal_scroll_container_first_panel_ {
+    background-position: -600px !important;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel {
+    width: 780vw;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_1 {
+    padding: 3.5rem 4rem 3.5rem 6rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_1 ._firstImg img {
+    width: 500px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_2 .marquee ._gsap_marquee {
+    font-size: 105px !important;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._top_img,
+._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._bottom_img {
+    padding: 3.5rem 5rem 3.5rem 4rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._top_img img,
+._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._bottom_img img {
+    width: 600px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_2_img {
+    padding: 3.5rem 6rem 3.5rem 6rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_2_img ._center_2_img_parent {
+    width: 500px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video {
+    margin-right: 8rem;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video ._video {
+    width: 900px;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video ._video video {
+    width: 900px;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
@@ -700,6 +929,9 @@
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 768px) {
+  ._footer ._container {
+    padding: 0 !important;
+  }
   ._footer ._testimonials ._testimonials_header img {
     height: 75px;
     width: 75px;
