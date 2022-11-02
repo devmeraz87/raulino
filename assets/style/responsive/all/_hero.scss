@@ -122,6 +122,13 @@
 }
 
 
+@media only screen and (max-width: 820px) {
+    ._hero {
+        background-position-x: -1050px !important;
+    }
+}
+
+
 
 // >> XL 1201
 @media only screen and (min-width: 375px) and (max-width: 768px) {
@@ -272,6 +279,16 @@
 
         &._about_page {
             background-position-x: -650px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 393px) {
+    ._hero {
+        background-position-x: -1000px !important;
+
+        &._about_page {
+            // background-position-x: -650px !important;
         }
     }
 }

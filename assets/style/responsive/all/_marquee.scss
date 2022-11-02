@@ -111,22 +111,26 @@
     ._marquee_section {
         overflow: hidden;
         padding: 0;
-        padding-top: 10rem;
-        height: 120vh;
+        padding-top: 0rem;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
 
         ._marquee {
     
             &._marquee_top {
-                top: 100px;
+                top: -20px;
             }
 
             &._marquee_bottom {
-                bottom: 100px;
+                bottom: 120px;
             }
 
             ._marquee_content {
-                font-size: 100px;
+                font-size: 70px;
             }
 
             
@@ -140,7 +144,7 @@
                 width: 100%;
                 padding-top: 3rem;
                 padding-bottom: 3rem;
-                height: 80vh;
+                height: 75vh;
 
                 background-position-x: -600px !important;
                 background-position-y: 0px !important;

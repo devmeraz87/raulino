@@ -20,7 +20,7 @@ let scrollTween = gsap.to(sections, {
 // red section
 gsap.to("._horizontal_scroll_container_first_panel_", {
   xPercent: -100,
-  duration: 1,
+  duration: 2,
   ease: "none",
   scrollTrigger: {
     trigger: "._horizontal_scroll_container_panel",

@@ -255,19 +255,26 @@
 
     ._section_about_doctor {
         padding-top: 10rem;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+
 
         ._doctor_img_container {
-            max-width: 89% !important;
+            max-width: 100% !important;
             margin: auto;
+
+            ._doctor_img {
+                object-fit: cover;
+            }
         }
 
         ._context {
-            width: 89%;
+            width: 100%;
             margin: auto;
 
 
             > ._container {
-                padding: 0;
+                padding: 0 !important;
             }
 
 

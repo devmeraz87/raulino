@@ -5,6 +5,7 @@ gsap.to(".wrapper_img_card", {
         scrub: true
     },
 
-    scale: 0.95,
-    duration: 5
+    scale: 0.97,
+    duration: 5,
+    y: -100
 })

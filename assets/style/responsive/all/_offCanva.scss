@@ -120,6 +120,9 @@
 }
 
 
+
+
+
 @media only screen and (min-width: 375px) and (max-width: 768px) {
     ._offCanva {
 
@@ -145,7 +148,7 @@
                         ._links_item {
 
                             a {
-                                font-size: 36px !important; 
+                                font-size: 36px; 
                             }
                         }
                     }
@@ -167,6 +170,19 @@
     }
 }
 
+
+@media only screen and (max-width: 412px) {
+    
+    ._links {
+
+        ._links_item {
+
+            a {
+                font-size: 34px !important; 
+            }
+        }
+    }
+}
 
 @media only screen and (min-width: 375px) and (max-width: 410px) {
     ._offCanva {

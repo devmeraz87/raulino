@@ -95,7 +95,7 @@
 // >> SM ... >> 
 @media only screen and (min-width: 375px) and (max-width: 768px) {
     ._footer {
-
+        padding: 0 0.75rem !important;
 
         ._container {
             padding: 0 !important;
@@ -149,10 +149,7 @@
 
 
         ._footer_section_horizontal {
-            width: 100% !important;
-            max-width: 100% !important;
-            margin-left: 0.75rem;
-            margin-right: 0.75rem;
+            max-width: 100%;
             margin: auto;
         }
     }
