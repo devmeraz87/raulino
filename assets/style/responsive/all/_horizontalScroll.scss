@@ -242,13 +242,13 @@
 
 
         ._horizontal_scroll_container_panel {
-            width: 560vw;
+            width: 550vw;
 
             ._figure {
 
                &._figure_1 {
                      // >> in figure //
-                     padding: 3.5rem 4rem 3.5rem 6rem;
+                     padding: 7.5rem 4rem 7.5rem 7.5rem;
 
                      ._firstImg {
                         img {
@@ -262,7 +262,7 @@
                     .marquee {
 
                         ._gsap_marquee {
-                            font-size: 105px !important;
+                            font-size: 85px !important;
                         }
                     }
                }
@@ -271,7 +271,7 @@
 
                     ._top_img,
                     ._bottom_img {
-                        padding: 3.5rem 5rem 3.5rem 4rem;
+                        padding: 7.5rem 5rem 7.5rem 4rem;
 
                         img {
                             width: 600px;
@@ -279,7 +279,7 @@
                     }
 
                     ._center_2_img {
-                        padding: 3.5rem 6rem 3.5rem 6rem;
+                        padding: 6.5rem 6rem 6.5rem 6rem;
 
                         ._center_2_img_parent {
                             width: 500px;
@@ -304,6 +304,71 @@
 
 
 }
+
+
+// >> EXTRA SMALL IF NEED
+@media only screen and (max-width: 700px) {
+
+    ._horizontal_scroll_container_panel {
+        width: 650vw !important;
+    }    
+
+    ._center_video {
+        margin-right: 8rem;
+
+        ._video {
+            width: 800px;
+
+            video {
+                width: 900px;
+            }
+        }
+    }
+}
+
+
+// >> EXTRA SMALL IF NEED
+@media only screen and (max-width: 600px) {
+
+    ._horizontal_scroll_container_panel {
+        width: 700vw !important;
+    }    
+
+    ._center_video {
+        margin-right: 8rem;
+
+        ._video {
+            width: 600px !important;
+
+            video {
+                width: 600px;
+            }
+        }
+    }
+}
+
+
+// >> EXTRA SMALL IF NEED
+@media only screen and (max-width: 500px) {
+
+    ._horizontal_scroll_container_panel {
+        width: 800vw !important;
+    }    
+
+    ._center_video {
+        margin-right: 8rem;
+
+        ._video {
+            width: 600px !important;
+
+            video {
+                width: 600px;
+            }
+        }
+    }
+}
+
+
 
 // >> EXTRA SMALL IF NEED
 @media only screen and (max-width: 414px) {
