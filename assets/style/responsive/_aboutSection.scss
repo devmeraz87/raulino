@@ -133,6 +133,42 @@
             }
         }
     }
+
+
+    ._section_about_doctor {
+        padding-top: 10rem;
+
+        ._doctor_img_container {
+            max-width: 80% !important;
+            margin: auto;
+        }
+
+        ._context {
+            width: 80%;
+            margin: auto;
+
+
+            > ._container {
+                padding: 0;
+            }
+
+
+            ._section_about_title {
+                // font-size: ;
+            }
+
+            ._section_heading {
+                font-size: 45px !important;
+            }
+
+            ._counters {
+                ._counter_number {
+                    font-size: 40px !important;
+                }
+            }
+
+        }
+    }
 }
 
 
@@ -201,5 +237,40 @@
         }
     }
 
+
+    ._section_about_doctor {
+        padding-top: 10rem;
+
+        ._doctor_img_container {
+            max-width: 80% !important;
+            margin: auto;
+        }
+
+        ._context {
+            width: 80%;
+            margin: auto;
+
+
+            > ._container {
+                padding: 0;
+            }
+
+
+            ._section_about_title {
+                // font-size: ;
+            }
+
+            ._section_heading {
+                font-size: 32px !important;
+            }
+
+            ._counters {
+                ._counter_number {
+                    font-size: 26px !important;
+                }
+            }
+
+        }
+    }
 
 }

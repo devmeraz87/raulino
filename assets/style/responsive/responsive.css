@@ -376,6 +376,26 @@
   ._about ._about_content ._about_doctor ._about_context ._lead {
     font-size: 14px;
   }
+  ._section_about_doctor {
+    padding-top: 10rem;
+  }
+  ._section_about_doctor ._doctor_img_container {
+    max-width: 80% !important;
+    margin: auto;
+  }
+  ._section_about_doctor ._context {
+    width: 80%;
+    margin: auto;
+  }
+  ._section_about_doctor ._context > ._container {
+    padding: 0;
+  }
+  ._section_about_doctor ._context ._section_heading {
+    font-size: 45px !important;
+  }
+  ._section_about_doctor ._context ._counters ._counter_number {
+    font-size: 40px !important;
+  }
 }
 @media only screen and (min-width: 375px) and (max-width: 768px) {
   ._about._home_page ._about_content {
@@ -420,6 +440,26 @@
   ._about ._about_content ._about_doctor ._about_context ._lead {
     font-size: 12px;
     display: block;
+  }
+  ._section_about_doctor {
+    padding-top: 10rem;
+  }
+  ._section_about_doctor ._doctor_img_container {
+    max-width: 80% !important;
+    margin: auto;
+  }
+  ._section_about_doctor ._context {
+    width: 80%;
+    margin: auto;
+  }
+  ._section_about_doctor ._context > ._container {
+    padding: 0;
+  }
+  ._section_about_doctor ._context ._section_heading {
+    font-size: 32px !important;
+  }
+  ._section_about_doctor ._context ._counters ._counter_number {
+    font-size: 26px !important;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
