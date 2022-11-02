@@ -188,8 +188,8 @@
                             <span>nesta jornada em direcao da sua</span>
                             <span>transformacao!</span>
                         </div>
-                        <div class="_play_button">
-                            <button>
+                        <div class="_play_button_box">
+                            <button class="_play_button" src="./assets/video/video.mp4">
                                 <img style="max-height: 90px;" src="./assets/img/all/play_btn.png" alt="">
                             </button>
                         </div>
@@ -501,8 +501,24 @@
 
 
 
-
-
+    <!-- // >> video player / -->
+    <div class="_video_player">
+        <div class="_video_player_overlay">
+            <div class="_overlay_inner"></div>
+        </div>
+        <div class="_video_player_video">
+            <video class="_video_tag"   src="" autoplay muted playsinline loop>
+                <!-- <source _video_tag src="" > -->
+            </video>
+        </div>
+        <div class="_close_btn" data-cursor="-icon">
+            <i>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>                  
+            </i>
+        </div>
+    </div>
 
 
 
@@ -542,6 +558,7 @@
     <script src="./assets/js/components/all/hideSomthingScrollPosition.js"></script>
     <script src="./assets/js/components/all/wrapperImgScale.js"></script>
     <script src="./assets/js/components/all/testimonial.js"></script>
+    <script src="./assets/js/components/all/video_player.js"></script>
     <script src="./assets/js/components/about/aboutCollaps.js"></script>
     
     <!-- // From Home js / -->

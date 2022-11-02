@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5 {
 ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item ._contact_title {
   margin-bottom: 1.5rem;
   font-size: 17px;
-  color: #fff;
+  color: rgb(138, 97, 63);
   display: block;
 }
 ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item ._contact_details ._contact_details_item {
@@ -1166,6 +1166,9 @@ h1, h2, h3, h4, h5 {
   z-index: 99999;
   pointer-events: none;
 }
+._video_player._active {
+  pointer-events: all;
+}
 ._video_player ._video_player_overlay {
   position: fixed;
   top: 0;
@@ -1190,10 +1193,29 @@ h1, h2, h3, h4, h5 {
      object-fit: cover;
 }
 
-._play_btn {
+._close_btn {
   position: fixed;
-  bottom: 100px;
-  left: 50%;
+  top: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
   z-index: 999999;
   cursor: pointer;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+._close_btn i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+}
+._close_btn i svg {
+  height: 32px;
+  width: 32px;
 }/*# sourceMappingURL=style.css.map */
