@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style/tailwind.style.css">
     <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="stylesheet" href="./assets/style/responsive/responsive.css">
@@ -67,7 +67,7 @@
 
     <!-- // >> MainNav start // -->
     <nav class="mainNav">
-        <div class="_container px-3">
+        <div class="_container">
            <div class="mainNavContent">
             <div class="_burger">
                 <div data-cursor="-icon" class="_burger_btn">
@@ -98,7 +98,7 @@
 
     <!-- // >> Hero showcase start // -->
     <div class="_hero _about_page h-screen w-full" style="background: url(./assets/img/showcase/about_doctor_showcase_img.png) no-repeat center center/cover;">
-        <div class="_container px-3 h-full text-white">
+        <div class="_container h-full text-white">
             <div class="_hero_content h-full w-full flex items-center justify-start">
                 <div class="_about_heading flex flex-col text-start">
                     <span id="aboutHeroSplitText" >Referencia </span>
@@ -115,7 +115,7 @@
 
      <!-- // >> About section Start // -->
      <div class="_about">
-        <div class="_default_container px-3">
+        <div class="_container">
             <div class="_about_content py-36">
                 <div class="flex items-center flex-col">
                     <span id="aboutSplitText" class="_about_title">Tecnica especializada em transformacao com <a data-cursor="-icon" class="underline" href="">aparencia natural,</a></span>
@@ -144,10 +144,10 @@
 
     <!-- // >> My details start // -->
     <div class="_my_details">
-        <div class="_container px-3">
+        <div class="_container">
             <div class="_my_details_context py-28">
-                <div class="grid grid-cols-2 gap-10">
-                    <div>
+                <div class="_grid grid lg:grid-cols-2 gap-0 xl:gap-10">
+                    <div class="_doctor_img">
                         <img src="./assets/img/about_doctor/doctor_half_img.png" alt="">
                     </div>
                     <div class="_details flex flex-col justify-center items-start">
@@ -160,12 +160,12 @@
                             <span>Sonhos Realizados</span>
                         </div>
                         <div id="myDetailsSplitText" class="_lead mb-10">
-                            <p class="mb-6">
+                            <div class="mb-6">
                                 conclui a pos-graduacao em cirurgia plastica estetica e reparadora na cidade de Sao Paulo em 2008, no hospital de referencia estadual ipiranga, onde tive a oportunidade de conviver e relizar cirurgias com os grandes nomes da cirurgia plastica brasileira e mundia.
-                            </p>                            
-                            <p>
+                            </div>                            
+                            <div>
                                 Equipamentos de vanguarda como o vaser, Renuvion, Microaire e Bodytite, somados a pericia do Dr. Eduardo Raulino com mais de 5.000 casos operados com sucesso conferem a clinica Raulino o status de referencia internacional em cirurgias de contorno corporal.
-                            </p>
+                            </div>
                         </div>
                         <a  class="my_details_btn uppercase" href="#">Agendar Consulta</a>
                     </div>
@@ -178,7 +178,7 @@
 
       <!-- // >> About video start // -->
     <div class="_about_video" style="background: url(./assets/img/all/about_video_bg.png) no-repeat center center/cover;">
-         <div class="_container px-3">
+         <div class="_container">
             <div class="_about_video_context py-36">
                 <div class="_video_thumb" style="background: url(./assets/img/about_doctor/about_doctor_video_img.png) no-repeat center center/cover;">
                     <div class="_video_context py-36 flex  flex-col items-center justify-center">
@@ -201,7 +201,7 @@
 
 
     <!-- // >> _Expereance // -->
-    <div class="_Experience">
+    <!-- <div class="_Experience">
         <div class="_container px-3">
             <div class="_experience_content py-36">
                 <div id="experienceSectionSplitText" class="_experience_content_header mb-16">
@@ -318,7 +318,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- // >> COllaps End // -->
 
 
@@ -331,10 +331,10 @@
                 <span class="_marquee_context_top">Resultados naturais </span>
             </div>
         </div>
-        <div class="wrapper_img py-48">
-            <div class="_default_container px-3">
+        <div class="wrapper_img">
+            <div class="_container">
                 <div class="wrapper_img_card" style="background: url(./assets/img/all/marqueeInner.png) no-repeat center center;">
-                    <div class="wrapper_img_card_content py-72">
+                    <div class="wrapper_img_card_content">
                         <h1 id="wrapperImgSectionSplitText" class="_heading flex flex-col mb-6">
                             <span>O corpo dos seus sonhos</span>
                             <span>esta a um clique de voce</span>
@@ -362,8 +362,8 @@
         <footer class="_footer px-0 md:px-6">
 
             <!-- // >> Tsttimonail section start ? -->
-            <div class="_testimonials pt-24 md:pt-28 pb-6  2xl:px-3">
-                <div class="max-w-screen-2xl m-auto md:px-3">
+            <div class="_testimonials md:pt-28 pb-6 pt-16  2xl:px-3">
+                <div class="_container">
                     <div class="_content">
                         <div class="_testimonials_header flex items-center justify-center mb-14">
                             <img src="./assets/img/all/testimonials_header_logo.png" alt="">
@@ -458,7 +458,7 @@
             </div>
             <!-- // >> Roulino start ? -->
             <div class="_roulino">
-                <div class="max-w-screen-2xl m-auto px-3">
+                <div class="_container">
                     <div class="_roulino_context flex flex-col items-center justify-center  py-14">
                         <div class="_logo mb-10">
                             <img src="./assets/img/logo/Logo Dr.png" alt="">
@@ -477,7 +477,7 @@
     
             <!-- // >> footer Address start / -->
             <div class="_footer_address">
-                <div class="max-w-screen-2xl m-auto px-0 md:px-3">
+                <div class="_container">
                 <div class="_custome_footer_container">
                     <div class="grid grid-cols-2 gap-5 md:gap-2 py-14">
                         <div>

@@ -1,5 +1,7 @@
 @media only screen and (max-width: 1200px) {
-
+    ._container {
+       padding: 0 1.5rem;
+    }
 }
 
 
@@ -9,4 +11,7 @@
 @import "./all/offCanva";
 @import "./all/hero";
 @import "./lipo";
+@import "./about";
+@import "./aboutSection";
+@import "./all/marquee";
 @import "./all/footer";

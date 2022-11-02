@@ -45,6 +45,14 @@
     ._hero {
         background-position-x: -249px !important;
 
+        &._about_page {
+            background-position-x: -200px !important;
+
+            ._about_heading {
+                font-size: 55px;
+            }
+        }
+
         ._hero_content {
 
             ._section_title {
@@ -79,6 +87,11 @@
 // >> XL 1201
 @media only screen and (min-width: 769px) and (max-width: 991px) {
     ._hero {
+
+        &._about_page {
+            background-position-x: -450px !important;
+        }
+
         ._hero_content {
 
             ._section_title {

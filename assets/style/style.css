@@ -11,6 +11,7 @@
 ._container {
   max-width: 1424px;
   margin: 0 auto;
+  padding: 0 0.75rem;
 }
 
 body {
@@ -410,7 +411,8 @@ h1, h2, h3, h4, h5 {
 }
 
 ._marquee_section {
-  overflow-x: hidden;
+  overflow: hidden;
+  padding: 12rem 0;
 }
 ._marquee_section ._marquee {
   position: relative;
@@ -433,16 +435,17 @@ h1, h2, h3, h4, h5 {
   white-space: pre-wrap;
 }
 ._marquee_section ._marquee_top ._marquee_content_top {
-  top: -20px;
+  top: -200px;
 }
 ._marquee_section ._marquee_bottom ._marquee_content_bottom {
-  top: -400px;
+  bottom: -200px;
   z-index: 111;
 }
 ._marquee_section .wrapper_img .wrapper_img_card {
   z-index: 1;
   position: relative;
   transform: scale(1.3);
+  padding: 20rem 0;
 }
 ._marquee_section .wrapper_img .wrapper_img_card .wrapper_img_card_content {
   text-align: center;
