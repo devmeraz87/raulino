@@ -953,7 +953,7 @@
     padding: 7.5rem 4rem 7.5rem 7.5rem;
   }
   ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_1 ._firstImg img {
-    width: 500px;
+    width: 500px !important;
   }
   ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_2 .marquee ._gsap_marquee {
     font-size: 85px !important;
@@ -961,16 +961,21 @@
   ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._top_img,
 ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._bottom_img {
     padding: 7.5rem 5rem 7.5rem 4rem;
+    flex-shrink: 0;
   }
   ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._top_img img,
 ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._bottom_img img {
-    width: 600px;
+    width: 600px !important;
+  }
+  ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._top_img ._lead,
+._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._bottom_img ._lead {
+    max-width: 600px;
   }
   ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_2_img {
     padding: 6.5rem 6rem 6.5rem 6rem;
   }
   ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_2_img ._center_2_img_parent {
-    width: 500px;
+    width: 500px !important;
   }
   ._horizontal_scroll ._horizontal_scroll_container_panel ._figure._figure_3 ._center_video {
     margin-right: 8rem;
