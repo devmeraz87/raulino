@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style/tailwind.style.css">
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/responsive/responsive.css">
     <title>Project || </title>
 </head>
 <body style="background-color: #fff;">
@@ -31,7 +32,7 @@
                 <div id="_gsap_offCanvaRight" class="_offCanva_right_element" style="background: url(./assets/img/offcanva/offcanva.png);"></div>
             </div>
             <div id="_gsap_offCanva_links" class="_offCanva_links">
-                <div class="_container px-3">
+                <div class="_container lg:px-3 px-6">
                     <div class="_offCanva_links_content">
                         <ul id="_offCanvaSplitText" class="_links">
                             <li class="_links_item"><a data-cursor="-icon" href="/">Home</a></li>
@@ -65,7 +66,7 @@
 
     <!-- // >> MainNav start // -->
     <nav class="mainNav">
-        <div class="_container px-3">
+        <div class="_container lg:px-3 px-6">
            <div class="mainNavContent">
             <div class="_burger">
                 <div data-cursor="-icon" class="_burger_btn">
@@ -100,7 +101,7 @@
         <div class="_container m-auto px-3 h-full text-white">
             <div class="_hero_content h-full w-full flex flex-col items-center justify-center">
                 <h3 class="_section_title">Lipo UltraHD <span class="font-bold">Ugraft</span></h3>
-                <h1 class="_section_heading flex items-center flex-col">
+                <h1 class="_section_heading block md:flex md:items-center md:flex-col">
                     <span id="splite_text">Preparada para os</span>
                     <span>Olhares de admiracao?</span>
                 </h1>
@@ -119,8 +120,8 @@
 
     
     <!-- // >> Ultra Hd Ugraft start / -->
-    <div class="_ultra_hd_ugraft">
-        <div class="_container m-auto px-6 2xl:px-3">
+    <!-- <div class="_ultra_hd_ugraft">
+        <div class="_container m-auto px-6 lg:px-3">
            <div class="_ultra_hd_ugraft_content py-32">
                 <div class="_ultra_hd_ugraft_section_header mb-14">
                     <div class="_ultra_hd_title text-center mb-8">Lipoaspiracao Ultra HD Ugraft</div>
@@ -172,17 +173,17 @@
                 </div>
            </div>
         </div>
-    </div>
+    </div> -->
     <!-- // >> Lipo ultra hd end / -->
 
     <!-- // >> Lipo Gallery  ========================================================================== -->
     <!-- // >> Lipo Gallery  ========================================================================== -->
     <!-- // >> Lipo Gallery  ========================================================================== -->
     <!-- // >> Lipo gallery / -->
-    <div class="_lipo_gallery" style="background: url(./assets/img/all/about_video_bg.png) no-repeat center center/cover;">
-        <div class="py-32">
-            <div class="_container m-auto px-6  2xl:px-3">
-                <div class="grid grid-cols-3">
+    <!-- <div class="_lipo_gallery" style="background: url(./assets/img/all/about_video_bg.png) no-repeat center center/cover;">
+        <div class="py-24 md:py-32">
+            <div class="_container px-6  2xl:px-3">
+                <div class="grid grid-cols-2 lg:grid-cols-3">
                     <div class="grid_item">
                         <a href="#">
                             <img src="./assets/img/lipo_ultra_hd/Lipo_grid/Lipo_grid_img_1.png" alt="">
@@ -216,7 +217,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>  -->
     <!-- // >> Lipo Grid end /  -->
 
 
@@ -226,7 +227,7 @@
     <!-- // >> Lipo Carousel start / -->
     <div class="_section_carousel pt-28">
         <div class="_lipo_carousel_header">
-                <div class="max-w-7xl px-6  2xl:px-3 m-auto text-center mb-10">
+                <div class="_container px-6 lg:px-3 m-auto text-center mb-10">
                     <p class="_title">Saiba tudo sobre a lipoaspiracao UltraHD Ugraft</p>
                     <h1 class="_heading flex flex-col">
                         <span>A tecnica que poucos cirurgioes </span>
@@ -242,7 +243,7 @@
                 <button data-cursor="-icon" class="carousel_dot">04.</button>
                 <button data-cursor="-icon" class="carousel_dot">05.</button>
             </div>
-            <div class="carousel mb-28">
+            <div class="carousel mb-16 md:mb-28">
                 <div class="carousel_inner">
                     <div class="carousel_item carousel_item__active">
                         <img src="./assets/img/lipo_ultra_hd/Lipo_carasule_img.png" alt="" class="carousel_img">

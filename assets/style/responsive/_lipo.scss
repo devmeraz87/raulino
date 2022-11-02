@@ -1,0 +1,153 @@
+// >> XL 1201
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    ._section_carousel {
+
+        ._lipo_carousel_header {
+
+
+            ._title {
+
+            }
+
+            ._heading{
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// >> XL 1201
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    ._section_carousel {
+
+        ._lipo_carousel_header {
+
+
+            ._title {
+
+            }
+
+            ._heading{
+                font-size: 48px;
+            }
+        }
+
+        ._section_carousel_container {
+            max-width: 940px;
+            padding-left: 0.9rem;
+        }
+    }
+}
+
+
+
+// >> XL 1201
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    ._section_carousel {
+
+        ._lipo_carousel_header {
+
+
+            ._title {
+
+            }
+
+            ._heading{
+                font-size: 48px;
+            }
+        }
+
+        ._section_carousel_container {
+            max-width: 720px;
+            padding-left: 1rem;
+
+            .carousel_caption {
+
+                .carousel_caption_content {
+                    padding: 1.5rem 2rem;
+
+                    .craousel_heading {
+                        font-size: 32px;
+                    }
+
+                    .carousel_lead {
+                        font-size: 15px;
+                    }
+
+                    .carousel_btn {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// >> XL 1201
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    ._section_carousel {
+        padding-top: 5rem;
+        
+        ._lipo_carousel_header {
+
+
+            ._title {
+
+            }
+
+            ._heading{
+                font-size: 28px;
+            }
+        }
+
+        .carousel_indicator {
+            margin-right: 0;
+        }
+
+        ._section_carousel_container {
+            max-width: 90%;
+
+            .carousel_item {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .carousel_caption {
+                padding: 0;
+                position: static;
+
+                .carousel_caption_content {
+                    padding: 0.75rem 0;
+                    position: static;
+
+                    .craousel_heading {
+                        font-size: 32px;
+                    }
+
+                    .carousel_lead {
+                        font-size: 15px;
+                    }
+
+                    .carousel_btn {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .carousel_control {
+            bottom: 0;
+        }
+    }
+}

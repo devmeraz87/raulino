@@ -1,0 +1,161 @@
+// >> XL 1201
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    ._hero {
+
+        ._hero_content {
+
+            ._section_title {
+                margin-top: 10rem;   
+            }
+
+            ._section_heading {
+                font-size: 50px  !important;
+            }
+
+            ._section_lead {
+                font-size: 16px;
+                font-weight: 100;
+            }   
+
+            ._button_container {
+
+                ._button {
+
+                }
+            }
+
+            ._circle_logo_selo{
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// >> XL 1201
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    ._hero {
+        background-position-x: -249px !important;
+
+        ._hero_content {
+
+            ._section_title {
+                margin-top: 10rem;
+            }
+
+            ._section_heading {
+                font-size: 50px;
+            }
+
+            ._section_lead {
+                font-size: 16px;
+                font-weight: 100;
+            }
+
+            ._button_container {
+
+                ._button {
+
+                }
+            }
+
+            ._circle_logo_selo{
+
+            }
+        }
+    }
+}
+
+
+
+// >> XL 1201
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    ._hero {
+        ._hero_content {
+
+            ._section_title {
+                margin-top: 10rem;
+                font-size: 18px;
+            }
+
+            ._section_heading {
+                font-size: 48px;
+            }
+
+            ._section_lead {
+                font-size: 15px;
+            }
+
+            ._button_container {
+                    margin-bottom: 4rem;
+                ._button {
+
+                }
+            }
+
+            ._circle_logo_selo{
+
+            }
+        }
+    }
+}
+
+
+
+// >> XL 1201
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    ._hero {
+        background-position-x: -719px !important;
+
+        &._about_page {
+            background-position-x: -450px !important;
+        }
+
+        ._hero_content {
+
+            ._section_title {
+                font-size: 18px;
+                margin-top: 10rem;
+
+            }
+
+            ._section_heading {
+                font-size: 42px;    
+                display: block;
+                padding: 0 1rem;
+            }   
+
+            ._about_heading {
+                font-size: 42px;
+            }
+
+            ._section_lead {
+                font-size: 15px;
+                margin-bottom: 2rem;
+            }
+
+            ._button_container {
+                margin-bottom: 1.5rem;
+
+                ._button {
+                    padding: 0.75rem 1.2rem;
+                    font-size: 15px;
+                }
+            }
+
+            ._circle_logo_selo{
+                img {
+                    max-height: 60%;
+                }
+            }
+        }
+    }
+}
