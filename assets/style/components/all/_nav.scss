@@ -35,19 +35,19 @@
 
                 ._burger_icon {
                     position: relative;
-                    height: 3px;
+                    height: 2px;
                     width: 40px;
                     border-radius: 1px;
-                    background-color: #333;
+                    background-color: #ccc;
                     transition: 0.4s;
 
                     &::before, &::after {
                         content: "";
                         position: absolute;
-                        height: 3px;
+                        height: 2px;
                         width: 25px;
                         border-radius: 1px;
-                        background-color: #333;
+                        background-color: #ccc;
                         transition: 0.4s;
                     }
 

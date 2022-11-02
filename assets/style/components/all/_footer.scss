@@ -4,62 +4,6 @@
     background-color: #2D2824;
 
     // >> Testimonials Start >> 
-    ._testimonials {
-        background-color: #2D2824;
-    
-        ._content {
-    
-    
-            ._testimonials_header {
-                
-            }
-    
-            ._testimonials_container {
-                max-width: 900px;
-                margin: auto;
-    
-                ._testimonials_content {
-                    max-width: 900px;
-                    overflow: hidden;
-    
-                    ._testimonials_row {
-                        transition: 0.5s;
-                        width: 4500px;
-    
-                        
-                        ._testimonials_col {
-                            width: 900px;
-    
-                            ._testimonials_text_content {
-    
-                                ._testimonials_lead {
-                                    font-size: 40px;
-                                    font-family: "prata";
-                                    color: #fff;
-                                    margin-bottom: 2rem;
-                                }
-    
-                                ._testimonials_name {
-                                    color: #fff;
-                                }
-                            }
-                        }
-                    }
-                }
-    
-                ._testimonials_buttons {
-    
-                    ._testimonial_btn {
-                        transition: 0.3s;
-    
-                       &.active {
-                        box-shadow: 0 0 0 0.25rem rgb(253, 161, 128);
-                       }
-                    }
-                }
-            }
-        }
-    }
 
     
     // >> Roulino
@@ -109,4 +53,130 @@
     max-width: 922px;
     padding: 0 0.75rem;
     margin: 0 auto;
+}
+
+
+ 
+// Testimonias
+._testimonials {
+
+    ._testimoniasl_container {
+        max-width: 924px;
+        padding: 0 0.75rem;
+        margin: auto;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 3rem;
+
+            
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: transparent;
+        
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+
+                ._slide_content {
+
+                    ._main_context {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 40px;
+                        font-family: "prata";
+                        margin-bottom: 2.5rem;
+                        color: #fff;
+                        text-align: center;
+
+                        @media only screen and (max-width: 991px) {
+                            font-size: 35px !important;
+                            display: block !important;
+                        }
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: 35px !important;
+                            display: block !important;
+                        }
+
+                        @media only screen and (max-width: 375px) {
+                            font-size: 28px !important;
+                            display: block !important;
+                        }
+                    }
+        
+                    ._name {
+                        font-family: "poppins";
+                        font-size: 16px;
+                        color: #fff;
+        
+                        a {
+                            font-size: 19px;
+                            font-weight: bold;
+                            text-decoration: none;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .swiper-pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: static;
+            margin-bottom: 3rem;
+
+            .swiper-pagination-bullet {
+                height: 65px;
+                width: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                opacity: 1;
+                margin: 0 0.4rem;
+                background-color: transparent;
+                flex-shrink: 0;
+
+                @media only screen and (max-width: 991px) {
+                    height: 55px;
+                    width: 55px;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    height: 50px;
+                    width: 50px;
+                }
+
+                @media only screen and (max-width: 375px) {
+                    height: 50px;
+                    width: 50px;
+                }
+                
+                &.swiper-pagination-bullet-active {
+                    box-shadow: 0 0 0 0.25rem rgb(255, 195, 106);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
 }

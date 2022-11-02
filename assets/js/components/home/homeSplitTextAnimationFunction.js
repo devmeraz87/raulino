@@ -63,14 +63,14 @@ gsap.from(aboutSplitTextChar, {
 // >> =======================================================================================================================================
 // >>                                              Animate Marquee Section                                                                 //
 // >> =======================================================================================================================================
-let marqueeSplitText = new SplitText("#marqueeSplitText", { type: "chars" }),
+let marqueeSplitText = new SplitText("#wrapperImgSectionSplitText", { type: "chars" }),
   marqueeSplitTextChar = marqueeSplitText.chars;
 
-gsap.set("#marqueeSplitText", { perspective: 800 });
+gsap.set("#wrapperImgSectionSplitText", { perspective: 800 });
 
 gsap.from(marqueeSplitTextChar, {
   scrollTrigger: {
-    trigger: "#marqueeSplitText",
+    trigger: "#wrapperImgSectionSplitText",
     start: "top 70%",
     end: "+=500",
     // markers: true,
