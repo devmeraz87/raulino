@@ -6,6 +6,7 @@
     bottom: 0;
     overflow: hidden;
     pointer-events: none;
+    z-index: 99999999;
 
     ._loading_name,
     ._loading_logo {

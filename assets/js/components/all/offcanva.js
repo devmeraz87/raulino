@@ -4,7 +4,7 @@ gsap.registerPlugin( SplitText );
 // >> Get nessesariy element
 const body = document.body;
 const btnBurger = document.querySelector("._burger_btn");
-const offCanva = document.querySelector(".offCanva");
+const offCanva = document.querySelector("._offCanva");
 
 // >> get offcanva links
 let offCanvaSplitText = new SplitText("#_offCanvaSplitText", { type: "chars" }),
@@ -20,8 +20,8 @@ let menuOpen = false;
 btnBurger.addEventListener("click", () => {
     if(!menuOpen) {
         // // >> Add class
-        // offCanva.classList.add("active");
-        // btnBurger.classList.add("active");
+        offCanva.classList.add("_active");
+        btnBurger.classList.add("_active");
         body.classList.add("_document_locked");
 
         gsap.to("#_gsap_offCanva_links", {
@@ -65,8 +65,8 @@ btnBurger.addEventListener("click", () => {
 
     } else {
         // // >> Remove offCanva Active calss
-        // offCanva.classList.remove("active");
-        // btnBurger.classList.remove("active");
+        offCanva.classList.remove("_active");
+        btnBurger.classList.remove("_active");
         body.classList.remove("_document_locked");
 
         gsap.to("#_gsap_offCanva_links", {
