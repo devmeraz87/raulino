@@ -69,7 +69,6 @@
 
         ._about_content {
 
-
             ._about_title {
                 font-size: 16px;
             }
@@ -109,6 +108,8 @@
 
 
         ._about_content {
+            padding-bottom: 0.75rem;
+            padding-top: 5rem;
 
 
             ._about_title {
@@ -116,7 +117,9 @@
             }
 
             ._about_heading {
-                font-size: 36px;
+                display: block;
+                font-size: 27px;
+                padding: 0.75rem;
             }
 
             ._about_doctor {
@@ -149,6 +152,7 @@
 
                     ._lead {
                         font-size: 12px;
+                        display: block;
                     }
                 }
             }

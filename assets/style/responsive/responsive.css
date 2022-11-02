@@ -59,7 +59,7 @@
     background-position-x: -719px !important;
   }
   ._hero._about_page {
-    background-position-x: -450px !important;
+    background-position-x: -630px !important;
   }
   ._hero ._hero_content ._section_title {
     font-size: 18px;
@@ -285,11 +285,17 @@
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 768px) {
+  ._about ._about_content {
+    padding-bottom: 0.75rem;
+    padding-top: 5rem;
+  }
   ._about ._about_content ._about_title {
     font-size: 16px;
   }
   ._about ._about_content ._about_heading {
-    font-size: 36px;
+    display: block;
+    font-size: 27px;
+    padding: 0.75rem;
   }
   ._about ._about_content ._about_doctor {
     align-items: center;
@@ -317,6 +323,7 @@
   }
   ._about ._about_content ._about_doctor ._about_context ._lead {
     font-size: 12px;
+    display: block;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
