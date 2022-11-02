@@ -56,6 +56,42 @@
             }
         }
     }
+
+
+    ._section_about_doctor {
+        padding-top: 10rem;
+
+        ._doctor_img_container {
+            max-width: 80% !important;
+            margin: auto;
+        }
+
+        ._context {
+            width: 80%;
+            margin: auto;
+
+
+            > ._container {
+                padding: 0;
+            }
+
+
+            ._section_about_title {
+                // font-size: ;
+            }
+
+            ._section_heading {
+                font-size: 50px !important;
+            }
+
+            ._counters {
+                ._counter_number {
+                    font-size: 45px !important;
+                }
+            }
+
+        }
+    }
 }
 
 
@@ -106,6 +142,12 @@
     
     ._about {
 
+        &._home_page {
+
+            ._about_content {
+                padding-bottom: 4rem;
+            }
+        }
 
         ._about_content {
             padding-bottom: 0.75rem;
@@ -158,4 +200,6 @@
             }
         }
     }
+
+
 }

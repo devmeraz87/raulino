@@ -97,6 +97,11 @@
                     ._video_context_heading {
                         font-size: 46px;
                     }
+
+                    ._play_button {
+                        height: 90px;
+                        width: 90px;
+                    }
                 }
             }
         }
@@ -107,11 +112,6 @@
 
 // >> XL 1201
 @media only screen and (min-width: 769px) and (max-width: 991px) {
-
-
-
-
-
 
 
 
@@ -147,6 +147,32 @@
                 ._lead {
                     font-size: 15px;
                     padding-right: 1rem;
+                }
+            }
+        }
+    }
+
+
+    ._about_video {
+
+        ._about_video_context {
+
+
+            ._video_thumb {
+                width: 100%;
+
+
+                ._video_context {
+
+
+                    ._video_context_heading {
+                        font-size: 36px;
+                    }
+
+                    ._play_button {
+                        height: 90px;
+                        width: 90px;
+                    }
                 }
             }
         }
@@ -203,4 +229,31 @@
         }
     }
    
+
+    ._about_video {
+
+        ._about_video_context {
+
+
+            ._video_thumb {
+                width: 100%;
+
+
+                ._video_context {
+
+
+                    ._video_context_heading {
+                        font-size: 36px;
+                        display: block;
+                        padding: 0 1.75rem;
+                    }
+
+                    ._play_button {
+                        height: 90px;
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
 }

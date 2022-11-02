@@ -38,7 +38,7 @@
 }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   ._hero._about_page {
-    background-position-x: -450px !important;
+    background-position-x: -410px !important;
   }
   ._hero ._hero_content ._section_title {
     margin-top: 10rem;
@@ -59,7 +59,7 @@
     background-position-x: -719px !important;
   }
   ._hero._about_page {
-    background-position-x: -630px !important;
+    background-position-x: -580px !important;
   }
   ._hero ._hero_content ._section_title {
     font-size: 18px;
@@ -86,6 +86,53 @@
   }
   ._hero ._hero_content ._circle_logo_selo img {
     max-height: 60%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 700px) {
+  ._hero {
+    background-position-x: -719px !important;
+  }
+  ._hero._about_page {
+    background-position-x: -580px !important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+  ._hero {
+    background-position-x: -719px !important;
+  }
+  ._hero._about_page {
+    background-position-x: -580px !important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+  ._hero {
+    background-position-x: -719px !important;
+  }
+  ._hero._about_page {
+    background-position-x: -580px !important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 390px) {
+  ._hero {
+    background-position-x: -940px !important;
+  }
+  ._hero._about_page {
+    background-position-x: -580px !important;
+  }
+  ._hero ._hero_content ._section_title {
+    font-size: 18px;
+    margin-top: 10rem;
+  }
+  ._hero ._hero_content ._section_heading {
+    display: block;
+    padding: 0 0.75rem;
+  }
+  ._hero ._hero_content ._button_container {
+    margin-bottom: 2.5rem;
+  }
+  ._hero ._hero_content ._button_container ._button {
+    padding: 0.75rem 1.2rem;
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
@@ -204,6 +251,10 @@
   ._about_video ._about_video_context ._video_thumb ._video_context ._video_context_heading {
     font-size: 46px;
   }
+  ._about_video ._about_video_context ._video_thumb ._video_context ._play_button {
+    height: 90px;
+    width: 90px;
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   ._my_details ._my_details_context ._grid ._doctor_img {
@@ -224,6 +275,16 @@
   ._my_details ._my_details_context ._details ._lead {
     font-size: 15px;
     padding-right: 1rem;
+  }
+  ._about_video ._about_video_context ._video_thumb {
+    width: 100%;
+  }
+  ._about_video ._about_video_context ._video_thumb ._video_context ._video_context_heading {
+    font-size: 36px;
+  }
+  ._about_video ._about_video_context ._video_thumb ._video_context ._play_button {
+    height: 90px;
+    width: 90px;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 768px) {
@@ -250,6 +311,18 @@
     padding-right: 1rem;
     font-weight: 100;
   }
+  ._about_video ._about_video_context ._video_thumb {
+    width: 100%;
+  }
+  ._about_video ._about_video_context ._video_thumb ._video_context ._video_context_heading {
+    font-size: 36px;
+    display: block;
+    padding: 0 1.75rem;
+  }
+  ._about_video ._about_video_context ._video_thumb ._video_context ._play_button {
+    height: 90px;
+    width: 90px;
+  }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
   ._about ._about_content ._about_heading {
@@ -269,6 +342,26 @@
   ._about ._about_content ._about_doctor ._about_context ._lead {
     font-size: 15px;
   }
+  ._section_about_doctor {
+    padding-top: 10rem;
+  }
+  ._section_about_doctor ._doctor_img_container {
+    max-width: 80% !important;
+    margin: auto;
+  }
+  ._section_about_doctor ._context {
+    width: 80%;
+    margin: auto;
+  }
+  ._section_about_doctor ._context > ._container {
+    padding: 0;
+  }
+  ._section_about_doctor ._context ._section_heading {
+    font-size: 50px !important;
+  }
+  ._section_about_doctor ._context ._counters ._counter_number {
+    font-size: 45px !important;
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   ._about ._about_content ._about_title {
@@ -285,6 +378,9 @@
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 768px) {
+  ._about._home_page ._about_content {
+    padding-bottom: 4rem;
+  }
   ._about ._about_content {
     padding-bottom: 0.75rem;
     padding-top: 5rem;
@@ -324,6 +420,29 @@
   ._about ._about_content ._about_doctor ._about_context ._lead {
     font-size: 12px;
     display: block;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+  ._section_2 ._video_container ._video_card ._context ._section_card_heading {
+    font-size: 50px !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  ._section_2 ._video_container ._video_card ._context ._section_card_heading {
+    font-size: 48px !important;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  ._section_2 ._video_container ._video_card ._context ._section_card_heading {
+    font-size: 45px !important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  ._section_2 ._video_container ._video_card {
+    padding: 8rem 4rem !important;
+  }
+  ._section_2 ._video_container ._video_card ._context ._section_card_heading {
+    font-size: 32px !important;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
