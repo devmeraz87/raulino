@@ -151,15 +151,25 @@ h1, h2, h3, h4, h5 {
   left: 0;
   right: 0;
   height: 120px;
-  z-index: 999;
+  z-index: 9999;
   height: 120px;
   width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .mainNav {
+    height: 100px;
+  }
 }
 .mainNav .mainNavContent {
   height: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .mainNav .mainNavContent {
+    height: 100px;
+  }
 }
 .mainNav .mainNavContent ._burger ._burger_btn {
   height: 40px;
@@ -216,6 +226,16 @@ h1, h2, h3, h4, h5 {
 .mainNav .mainNavContent ._logo img {
   width: 200px;
 }
+@media only screen and (max-width: 768px) {
+  .mainNav .mainNavContent ._logo img {
+    width: 160px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mainNav .mainNavContent ._lang_flags {
+    display: none;
+  }
+}
 .mainNav .mainNavContent ._lang_flags ._lang_flags_items {
   display: flex;
   align-items: center;
@@ -234,6 +254,7 @@ h1, h2, h3, h4, h5 {
   right: 0;
   bottom: 0;
   pointer-events: none;
+  z-index: 9999;
 }
 ._offCanva._active {
   pointer-events: all;

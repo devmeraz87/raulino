@@ -3,6 +3,56 @@
     padding: 0 1.5rem;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  ._offCanva ._offCanvaContent ._offCanva_left_and_right_container ._offCanva_right_element {
+    flex: 2 !important;
+  }
+  ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._links ._links_item a {
+    font-size: 48px !important;
+  }
+  ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item:not(:first-child) {
+    margin-left: 4rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  ._offCanva ._offCanvaContent ._offCanva_left_and_right_container ._offCanva_right_element {
+    display: none;
+  }
+  ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._links ._links_item a {
+    font-size: 44px !important;
+  }
+  ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item:not(:first-child) {
+    margin-left: 4rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  ._offCanva ._offCanvaContent ._offCanva_left_and_right_container ._offCanva_right_element {
+    display: none;
+  }
+  ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._links ._links_item a {
+    font-size: 36px !important;
+  }
+  ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item:not(:first-child) {
+    margin-left: 4rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 410px) {
+  ._offCanva ._offCanvaContent ._offCanva_left_and_right_container ._offCanva_right_element {
+    display: none;
+  }
+  ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._links ._links_item a {
+    font-size: 32px !important;
+  }
+  ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item ._contact_title {
+    font-size: 13px;
+  }
+  ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item ._contact_details ._contact_details_item {
+    font-size: 12px !important;
+  }
+  ._offCanva ._offCanvaContent ._offCanva_links ._offCanva_links_content ._offCanvaContact ._contact_item:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
   ._hero ._hero_content ._section_title {
     margin-top: 10rem;
@@ -392,9 +442,22 @@
   }
   ._section_about_doctor ._context ._section_heading {
     font-size: 45px !important;
+    display: block;
   }
   ._section_about_doctor ._context ._counters ._counter_number {
     font-size: 40px !important;
+  }
+  ._section_about_doctor ._context ._about_doctor_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  ._section_about_doctor ._context ._about_doctor_buttons a {
+    margin: 0 !important;
+  }
+  ._section_about_doctor ._context ._about_doctor_buttons a:first-child {
+    margin-bottom: 0.75rem;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 768px) {
@@ -445,11 +508,11 @@
     padding-top: 10rem;
   }
   ._section_about_doctor ._doctor_img_container {
-    max-width: 80% !important;
+    max-width: 89% !important;
     margin: auto;
   }
   ._section_about_doctor ._context {
-    width: 80%;
+    width: 89%;
     margin: auto;
   }
   ._section_about_doctor ._context > ._container {
@@ -457,9 +520,22 @@
   }
   ._section_about_doctor ._context ._section_heading {
     font-size: 32px !important;
+    display: block;
   }
   ._section_about_doctor ._context ._counters ._counter_number {
     font-size: 26px !important;
+  }
+  ._section_about_doctor ._context ._about_doctor_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  ._section_about_doctor ._context ._about_doctor_buttons a {
+    margin: 0;
+  }
+  ._section_about_doctor ._context ._about_doctor_buttons a:first-child {
+    margin-bottom: 0.75rem;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
