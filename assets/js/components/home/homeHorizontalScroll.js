@@ -1,3 +1,6 @@
+window.addEventListener("load", function () {
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 let container = document.querySelector('._horizontal_scroll_container')
@@ -56,6 +59,7 @@ gsap.to("._horizontal_scroll_container_first_panel_", {
   duration: 2,
   ease: "none",
   scrollTrigger: {
+    scroller: "[data-scroll-container]",
     trigger: "._horizontal_scroll_container_panel",
     containerAnimation: scrollTween,
     delay: 3,
@@ -66,6 +70,7 @@ gsap.to("._horizontal_scroll_container_first_panel_", {
 
 gsap.to("._horizontal_scroll_container_first_panel_", {
   scrollTrigger:  {
+    scroller: "[data-scroll-container]",
     trigger: "._horizontal_scroll_container_first_panel_",
     end: "top top",
     scrub: true,
@@ -74,8 +79,9 @@ gsap.to("._horizontal_scroll_container_first_panel_", {
   y: 0
 })
 
-ScrollTrigger.addEventListener("refresh", () => { 
-  scroller.update()
-});
+// ScrollTrigger.addEventListener("refresh", () => { 
+//   scroller.update()
+// });
 
-ScrollTrigger.refresh();
+// ScrollTrigger.refresh();
+});
