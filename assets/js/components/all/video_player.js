@@ -46,6 +46,7 @@ cloesBtn.addEventListener("click", () => {
 
 
   gsap.to("._overlay_inner", {
+    duration
     opacity: 0,
   })
 

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style/tailwind.style.css">
     <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'><link rel="stylesheet" href="./horizontalScroll.css">
+
     <link rel="stylesheet" href="./assets/style/responsive/responsive.css">
     <title>Project || </title>
 </head>
@@ -94,6 +96,9 @@
         </div>
     </nav>
     <!-- // >> MainNav End // -->
+
+
+    <main class="smoothScrollingWrapper">
 
 
     <!-- // >> About  ========================================================================== -->
@@ -220,7 +225,7 @@
     <!-- // >> Horizontal Scroll  ========================================================================== -->
     <!-- // >> Horizontal Scroll  ========================================================================== -->
     <!-- // >> Horizontal Scroll Start / -->
-    <div class="_horizontal_scroll">
+    <div style="overflow: hidden;" class="_horizontal_scroll">
         <div class="_horizontal_scroll_container">
             <section class="_horizontal_scroll_container_first_panel_ panel-1" style="background: url(./assets/img/home/grid_sendy_cover.1a0bb4.webp) no-repeat center center/cover;"><h1>Panel 1</h1></section>
             <section class="_horizontal_scroll_container_panel panel-2">
@@ -320,8 +325,8 @@
     <!-- // >> About doctor section end  -->
 
 
-<div id="smooth-wrapper">
-    <div id="smooth-content">
+
+
          <!-- // >> Footer  ========================================================================== -->
     <!-- // >> Footer  ========================================================================== -->
     <!-- // >> Footer  ========================================================================== -->
@@ -462,8 +467,7 @@
         </div>
         <!-- // >> footer social end / -->
     </footer>
-    </div>
-</div>
+</main>
 
 <!-- // >> Video player / -->
 <div class="_video_player">
@@ -516,8 +520,10 @@
     <script src="./assets/js/components/all/hideSomthingScrollPosition.js"></script>
     <script src="./assets//js/components//all/wrapperImgScale.js"></script>
     <script src="./assets//js/components//all/testimonial.js"></script>
-    <script src="./assets/js/components/all/video_player.js"></script>
+    <!-- <script src="./assets/js/components/all/video_player.js"></script> -->
     
+<script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
+
     <!-- // From Home js / -->
     <script src="./assets/js/components/home/homeSplitTextAnimationFunction.js"></script>
     <script src="./assets/js/components/home/homeMarquee.js"></script>
