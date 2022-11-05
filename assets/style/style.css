@@ -1005,6 +1005,12 @@ h1, h2, h3, h4, h5 {
   display: none;
 }
 
+.lipo_smooth_scrollingWrapper,
+.about_smooth_scrollingWrapper,
+.smoothScrollingWrapper {
+  perspective: 1px;
+}
+
 ._ultra_hd_ugraft ._ultra_hd_ugraft_content ._ultra_hd_ugraft_section_header ._ultra_hd_title {
   font-family: "poppins";
 }

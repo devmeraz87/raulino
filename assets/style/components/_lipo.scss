@@ -1,3 +1,9 @@
+// .lipo_smooth_scrollingWrapper , [data-scroll-section] { transform-style: preserve-3d; will-change: transform; }
+.lipo_smooth_scrollingWrapper,
+.about_smooth_scrollingWrapper,
+.smoothScrollingWrapper {
+    perspective: 1px;
+}
 ._ultra_hd_ugraft {
 
     ._ultra_hd_ugraft_content {

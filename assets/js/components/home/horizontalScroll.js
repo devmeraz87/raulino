@@ -302,8 +302,6 @@ gsap.from(aboutDoctorSectionSplitTextChar, {
   
     if(window.mobileCheck() === true) {
       document.querySelector(".horizontal-scroll").classList.add("hidden")
-  
-      console.log("chaking");
     }
     
   })
