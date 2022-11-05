@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style/tailwind.style.css">
     <link rel="stylesheet" href="./assets/style/style.css">
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'><link rel="stylesheet" href="./horizontalScroll.css">
-
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
     <link rel="stylesheet" href="./assets/style/responsive/responsive.css">
     <title>Project || </title>
 </head>
@@ -225,7 +224,7 @@
     <!-- // >> Horizontal Scroll  ========================================================================== -->
     <!-- // >> Horizontal Scroll  ========================================================================== -->
     <!-- // >> Horizontal Scroll Start / -->
-    <div style="overflow: hidden;" class="_horizontal_scroll">
+    <!-- <div style="overflow: hidden;" class="_horizontal_scroll">
         <div class="_horizontal_scroll_container">
             <section class="_horizontal_scroll_container_first_panel_ panel-1" style="background: url(./assets/img/home/grid_sendy_cover.1a0bb4.webp) no-repeat center center/cover;"><h1>Panel 1</h1></section>
             <section class="_horizontal_scroll_container_panel panel-2">
@@ -273,8 +272,71 @@
             </section>
             <section class="_horizontal_scroll_container_panel panel-3"><h1>Panel 2</h1></section>
         </div>
-    </div> 
+    </div>  -->
     <!-- // >> Horizontal Scroll End / -->
+
+
+
+
+
+
+
+
+    <section class="horizontal-scroll" data-textcolor="#bcb8ad" data-bgcolor="#815946">
+        <div class="pin-wrap">
+            <div class="_figure" >
+                <div style="background: url(./assets/img/home/grid_sendy_cover.1a0bb4.webp) no-repeat center center/cover; height: 100%; width: 100%;" class="_figure_inner">
+
+                </div>
+            </div>
+            <div class="_figure_2">
+                <div class="_center_first_img">
+                    <img src="./assets/img/home/photo-section-img-3.png" alt="">
+                    <div class="_marquee_3">
+                        <span class="_gsap_marquee_3">Olhares de admiração <div class="line"></div> Olhares de admiração </span>
+                        <span class="_gsap_marquee_3">Olhares de admiração <div class="line"></div> Olhares de admiração </span>
+                    </div>
+                </div>
+                <div class="_top_img">
+                    <img src="./assets/img/home/photo-section-img-1.png" alt="">
+                    <div class="_top_img_text">
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, velit!</div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, velit!</div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, velit!</div>
+                    </div>
+                </div>
+                <div class="_bottom_img">
+                    <div class="_bottom_img_text">
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, velit!</div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, velit!</div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, velit!</div>
+                    </div>
+                    <img src="./assets/img/home/photo-section-img-2.png" alt="">
+                </div>
+                <div class="_center_2_img">
+                    <div class="_center_2_img_parent">
+                        <img src="./assets/img/home/photo-section-img-3.png" alt="">
+                        <img class="child" src="./assets/img/home/photo-section-img-3.png" alt="">
+                    </div>
+                </div>
+                <div class="_video">
+                    <div class="_play_button_container">
+                        <button class="_play_btn">x</button>
+                    </div>
+                    <div class="_video_container">
+                        <video src="./assets/video/video.mp4" autoplay loop muted>x</video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
     
     <!-- // >> About doctor  ========================================================================== -->
     <!-- // >> About doctor  ========================================================================== -->
@@ -475,9 +537,15 @@
         <div class="_overlay_inner"></div>
     </div>
     <div class="_video_player_video">
-        <video class="_video_tag"   src="" autoplay muted playsinline loop>
-            <!-- <source _video_tag src="" > -->
+        <video class="_video_tag"   src="./assets/video/video.mp4" >
         </video>
+    </div>
+    <div class="_close_btn" data-cursor="-icon">
+        <i>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>                  
+        </i>
     </div>
 </div>
 
@@ -520,14 +588,15 @@
     <script src="./assets/js/components/all/hideSomthingScrollPosition.js"></script>
     <script src="./assets//js/components//all/wrapperImgScale.js"></script>
     <script src="./assets//js/components//all/testimonial.js"></script>
-    <!-- <script src="./assets/js/components/all/video_player.js"></script> -->
+    <script src="./assets/js/components/all/video_player.js"></script>
     
 <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
 
     <!-- // From Home js / -->
     <script src="./assets/js/components/home/homeSplitTextAnimationFunction.js"></script>
     <script src="./assets/js/components/home/homeMarquee.js"></script>
-    <script src="./assets/js/components/home/homeHorizontalScroll.js"></script>
+    <!-- <script src="./assets/js/components/home/homeHorizontalScroll.js"></script> -->
+    <script src="./assets/js/components/home/horizontalScroll.js"></script>
 
 
 </body>

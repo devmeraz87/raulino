@@ -12,7 +12,7 @@ const loop2 = horizontalLoop2("._marquee_context_bottom", {
   ease: "power4.out"
 })
 
-const loop3 = horizontalLoop3("._gsap_marquee", {
+const loop3 = horizontalScrollMarquee("._gsap_marquee_3", {
 	reversed: true,
 	repeat: -1,
 	ease: "power4.out"
@@ -138,7 +138,7 @@ function horizontalLoop2(items, config) {
 }
 
 // Horizontal loop 3
-function horizontalLoop3(items, config) {
+function horizontalScrollMarquee(items, config) {
 	items = gsap.utils.toArray(items);
 	config = config || {};
 	let tl = gsap.timeline({repeat: config.repeat, paused: config.paused, defaults: {ease: "none"}, onReverseComplete: () => tl.totalTime(tl.rawTime() + tl.duration() * 100)}),
