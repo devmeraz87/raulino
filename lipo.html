@@ -101,6 +101,10 @@
 
 <main class="lipo_smooth_scrollingWrapper">
 
+    <div style="position: fixed; top: 120px; left: 20px; color: #fff;" class="window-width-and-height">
+
+    </div>
+
     <!-- // >> Hero showcase start  -->
     <div class="_hero h-screen w-full" style="background: url(./assets/img/showcase/showcase.png) no-repeat center center/cover;">
         <div class="_container m-auto px-3 h-full text-white">
@@ -533,6 +537,13 @@
         return false; 
         } 
         } 
+
+        const varia_ = document.querySelector(".window-width-and-height");
+
+        window.addEventListener("load", () => {
+            varia_.innerHTML = `<div>Width: ${window.innerWidth}</div><div>Height: ${window.innerHeight}</div>`
+        })
+
       </script>
 </body>
 </html>
