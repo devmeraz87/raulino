@@ -33,18 +33,19 @@ const scroller = new LocomotiveScroll({
     },
     pinType: pageContainer.style.transform ? "transform" : "fixed" });
 
+
     // >> Animate wrapper image
     gsap.to(".wrapper_img_card", {
         scrollTrigger: {
-            scroller: "[data-scroll-container]",
+          scroller: "[data-scroll-container]",
             trigger: ".wrapper_img_card",
             scrub: true
         },
 
         scale: 0.97,
         duration: 5,
-        y: -100
     })
+
 
 
     var aboutTimeLine = gsap.timeline(),

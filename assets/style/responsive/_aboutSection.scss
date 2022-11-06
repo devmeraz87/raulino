@@ -189,8 +189,9 @@
 
 
 
-@media only screen and (min-width: 375px) and (max-width: 768px) {
+@media only screen and (min-width: 360px) and (max-width: 768px) {
     
+    // >> About section top
     ._about {
 
         &._home_page {
@@ -206,7 +207,7 @@
 
 
             ._about_title {
-                font-size: 16px;
+                font-size: 14px;
             }
 
             ._about_heading {
@@ -219,8 +220,8 @@
                 align-items: center;
 
                 ._img_container {
-                    height: 100px;
-                    width: 100px;
+                    height: 80px;
+                    width: 80px;
                     padding: 0;
                     flex-shrink: 0;
 
@@ -229,8 +230,8 @@
                     justify-content: center;
 
                     img {
-                        height: 90px !important;
-                        width: 90px !important;
+                        height: 70px !important;
+                        width: 70px !important;
                         object-fit: cover !important;
                     }
                 }
@@ -253,47 +254,47 @@
     }
 
 
-    ._section_about_doctor {
-        padding-top: 10rem;
-        padding-left: 1.75rem;
-        padding-right: 1.75rem;
 
+    // >> About section after horizontal scroll / 
+
+    ._section_about_doctor {
+        padding-top: 5rem;
 
         ._doctor_img_container {
-            max-width: 100% !important;
-            margin: auto;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
 
-            ._doctor_img {
-                object-fit: cover;
+            img {
+                object-fit: contain;
+                box-shadow: 2px 5px 14px rgba(51, 51, 51, 0.301);
             }
         }
 
         ._context {
-            width: 100%;
-            margin: auto;
-
-
-            > ._container {
-                padding: 0 !important;
-            }
 
 
             ._section_about_title {
-                // font-size: ;
+
             }
 
+
             ._section_heading {
-                font-size: 32px !important;
-                display: block;
+                font-size: 27px;
+                display: inline-block;
+                line-height: 1.5;
             }
 
             ._counters {
+
                 ._counter_number {
-                    font-size: 26px !important;
+                    flex-basis: 120px;
+                    font-size: 27px !important;
+                    white-space: pre-wrap;
                 }
             }
 
             ._about_doctor_buttons {
+                margin-top: 1.5rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -301,13 +302,12 @@
 
                 a {
                     margin: 0;
-
-                    &:first-child {
-                        margin-bottom: 0.75rem;
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
                     }
                 }
             }
-
         }
+
     }
 }
