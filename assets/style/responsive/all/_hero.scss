@@ -272,57 +272,26 @@
 
 
 
-@media only screen and (max-width: 991px) {
-    ._hero {
-        background-position-x: -420px !important;
 
-        &._about_page {
-            background-position-x: -300px !important;
-        }
+// >> three position /
+
+@media only screen and (max-width: 600px) and (max-height: 1200px) {
+    ._hero {
+        background-position-x: -1050px !important;
     }
 }
-
-
-
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) and (max-height: 900px) {
     ._hero {
-        background-position-x: -620px !important;
-
-        &._about_page {
-            background-position-x: -360px !important;
-        }
+        background-position-x: -1000px !important;
     }
 }
-
-
-
-@media only screen and (max-width: 700px) {
-    ._hero {
-        background-position-x: -720px !important;
-
-        &._about_page {
-            background-position-x: -400px !important;
-        }
-    }
-}
-
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (max-height: 800px) {
     ._hero {
         background-position-x: -850px !important;
-
-        &._about_page {
-            background-position-x: -450px !important;
-        }
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) and (max-height: 700px) {
     ._hero {
-
-        &._about_page {
-            background-position-x: -580px !important;
-        }
+        background-position-x: -750px !important;
     }
 }
