@@ -270,51 +270,135 @@
     }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1200px)  {
+    ._hero {
+        background-position-x: -410px !important;
+
+        &._about_page {
+
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px)  {
+    ._hero {
+        background-position-x: -710px !important;
+        
+        &._about_page {
+            
+        }
+    }
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 768px)  {
+    ._hero {
+        background-position-x: -790px !important;
+        
+        &._about_page {
+            
+        }
+    }
+}
+
+
 @media only screen and (max-width: 500px)  {
     ._hero {
         background-position-x: -990px !important;
+        
+        &._about_page {
+            
+        }
     }
 }
+
+
+//  max-height and max-width 
+@media only screen and (max-width: 450px) and (max-height: 1150px) {
+    ._hero {
+        background-position-x: -1400px !important;
+        
+        &._about_page {
+            background-position-x: -700px !important;
+        }
+    }
+}
+
 
 @media only screen and (max-width: 450px)  {
     ._hero {
         background-position-x: -1010px !important;
+        
+        &._about_page {
+            
+        }
     }
 }
 
 
 @media only screen and (max-width: 414px)  {
     ._hero {
-        background-position-x: -1020px !important;
+        background-position-x: -1040px !important;
+        
+        &._about_page {
+            background-position-x: -690px !important;
+        }
     }
 }
 
-@media only screen and (max-width: 412px)  {
-    ._hero {
-        background-position-x: -1030px !important;
-    }
-}
-
-@media only screen and (max-width: 412px)  {
-    ._hero {
-        background-position-x: -1030px !important;
-    }
-}
 
 @media only screen and (max-width: 393px)  {
     ._hero {
         background-position-x: -1035px !important;
+        
+        &._about_page {
+            
+        }
     }
 }
 
 @media only screen and (max-width: 375px)  {
     ._hero {
         background-position-x: -1040px !important;
+        
+        &._about_page {
+            
+        }
     }
 }
 
-@media only screen and (max-width: 360px)  {
+@media only screen and (max-width: 375px) and (max-height: 812px) {
     ._hero {
-        background-position-x: -1050px !important;
+        background-position-x: -940px !important;
+        
+        &._about_page {
+            
+        }
     }
 }
+
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+    ._hero {
+        background-position-x: -850px !important;
+        
+        &._about_page {
+            background-position-x: -620px !important;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 360px) and (max-height: 760px) {
+    ._hero {
+        background-position-x: -850px !important;
+        
+        &._about_page {
+            background-position-x: -570px !important;
+        }
+    }
+}
+
+
+
+
