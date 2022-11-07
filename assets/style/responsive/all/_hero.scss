@@ -123,10 +123,8 @@
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     ._hero {
-        background-position-x: -650px !important;
 
         &._about_page {
-            background-position: -400px !important;
             
             ._about_heading {
                 font-size: 38px;
@@ -175,10 +173,8 @@
 
 @media only screen and (min-width: 501px) and (max-width: 600px) {
     ._hero {
-        background-position-x: -740px !important;
 
         &._about_page {
-            background-position: -460px !important;
             
             ._about_heading {
                 font-size: 38px;
@@ -227,10 +223,8 @@
 
 @media only screen and (min-width: 360px) and (max-width: 500px) {
     ._hero {
-        background-position-x: -840px !important;
 
         &._about_page {
-            background-position: -560px !important;
             
             ._about_heading {
                 font-size: 38px;
@@ -273,5 +267,54 @@
                 height: 100px !important;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 500px)  {
+    ._hero {
+        background-position-x: -990px !important;
+    }
+}
+
+@media only screen and (max-width: 450px)  {
+    ._hero {
+        background-position-x: -1010px !important;
+    }
+}
+
+
+@media only screen and (max-width: 414px)  {
+    ._hero {
+        background-position-x: -1020px !important;
+    }
+}
+
+@media only screen and (max-width: 412px)  {
+    ._hero {
+        background-position-x: -1030px !important;
+    }
+}
+
+@media only screen and (max-width: 412px)  {
+    ._hero {
+        background-position-x: -1030px !important;
+    }
+}
+
+@media only screen and (max-width: 393px)  {
+    ._hero {
+        background-position-x: -1035px !important;
+    }
+}
+
+@media only screen and (max-width: 375px)  {
+    ._hero {
+        background-position-x: -1040px !important;
+    }
+}
+
+@media only screen and (max-width: 360px)  {
+    ._hero {
+        background-position-x: -1050px !important;
     }
 }
