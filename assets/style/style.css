@@ -767,38 +767,6 @@ h1, h2, h3, h4, h5 {
   margin-right: 3rem;
   background-color: black;
 }
-@media only screen and (min-width: 1201px) and (max-width: 1500px) {
-  ._center_first_img ._marquee_3 {
-    right: -2120px;
-  }
-  ._center_first_img ._marquee_3 ._gsap_marquee_3 {
-    font-size: 140px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  ._center_first_img ._marquee_3 {
-    right: -2000px;
-  }
-  ._center_first_img ._marquee_3 ._gsap_marquee_3 {
-    font-size: 130px;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 991px) {
-  ._center_first_img ._marquee_3 {
-    right: -1860px;
-  }
-  ._center_first_img ._marquee_3 ._gsap_marquee_3 {
-    font-size: 120px;
-  }
-}
-@media only screen and (min-width: 500px) and (max-width: 768px) {
-  ._center_first_img ._marquee_3 {
-    right: -1740px;
-  }
-  ._center_first_img ._marquee_3 ._gsap_marquee_3 {
-    font-size: 110px;
-  }
-}
 
 ._top_img {
   display: flex;
@@ -890,36 +858,141 @@ h1, h2, h3, h4, h5 {
   display: none !important;
 }
 
-._section_about_doctor ._context ._section_about_title {
-  margin-bottom: 1.5rem;
+._about_doctor {
+  position: relative;
 }
-._section_about_doctor ._context ._section_heading {
-  font-size: 65px;
-  font-family: "prata";
-  line-height: 1.2;
+@media only screen and (max-width: 991px) {
+  ._about_doctor ._about_doctor_photo {
+    padding-top: 5rem;
+  }
+  ._about_doctor ._about_doctor_photo ._about_doctor_img_right img {
+    width: 60%;
+    margin: auto;
+    box-shadow: 2px 5px 20px rgba(51, 51, 51, 0.288);
+  }
+}
+@media only screen and (max-width: 500px) {
+  ._about_doctor img {
+    width: 85% !important;
+  }
+}
+._about_doctor ._about_doctor_photo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+._about_doctor ._about_doctor_photo ._about_doctor_img_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  ._about_doctor ._about_doctor_photo ._about_doctor_img_right img {
+    width: 80%;
+  }
+}
+._about_doctor ._about_doctor_details {
+  padding: 10rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  ._about_doctor ._about_doctor_details {
+    position: static;
+    padding: 5rem 0;
+  }
+}
+._about_doctor ._about_doctor_details ._container {
+  flex: 1;
+}
+._about_doctor ._about_doctor_details ._details_content {
+  height: 100%;
+}
+._about_doctor ._about_doctor_details ._details_content ._section_title {
+  font-size: 18px;
+  font-family: "poppins";
+  display: flex;
+  flex-direction: column;
   margin-bottom: 2rem;
 }
-._section_about_doctor ._context ._counters {
-  margin-bottom: 1rem;
+@media only screen and (max-width: 768px) {
+  ._about_doctor ._about_doctor_details ._details_content ._section_title {
+    font-size: 15px;
+  }
 }
-._section_about_doctor ._context ._counters ._counter {
+@media only screen and (max-width: 500px) {
+  ._about_doctor ._about_doctor_details ._details_content ._section_title {
+    font-size: 14px;
+    display: inline-block;
+  }
+}
+._about_doctor ._about_doctor_details ._details_content ._section_heading {
+  display: flex;
+  flex-direction: column;
+  font-family: "prata";
+  font-size: 60px;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 991px) {
+  ._about_doctor ._about_doctor_details ._details_content ._section_heading {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  ._about_doctor ._about_doctor_details ._details_content ._section_heading {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  ._about_doctor ._about_doctor_details ._details_content ._section_heading {
+    font-size: 30px;
+    display: inline-block;
+  }
+}
+._about_doctor ._about_doctor_details ._details_content ._counters ._counter {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  align-items: center;
   font-family: "poppins";
-  white-space: pre-wrap;
 }
-._section_about_doctor ._context ._counters ._counter ._counter_number {
-  font-size: 65px;
+@media only screen and (max-width: 991px) {
+  ._about_doctor ._about_doctor_details ._details_content ._counters ._counter {
+    grid-template-columns: 0.4fr 1fr;
+  }
+}
+@media only screen and (max-width: 768px) {
+  ._about_doctor ._about_doctor_details ._details_content ._counters ._counter {
+    grid-template-columns: 0.5fr 1fr;
+  }
+}
+@media only screen and (max-width: 768px) {
+  ._about_doctor ._about_doctor_details ._details_content ._counters ._counter {
+    grid-template-columns: 0.6fr 1fr;
+  }
+}
+._about_doctor ._about_doctor_details ._details_content ._counters ._counter ._counter_number {
+  font-size: 60px;
   font-family: "prata";
 }
-._section_about_doctor ._context ._about_doctor_buttons a {
-  display: inline-block;
-  border: 1px solid;
-  padding: 0.75rem 1.75rem;
-  border-radius: 50px;
-  font-size: 14px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+@media only screen and (max-width: 991px) {
+  ._about_doctor ._about_doctor_details ._details_content ._counters ._counter ._counter_number {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  ._about_doctor ._about_doctor_details ._details_content ._counters ._counter ._counter_number {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  ._about_doctor ._about_doctor_details ._details_content ._counters ._counter ._counter_number {
+    font-size: 30px;
+  }
 }
 
 ._hero ._hero_content ._about_heading {

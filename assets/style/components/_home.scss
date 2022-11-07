@@ -1,41 +1,146 @@
-// >> ABOUT DOCTOR
-._section_about_doctor {
+// >> Section about doctor
 
-    ._context {
+._about_doctor {
+    position: relative;
 
-        ._section_about_title {
-            margin-bottom: 1.5rem;
-        }
+    @media only screen and (max-width: 991px) {
 
-        ._section_heading {
-            font-size: 65px;
-            font-family: "prata";
-            line-height: 1.2;
-            margin-bottom: 2rem;
-        }
+        ._about_doctor_photo {
+            padding-top: 5rem;
 
-        ._counters {
-            margin-bottom: 1rem;
-            ._counter {
-                font-family: "poppins";
-                white-space: pre-wrap;
+            ._about_doctor_img_right {
 
-                ._counter_number {
-                    font-size: 65px;
-                    font-family: "prata";
+                img {
+                    width: 60%;
+                    margin: auto;
+                    box-shadow: 2px 5px 20px rgba(51, 51, 51, 0.288);
                 }
             }
         }
+    }
 
-        ._about_doctor_buttons {
+    @media only screen and (max-width: 500px) {
+        img {
+            width: 85% !important;
+        }
+    }
 
-            a {
-                display: inline-block;
-                border: 1px solid;  
-                padding: 0.75rem 1.75rem;
-                border-radius: 50px;
-                font-size: 14px;
-                user-select: none;
+    ._about_doctor_photo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        ._about_doctor_img_left {
+            // flex: 1;
+        }
+        ._about_doctor_img_right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            // flex: 1;
+            @media only screen and (min-width: 992px) and (max-width: 1500px) {
+                
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+
+    ._about_doctor_details {
+        padding: 10rem 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        @media only screen and (max-width: 991px) {
+            position: static;
+            padding: 5rem 0;
+        }
+
+        display: flex;
+        align-items: center;
+
+        ._container {
+            flex: 1;
+        }
+        
+
+        ._details_content {
+            height: 100%;
+
+            ._section_title {
+                font-size: 18px;
+                font-family: "poppins";
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+
+                @media only screen and (max-width: 768px) {
+                    font-size: 15px;
+                }
+                @media only screen and (max-width: 500px) {
+                    font-size: 14px;
+                    display: inline-block;
+                }
+            }
+
+            ._section_heading {
+                display: flex;
+                flex-direction: column;
+                font-family: "prata";
+                font-size: 60px;
+                margin-bottom: 2rem;
+
+                @media only screen and (max-width: 991px) {
+                    font-size: 50px;
+                }
+                @media only screen and (max-width: 768px) {
+                    font-size: 40px;
+                }
+                @media only screen and (max-width: 500px) {
+                    font-size: 30px;
+                    display: inline-block;
+                }
+            }
+
+            ._counters {
+
+                ._counter {
+                    display: grid;
+                    grid-template-columns: 0.25fr 1fr;
+                    align-items: center;
+                    font-family: "poppins";
+
+                    @media only screen and (max-width: 991px) {
+                        grid-template-columns: 0.40fr 1fr;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        grid-template-columns: 0.50fr 1fr;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        grid-template-columns: 0.60fr 1fr;
+                    }
+
+                    ._counter_number {
+                        font-size: 60px;
+                        font-family: "prata";
+
+                        @media only screen and (max-width: 991px) {
+                            font-size: 50px;
+                        }
+                        @media only screen and (max-width: 768px) {
+                            font-size: 40px;
+                        }
+                        @media only screen and (max-width: 500px) {
+                            font-size: 30px;
+                        }
+                    }
+                }
             }
         }
     }
