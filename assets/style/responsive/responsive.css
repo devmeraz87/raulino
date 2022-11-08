@@ -25,7 +25,7 @@
     margin-left: 4rem;
   }
 }
-@media only screen and (min-width: 375px) and (max-width: 768px) {
+@media only screen and (min-width: 360px) and (max-width: 768px) {
   ._offCanva ._offCanvaContent ._offCanva_left_and_right_container ._offCanva_right_element {
     display: none;
   }
@@ -41,7 +41,7 @@
     font-size: 34px !important;
   }
 }
-@media only screen and (min-width: 375px) and (max-width: 410px) {
+@media only screen and (min-width: 360px) and (max-width: 410px) {
   ._offCanva ._offCanvaContent ._offCanva_left_and_right_container ._offCanva_right_element {
     display: none;
   }
@@ -446,12 +446,13 @@
     width: 90px;
   }
 }
-@media only screen and (min-width: 375px) and (max-width: 768px) {
+@media only screen and (min-width: 360px) and (max-width: 768px) {
   ._my_details ._my_details_context ._grid ._doctor_img {
     margin-bottom: 2rem;
   }
   ._my_details ._my_details_context ._grid ._doctor_img img {
     margin: auto;
+    width: 80%;
   }
   ._my_details ._my_details_context ._details {
     margin-left: 0rem;
@@ -822,6 +823,7 @@
   ._marquee_section .wrapper_img .wrapper_img_card {
     height: 70vh;
     padding: 0 0.75rem;
+    background-position-x: -250px !important;
   }
   ._marquee_section .wrapper_img .wrapper_img_card ._heading {
     display: block;
@@ -854,6 +856,7 @@
   ._marquee_section .wrapper_img .wrapper_img_card {
     height: 70vh;
     padding: 0 0.75rem;
+    background-position-x: -450px !important;
   }
   ._marquee_section .wrapper_img .wrapper_img_card ._heading {
     display: block;
@@ -886,6 +889,7 @@
   ._marquee_section .wrapper_img .wrapper_img_card {
     height: 70vh;
     padding: 0 0.75rem;
+    background-position-x: -500px !important;
   }
   ._marquee_section .wrapper_img .wrapper_img_card ._heading {
     display: block;
@@ -918,6 +922,7 @@
   ._marquee_section .wrapper_img .wrapper_img_card {
     height: 70vh;
     padding: 0 0.75rem;
+    background-position-x: -550px !important;
   }
   ._marquee_section .wrapper_img .wrapper_img_card ._heading {
     display: block;

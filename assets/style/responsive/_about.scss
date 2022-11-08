@@ -182,9 +182,9 @@
 
 
 // >> XL 1201
-@media only screen and (min-width: 375px) and (max-width: 768px) {
 
 
+@media only screen and (min-width: 360px) and (max-width: 768px) {
 
 
     ._my_details {
@@ -200,6 +200,7 @@
 
                     img {
                         margin: auto;
+                        width: 80%;
                     }
                 }
             }
