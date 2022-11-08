@@ -80,6 +80,9 @@
                 flex-direction: column;
                 margin-bottom: 2rem;
 
+                @media only screen and (max-width: 1024px) {
+                    font-size: 15px;
+                }
                 @media only screen and (max-width: 768px) {
                     font-size: 15px;
                 }
@@ -96,6 +99,9 @@
                 font-size: 60px;
                 margin-bottom: 2rem;
 
+                @media only screen and (max-width: 1024px) {
+                    font-size: 50px;
+                }
                 @media only screen and (max-width: 991px) {
                     font-size: 50px;
                 }
@@ -130,6 +136,9 @@
                         font-size: 60px;
                         font-family: "prata";
 
+                        @media only screen and (max-width: 1024px) {
+                            font-size: 50px;
+                        }
                         @media only screen and (max-width: 991px) {
                             font-size: 50px;
                         }
@@ -140,6 +149,149 @@
                             font-size: 30px;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+
+// >> Vertical Section
+._horizontal_section_vertical {
+    padding: 5rem 0;
+
+    ._content {
+
+
+        ._vertical_figure_1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            margin-bottom: 3rem;
+
+            max-width: 80%;
+            margin-left: auto;
+
+            @media only screen and (max-width: 500px) {
+                max-width: 85%;
+            }
+
+            ._figure_title {
+                // font-size: ;
+                margin-bottom: 1.5rem;
+
+                @media only screen and (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        ._vertical_figure_2 {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 80%;
+            margin-bottom: 5rem;
+
+
+            ._vertical_marquee {
+                position: absolute;
+                bottom: -78px;
+                font-size: 180px;
+                font-family: "prata";
+
+                @media only screen and (max-width: 768px) {
+                    font-size: 100px;
+                    bottom: -50px;
+                }
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+
+                span {
+                    flex-shrink: 0;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        ._vertical_figure_3 {
+            max-width: 50%;
+            margin-bottom: 3rem;
+
+            @media only screen and (max-width: 500px) {
+                max-width: 60%;
+            }
+
+
+            ._figure_img_container {
+                position: relative;
+                left: 50%;
+                transform: translateX(-20%);
+                margin-bottom: 2rem;
+                @media only screen and (max-width: 500px) {
+                    left: 35%;
+                }
+
+                ._child {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(50%, -50%);
+                    height: 60%;
+
+                }
+            }
+
+            ._figure_title {
+                position: relative;
+                left: 50%;
+                width: 150%;
+                transform: translateX(-13%);
+                font-family: "poppins";
+
+
+                @media only screen and (max-width: 500px) {
+                    left: 35%;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        ._vertical_figure_4 {
+            position: relative;
+            margin-bottom: 10rem;
+
+            @media only screen and (max-width: 500px) {
+                margin-bottom: 5rem;
+            }
+
+            ._figure_img_container {
+                max-width: 70%;
+
+                @media only screen and (max-width: 500px) {
+                    max-width: 80%;
+                }
+            }
+
+            ._figure_video_container {
+                position: absolute;
+                max-width: 60%;
+                left: 30%;
+                top: 70%;
+
+                @media only screen and (max-width: 500px) {
+                    max-width: 70%;
+                    left: 20%;
+                }
+                
+                video {
+                    box-shadow: 2px 5px 20px #999;
                 }
             }
         }
