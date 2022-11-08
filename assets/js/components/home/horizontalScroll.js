@@ -8,7 +8,13 @@ window.addEventListener("load", function () {
       el: pageContainer,
       inertia: 0.8,
       smooth: true,
-      getDirection: true 
+      getDirection: true,
+      mobile: {
+        smooth: true
+      },
+      tablet: {
+          smooth: true
+      }
     });
     
     scroller.on("scroll", function (t) {
