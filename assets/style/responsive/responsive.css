@@ -78,7 +78,7 @@
     background-position: center right !important;
   }
   ._hero._about_page {
-    background-position-x: -200px !important;
+    background-position: center center !important;
   }
   ._hero._about_page ._about_heading {
     font-size: 55px;
@@ -99,7 +99,7 @@
     background-position: right top !important;
   }
   ._hero._about_page {
-    background-position-x: -410px !important;
+    background-position: center center !important;
   }
   ._hero ._hero_content ._section_title {
     margin-top: 10rem;
@@ -118,6 +118,9 @@
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   ._hero {
     background-position: right top !important;
+  }
+  ._hero._about_page {
+    background-position: center center !important;
   }
   ._hero._about_page ._about_heading {
     font-size: 38px;
@@ -155,6 +158,9 @@
   ._hero {
     background-position: center right !important;
   }
+  ._hero._about_page {
+    background-position: center center !important;
+  }
   ._hero._about_page ._about_heading {
     font-size: 38px;
     padding-top: 25rem;
@@ -190,6 +196,9 @@
 @media only screen and (min-width: 360px) and (max-width: 500px) {
   ._hero {
     background-position: 220% center !important;
+  }
+  ._hero._about_page {
+    background-position: 56% center !important;
   }
   ._hero._about_page ._about_heading {
     font-size: 38px;
