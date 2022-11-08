@@ -1,4 +1,7 @@
 // >> Section about doctor
+::-webkit-scrollbar {
+    display: none;
+}
 
 ._about_doctor {
     position: relative;
@@ -148,6 +151,34 @@
                         @media only screen and (max-width: 500px) {
                             font-size: 30px;
                         }
+                    }
+                }
+            }
+
+            ._my_details_button {
+                margin-top: 3rem;
+
+                @media only screen and (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                a {
+                    display: inline-block;
+                    border: 1px solid;
+                    padding: 0.75rem 2.5rem;
+                    border-radius: 30px;
+                    font-family: "poppins";
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    margin-bottom: 1rem;
+
+                    @media only screen and (min-width: 769px) {
+                        &:not(:first-child) {
+                            margin-left: 1rem;
+                        }
+                        margin-bottom: 0;
                     }
                 }
             }

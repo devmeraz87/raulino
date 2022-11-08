@@ -111,177 +111,30 @@ window.addEventListener("load", function () {
     
       /* COLOR CHANGER */
     
-      const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
-      scrollColorElems.forEach((colorSection, i) => {
-        const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
-        const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
+      // const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
+      // scrollColorElems.forEach((colorSection, i) => {
+      //   const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
+      //   const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
     
-        ScrollTrigger.create({
-          trigger: colorSection,
-          scroller: "[data-scroll-container]",
-          start: "top 50%",
-          onEnter: () =>
-          gsap.to("body", {
-            backgroundColor: colorSection.dataset.bgcolor,
-            color: colorSection.dataset.textcolor,
-            overwrite: "auto" }),
+      //   ScrollTrigger.create({
+      //     trigger: colorSection,
+      //     scroller: "[data-scroll-container]",
+      //     start: "top 50%",
+      //     onEnter: () =>
+      //     gsap.to("body", {
+      //       backgroundColor: colorSection.dataset.bgcolor,
+      //       color: colorSection.dataset.textcolor,
+      //       overwrite: "auto" }),
     
-          onLeaveBack: () =>
-          gsap.to("body", {
-            backgroundColor: prevBg,
-            color: prevText,
-            overwrite: "auto" }) });
+      //     onLeaveBack: () =>
+      //     gsap.to("body", {
+      //       backgroundColor: prevBg,
+      //       color: prevText,
+      //       overwrite: "auto" }) });
     
     
-      });
+      // });
 
-
-// // >> ==============================================================================================================================================================================================
-// // >> ==============================================================================================================================================================================================
-// // >>                                                                                  //  Home Section // 
-// // >> ==============================================================================================================================================================================================
-// // >> ==============================================================================================================================================================================================
-
-
-// >> =======================================================================================================================================
-// >>                                                    Animate hero Section                                                              // 
-// >> =======================================================================================================================================
-// var tl = gsap.timeline(),
-//   mySplitText = new SplitText("#quote", { type: "chars" }),
-//   chars = mySplitText.chars; //an array of all the divs that wrap each character
-
-// gsap.set("#quote", { perspective: 800 });
-
-
-// tl.from(chars, {
-//   delay: 4,
-//   duration: 0.5,
-//   opacity: 0,
-//   scale: 1,
-//   y: 2,
-//   rotationX: -10,
-//   transformOrigin: "0% 50% -50",
-//   ease: "Back.InOut",
-//   stagger: 0.02
-// });
-
-
-
-
-// // >> =======================================================================================================================================
-// // >>                                              Animate About section                                                                   //
-// // >> =======================================================================================================================================
-// let  aboutSplitText = new SplitText("#aboutSplitText", { type: "chars" }),
-//   aboutSplitTextChar = aboutSplitText.chars; //an array of all the divs that wrap each character
-
-// gsap.set("#aboutSplitText", { perspective: 800 });
-
-// gsap.from(aboutSplitTextChar, {
-//     scrollTrigger: {
-//         scroller: "[data-scroll-container]",
-//         trigger: "._about_content",
-//     },
-
-//     duration: 0.5,
-//     opacity: 0,
-//     scale: 1,
-//     y: 2,
-//     rotationX: -10,
-//     transformOrigin: "0% 50% -50",
-//     ease: "Back.InOut",
-//     stagger: 0.01
-// })
-
-
-
-// // >> =======================================================================================================================================
-// // >>                                              Animate Marquee Section                                                                 //
-// // >> =======================================================================================================================================
-// let marqueeSplitText = new SplitText("#wrapperImgSectionSplitText", { type: "chars" }),
-//   marqueeSplitTextChar = marqueeSplitText.chars;
-
-// gsap.set("#wrapperImgSectionSplitText", { perspective: 800 });
-
-// gsap.from(marqueeSplitTextChar, {
-//   scrollTrigger: {
-//     scroller: "[data-scroll-container]",
-//     trigger: "#wrapperImgSectionSplitText",
-//     start: "top 70%",
-//     end: "+=500",
-//     // markers: true,
-//     // scrub: true
-//   },
-
-//   duration: 0.5,
-//   opacity: 0,
-//   scale: 1,
-//   y: 2,
-//   rotationX: -10,
-//   transformOrigin: "0% 50% -50",
-//   ease: "Back.InOut",
-//   stagger: 0.01
-// })
-    
-
-
-// // >> =======================================================================================================================================
-// // >>                                                 Animate Video section                                                                //
-// // >> =======================================================================================================================================
-// let videoSectionSplitText = new SplitText("#video_section_marquee_text", { type: "chars" }),
-//   videoSectionSplitTextChar = videoSectionSplitText.chars;
-
-// gsap.set("#video_section_marquee_text", { perspective: 800 });
-
-// gsap.from(videoSectionSplitTextChar, {
-//   scrollTrigger: {
-//     scroller: "[data-scroll-container]",
-//     trigger: "#video_section_marquee_text",
-//     start: "top 80%",
-//     end: "+=500",
-//     // markers: true,
-//     // scrub: true
-//   },
-
-//   duration: 0.5,
-//   opacity: 0,
-//   scale: 1,
-//   y: 2,
-//   rotationX: -10,
-//   transformOrigin: "0% 50% -50",
-//   ease: "Back.InOut",
-//   stagger: 0.01
-// })
-    
-
-
-// // >> =======================================================================================================================================
-// // >>                                                 About doctor section                                                                 //
-// // >> =======================================================================================================================================
-// let aboutDoctorSectionSplitText = new SplitText("#doctor_section_splitText", { type: "words" }),
-//   aboutDoctorSectionSplitTextChar = aboutDoctorSectionSplitText.words;
-
-// gsap.set("#doctor_section_splitText", { perspective: 800 });
-
-// gsap.from(aboutDoctorSectionSplitTextChar, {
-//   scrollTrigger: {
-//     scroller: "[data-scroll-container]",
-//     trigger: "#doctor_section_splitText",
-//     // start: "top 80%",
-//     end: "+=800",
-//     // markers: true,
-//     // scrub: true
-//   },
-
-//   duration: 0.5,
-//   opacity: 0,
-//   scale: 1,
-//   y: 2,
-//   rotationX: -10,
-//   transformOrigin: "0% 50% -50",
-//   ease: "Back.InOut",
-//   stagger: 0.01
-// })
-    
 
 
     // >> Animate wrapper image
@@ -323,8 +176,10 @@ window.addEventListener("load", function () {
       document.querySelector(".pin-spacer").classList.add("hidden")
     }
 
-    if(width.mobileCheck() === false) {
+    if(window.mobileCheck() === false) {
       document.querySelector("._horizontal_section_vertical").classList.add("hidden");
+
+      console.log("false");
     }
     
   })

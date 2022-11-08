@@ -858,6 +858,10 @@ h1, h2, h3, h4, h5 {
   display: none !important;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 ._about_doctor {
   position: relative;
 }
@@ -1007,6 +1011,34 @@ h1, h2, h3, h4, h5 {
 @media only screen and (max-width: 500px) {
   ._about_doctor ._about_doctor_details ._details_content ._counters ._counter ._counter_number {
     font-size: 30px;
+  }
+}
+._about_doctor ._about_doctor_details ._details_content ._my_details_button {
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  ._about_doctor ._about_doctor_details ._details_content ._my_details_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+._about_doctor ._about_doctor_details ._details_content ._my_details_button a {
+  display: inline-block;
+  border: 1px solid;
+  padding: 0.75rem 2.5rem;
+  border-radius: 30px;
+  font-family: "poppins";
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 769px) {
+  ._about_doctor ._about_doctor_details ._details_content ._my_details_button a {
+    margin-bottom: 0;
+  }
+  ._about_doctor ._about_doctor_details ._details_content ._my_details_button a:not(:first-child) {
+    margin-left: 1rem;
   }
 }
 
