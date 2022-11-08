@@ -1012,6 +1012,7 @@ h1, h2, h3, h4, h5 {
 
 ._horizontal_section_vertical {
   padding: 5rem 0;
+  overflow-x: hidden;
 }
 ._horizontal_section_vertical ._content ._vertical_figure_1 {
   display: flex;
