@@ -8,6 +8,20 @@
   src: url(../font/poppins/Poppins-Regular.otf);
   font-style: normal;
 }
+::-moz-selection {
+  background: rgba(67, 217, 255, 0.521);
+  backdrop-filter: blur(10px);
+}
+::selection {
+  background: rgba(67, 217, 255, 0.521);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+body {
+  cursor: default;
+}
+
 ._container {
   max-width: 1424px;
   margin: 0 auto;

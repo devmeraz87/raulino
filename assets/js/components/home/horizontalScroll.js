@@ -138,16 +138,16 @@ window.addEventListener("load", function () {
 
 
     // >> Animate wrapper image
-    gsap.to(".wrapper_img_card", {
-      scrollTrigger: {
-        scroller: "[data-scroll-container]",
-          trigger: ".wrapper_img_card",
-          scrub: true
-      },
+      gsap.to(".wrapper_img_card", {
+        scrollTrigger: {
+          scroller: "[data-scroll-container]",
+            trigger: ".wrapper_img_card",
+            scrub: true
+        },
 
-      scale: 0.97,
-      duration: 5,
-  })
+        scale: 0.97,
+        duration: 5,
+      })
 
 
 
@@ -159,7 +159,204 @@ window.addEventListener("load", function () {
       });
     
       ScrollTrigger.refresh();
-    });
+
+      // >> Home split text start / 
+      const hero_title = document.querySelector("#_js_hero_title_splittext")
+      const hero_title_splitText = new SplitText(hero_title, {type: "words, chars"});
+      gsap.from(hero_title_splitText.chars, {
+        duration: 0.5,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+        onComplete: () => {
+            hero_title_splitText.revert();
+            console.log("reverted sucessfully");
+        }
+      })
+
+      // >> hero heading //
+      const hero_heading  = document.querySelector("#_js_hero_heading_splittext");
+      const hero_hading_splitText = new SplitText(hero_heading, {type: "words, chars"});
+      gsap.from(hero_hading_splitText.chars, {
+        duration: 0.5,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+        onComplete: () => {
+            hero_hading_splitText.revert();
+            console.log("reverted sucessfully");
+          }
+      })
+
+      // >> hero lead //
+      const hero_lead  = document.querySelector("#_js_hero_lead_splittext");
+      const hero_lead_splitText = new SplitText(hero_lead, {type: "words, chars"});
+      gsap.from(hero_lead_splitText.chars, {
+        duration: 0.5,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+        onComplete: () => {
+            hero_lead_splitText.revert();
+            console.log("reverted sucessfully");
+        }
+      })
+
+      // >> about Dorctor after hero
+      // >> title
+      const about_title  = document.querySelector("#_js_about_title_splittext");
+      const about_title_splitText = new SplitText(about_title, {type: "words, chars"});
+      gsap.from(about_title_splitText.chars, {
+        duration: 0.5,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+          scrollTrigger: {
+              scroller: "[data-scroll-container]",
+              trigger: about_title,
+              start: "center center",
+          },
+          onComplete: () => {
+              about_title_splitText.revert();
+              console.log("reverted sucessfully");
+          }
+      })
+
+
+      // >> heading
+      const about_heading  = document.querySelector("#_js_about_heading_splittext");
+      const about_heading_splitText = new SplitText(about_heading, {type: "words, chars"});
+      gsap.from(about_heading_splitText.chars, {
+        duration: 0.5,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+          scrollTrigger: {
+              scroller: "[data-scroll-container]",
+              trigger: about_title,
+              start: "center center",
+          },
+          onComplete: () => {
+              about_heading_splitText.revert();
+              console.log("reverted sucessfully");
+          }
+      })
+
+
+      // >> doctor name
+      const about_doctor_name  = document.querySelector("#_js_about_doctor_name_splittext");
+      const about_doctor_name_splitText = new SplitText(about_doctor_name, {type: "words, chars"});
+      gsap.from(about_doctor_name_splitText.chars, {
+        delay: 0.5,
+        duration: 0.5,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+          scrollTrigger: {
+              scroller: "[data-scroll-container]",
+              trigger: about_title,
+              start: "center center",
+          },
+          onComplete: () => {
+            //  about_doctor_name_splitText.revert();
+             console.log("reverted sucessfully");
+          }
+      })
+
+      // >> doctor lead
+      const about_doctor_lead  = document.querySelector("#_js_about_doctor_lead_splittext");
+      const about_doctor_lead_splitText = new SplitText(about_doctor_lead, {type: "words, chars"});
+      gsap.from(about_doctor_lead_splitText.chars, {
+        delay: 0.5,
+        duration: .5,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+          scrollTrigger: {
+              scroller: "[data-scroll-container]",
+              trigger: about_title,
+              start: "center center",
+          },
+          onComplete: () => {
+             about_doctor_lead_splitText.revert();
+          }
+      })
+
+
+      // >> wrapper card 
+      // >> heading
+      const wrapper_card_heading = this.document.querySelector("#_js_wrapper_img_card_heading_splittext")
+      const wrapper_card_heading_splitText = new SplitText(wrapper_card_heading, {type: "words, chars"});
+      gsap.from(wrapper_card_heading_splitText.chars, {
+        duration: .5,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+          scrollTrigger: {
+              scroller: "[data-scroll-container]",
+              trigger: "#_js_wrapper_img_card_heading_splittext",
+          },
+          onComplete: () => {
+            wrapper_card_heading_splitText.revert();
+          }
+      })
+
+      // >> lead
+      const wrapper_card_lead = this.document.querySelector("#_js_wrapper_img_card_lead_splittext")
+      const wrapper_card_lead_splitText = new SplitText(wrapper_card_lead, {type: "words, chars"});
+      gsap.from(wrapper_card_lead_splitText.chars, {
+        duration: .5,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+          scrollTrigger: {
+              scroller: "[data-scroll-container]",
+              trigger: "#_js_wrapper_img_card_heading_splittext",
+          },
+          onComplete: () => {
+            wrapper_card_heading_splitText.revert();
+          }
+      })
+
+
+
+});
     
   
 

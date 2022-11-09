@@ -10,6 +10,18 @@
     font-style: normal
 }
 
+
+::selection {
+    background-color: rgb(59 130 246 0.5);
+    backdrop-filter: blur(10px);
+  }
+
+body {
+    cursor: default;
+    // background-color: rgb(59 130 246 0.5);
+}
+
+
 @import "./components/base";
 @import "./components/mouseFollower";
 @import "./components/all/nav";
