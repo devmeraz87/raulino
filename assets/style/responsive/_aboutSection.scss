@@ -187,6 +187,19 @@
 }
 
 
+@media only screen and (max-width: 768px) {
+    
+    ._about_doctor {
+        width: 70% !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    
+    ._about_doctor {
+        width: 100% !important;
+    }
+}
 
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
@@ -208,7 +221,6 @@
 
             ._about_title {
                 font-size: 14px;
-                width: 75%;
             }
 
             ._about_heading {
@@ -219,7 +231,6 @@
 
             ._about_doctor {
                 align-items: center;
-                width: 70%;
 
                 ._img_container {
                     height: 80px;

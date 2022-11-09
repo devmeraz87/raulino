@@ -620,6 +620,16 @@
     margin-bottom: 0.75rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  ._about_doctor {
+    width: 70% !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  ._about_doctor {
+    width: 100% !important;
+  }
+}
 @media only screen and (min-width: 360px) and (max-width: 768px) {
   ._about._home_page ._about_content {
     padding-bottom: 4rem;
@@ -630,7 +640,6 @@
   }
   ._about ._about_content ._about_title {
     font-size: 14px;
-    width: 75%;
   }
   ._about ._about_content ._about_heading {
     display: block;
@@ -639,7 +648,6 @@
   }
   ._about ._about_content ._about_doctor {
     align-items: center;
-    width: 70%;
   }
   ._about ._about_content ._about_doctor ._img_container {
     height: 80px;
