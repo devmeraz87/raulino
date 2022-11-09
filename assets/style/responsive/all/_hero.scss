@@ -2,6 +2,7 @@
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
     ._hero {
         background-position: center right !important;
+        background-size: 100% 100% !important;
 
         &._about_page {
             background-position:  center center !important;
@@ -92,11 +93,18 @@
 }
 
 
+@media only screen and (max-width: 820px) and (max-height: 1180px) {
+    ._hero {
+        background-size: 250% 100% !important;
+    }
+}
+
 
 // >> XL 1201
 @media only screen and (min-width: 769px) and (max-width: 991px) {
     ._hero {
-        background-position: right top !important;
+        background-position: right center !important;
+
 
         &._about_page {
             background-position:  center center !important;
@@ -138,6 +146,7 @@
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     ._hero {
         background-position: right top !important;
+
 
         &._about_page {
             background-position:  56% center !important;
@@ -192,9 +201,10 @@
 
         background-position: 220% center !important;
 
+
         &._about_page {
             background-position:  56% center !important;
-            
+
             ._about_heading {
                 font-size: 38px;
                 padding-top: 25rem;
@@ -244,6 +254,7 @@
     ._hero {
         background-position:  220% center !important;
 
+
         &._about_page {
 
             background-position:  56% center !important;
@@ -292,3 +303,9 @@
     }
 }
 
+
+@media only screen and (max-width: 450px) {
+    ._hero {
+        background-position: 85% top !important;
+    }
+}

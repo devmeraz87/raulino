@@ -61,6 +61,7 @@
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
   ._hero {
     background-position: center right !important;
+    background-size: 100% 100% !important;
   }
   ._hero._about_page {
     background-position: center center !important;
@@ -100,9 +101,14 @@
     font-weight: 100;
   }
 }
+@media only screen and (max-width: 820px) and (max-height: 1180px) {
+  ._hero {
+    background-size: 250% 100% !important;
+  }
+}
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   ._hero {
-    background-position: right top !important;
+    background-position: right center !important;
   }
   ._hero._about_page {
     background-position: center center !important;
@@ -239,6 +245,11 @@
   }
   ._hero ._circle_logo_selo img {
     height: 100px !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  ._hero {
+    background-position: 85% top !important;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
