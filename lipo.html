@@ -106,19 +106,19 @@
     </div>
 
     <!-- // >> Hero showcase start  -->
-    <div class="_hero h-screen w-full" style="background: url(./assets/img/showcase/showcase.png) no-repeat center center/cover;">
+    <div class="_hero h-screen w-full" style="background: url(./assets/img/showcase/showcase.png);">
         <div class="_container m-auto px-3 h-full text-white">
             <div class="_hero_content h-full w-full flex flex-col items-center justify-center">
-                <h3 class="_section_title">Lipo UltraHD <span class="font-bold">Ugraft</span></h3>
-                <h1 class="_section_heading block md:flex md:items-center md:flex-col">
+                <h3 data-scroll data-scroll-speed=".5" class="_section_title">Lipo UltraHD <span class="font-bold">Ugraft</span></h3>
+                <h1 data-scroll data-scroll-speed=".5" class="_section_heading block md:flex md:items-center md:flex-col">
                     <span id="splite_text">Preparada para os</span>
                     <span>Olhares de admiracao?</span>
                 </h1>
-                <p class="_section_lead">Conquiste o poder e a confianca com o corpo que voce sempre sonhou</p>
-                <div class="_button_container select-none">
+                <p data-scroll data-scroll-speed=".5" class="_section_lead">Conquiste o poder e a confianca com o corpo que voce sempre sonhou</p>
+                <div data-scroll data-scroll-speed=".5" class="_button_container select-none">
                     <button data-cursor="-icon" class="_button">Iniciar Minha Transformacao</button>
                 </div>
-                <div class="_circle_logo_selo select-none">
+                <div data-scroll data-scroll-speed=".5" class="_circle_logo_selo select-none">
                     <img class="_img" src="./assets/img/logo/selo.png" alt="">
                 </div>
             </div>
@@ -133,30 +133,30 @@
         <div class="_container m-auto px-6 lg:px-3">
            <div class="_ultra_hd_ugraft_content py-32">
                 <div class="_ultra_hd_ugraft_section_header mb-14">
-                    <div data-scroll data-scroll-speed="1" class="_ultra_hd_title text-center mb-8">Lipoaspiracao Ultra HD Ugraft</div>
-                    <h1 data-scroll data-scroll-speed="2" class="_ultra_hd_heading flex flex-col text-center">
+                    <div data-scroll data-scroll-speed="1.5" class="_ultra_hd_title text-center mb-8">Lipoaspiracao Ultra HD Ugraft</div>
+                    <h1 data-scroll data-scroll-speed="1.5" class="_ultra_hd_heading flex flex-col text-center">
                         <span>O novo everest da cirurgia</span>
                         <span>Plastica mundial</span>
                     </h1>
                 </div>
                 <div class="_section_details grid grid-cols-2 gap-5 lg:gap-6 2xl:gap-10">
                     <div class="_ultra_hd_img_container mt-8 lg:mt-0">
-                        <img data-scroll data-scroll-speed="2" src="./assets/img/lipo_ultra_hd/Lipo_ultra_hd_about.png" alt="">
+                        <img data-scroll data-scroll-speed="1.5" src="./assets/img/lipo_ultra_hd/Lipo_ultra_hd_about.png" alt="">
                     </div>
                     <div class="flex flex-col items-start justify-center">
                         <div class="_ultra_hd_about">
-                            <div data-scroll data-scroll-speed="1" class="_title mb-3 lg:mb-6">
+                            <div data-scroll data-scroll-speed="1.5" class="_title mb-3 lg:mb-6">
                                 <span>Atraves da lipoenxertia e com o auxilio do ultrassom, o</span>
                                 <span>cirurgiao plastico enxerta celulas tronco diretamenta no </span>
                                 <span>musculo do pacienta com extrema precisao, </span>
                                 <span>desencadeando um processo de hipertrofia.</span>
                             </div>
-                            <div data-scroll data-scroll-speed="1" class="_heading mb-3 lg:mb-10">
+                            <div data-scroll data-scroll-speed="1.5" class="_heading mb-3 lg:mb-10">
                                 <span>Uma verdadeira</span>
                                 <span>engenharia</span>
                                 <span>muscular</span>
                             </div>
-                            <div data-scroll data-scroll-speed="1" class="_lead mb-10">
+                            <div data-scroll data-scroll-speed="1.5" class="_lead mb-10">
                                 <p class="mb-5 flex flex-col">
                                     Os resultados sao fantasticos! um corpo atletico, com
                                     <span>
@@ -176,7 +176,7 @@
                                     </span>
                                 </p>
                             </div>
-                            <a data-scroll data-scroll-speed="1" href="#" class="_ultra_hb_btn inline-block">Agendar Consulta</a>
+                            <a data-scroll data-scroll-speed="1.5" href="#" class="_ultra_hb_btn inline-block">Agendar Consulta</a>
                         </div>
                     </div>
                 </div>
@@ -518,33 +518,7 @@
     <!-- <script src="./assets/js/components/all/video_player.js"></script> -->
     <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
     <script src="./assets/js/components/lipo/lipoSmoothScrolling.js"></script>
-    <script>
-        window.addEventListener("contextmenu", (e) => {
-          e.preventDefault();
-        })
-        document.addEventListener('contextmenu', event=> event.preventDefault()); 
-        document.onkeydown = function(e) { 
-        if(event.keyCode == 123) { 
-        return false; 
-        } 
-        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
-        return false; 
-        } 
-        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
-        return false; 
-        } 
-        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
-        return false; 
-        } 
-        } 
-
- 
-      </script>  <script>    const varia_ = document.querySelector(".window-width-and-height");
-
-        window.addEventListener("load", () => {
-            varia_.innerHTML = `<div>Width: ${window.innerWidth}</div><div>Height: ${window.innerHeight}</div>`
-        })
-        </script>
+    <script src="./assets/js/components/all/contextMenu.js"></script>
 
 </body>
 </html>

@@ -62,6 +62,12 @@
   ._hero {
     background-position: center right !important;
   }
+  ._hero._about_page {
+    background-position: center center !important;
+  }
+  ._hero._about_page ._about_heading {
+    font-size: 60px;
+  }
   ._hero ._hero_content ._section_title {
     margin-top: 10rem;
   }
@@ -101,6 +107,9 @@
   ._hero._about_page {
     background-position: center center !important;
   }
+  ._hero._about_page ._about_heading {
+    font-size: 55px;
+  }
   ._hero ._hero_content ._section_title {
     margin-top: 10rem;
     font-size: 18px;
@@ -120,7 +129,7 @@
     background-position: right top !important;
   }
   ._hero._about_page {
-    background-position: center center !important;
+    background-position: 56% center !important;
   }
   ._hero._about_page ._about_heading {
     font-size: 38px;
@@ -156,10 +165,10 @@
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
   ._hero {
-    background-position: center right !important;
+    background-position: 220% center !important;
   }
   ._hero._about_page {
-    background-position: center center !important;
+    background-position: 56% center !important;
   }
   ._hero._about_page ._about_heading {
     font-size: 38px;
@@ -238,6 +247,26 @@
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  ._ultra_hd_ugraft ._ultra_hd_ugraft_content ._ultra_hd_ugraft_section_header {
+    margin-bottom: 2rem;
+  }
+  ._ultra_hd_ugraft ._ultra_hd_ugraft_content ._ultra_hd_ugraft_section_header ._ultra_hd_heading {
+    font-size: 45px;
+  }
+  ._ultra_hd_ugraft ._ultra_hd_ugraft_content ._section_details ._ultra_hd_about {
+    margin-left: 1rem;
+  }
+  ._ultra_hd_ugraft ._ultra_hd_ugraft_content ._section_details ._ultra_hd_about ._title {
+    font-size: 15px;
+    margin-bottom: 1rem !important;
+  }
+  ._ultra_hd_ugraft ._ultra_hd_ugraft_content ._section_details ._ultra_hd_about ._heading {
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+  ._ultra_hd_ugraft ._ultra_hd_ugraft_content ._section_details ._ultra_hd_about ._lead {
+    font-size: 15px;
+  }
   ._section_carousel ._lipo_carousel_header ._heading {
     font-size: 48px;
   }
@@ -272,7 +301,7 @@
     margin-left: 0;
   }
   ._ultra_hd_ugraft ._ultra_hd_ugraft_content ._section_details ._ultra_hd_about ._heading {
-    font-size: 50px;
+    font-size: 40px;
   }
   ._section_carousel ._lipo_carousel_header ._heading {
     font-size: 48px;
@@ -356,6 +385,7 @@
   ._section_carousel ._section_carousel_container .carousel_caption .carousel_caption_content {
     padding: 0.75rem 0;
     position: static;
+    box-shadow: none;
   }
   ._section_carousel ._section_carousel_container .carousel_caption .carousel_caption_content .craousel_heading {
     font-size: 32px;
@@ -594,6 +624,7 @@
   }
   ._about ._about_content ._about_title {
     font-size: 14px;
+    width: 75%;
   }
   ._about ._about_content ._about_heading {
     display: block;
@@ -602,6 +633,7 @@
   }
   ._about ._about_content ._about_doctor {
     align-items: center;
+    width: 70%;
   }
   ._about ._about_content ._about_doctor ._img_container {
     height: 80px;
@@ -827,7 +859,7 @@
   ._marquee_section .wrapper_img .wrapper_img_card {
     height: 70vh;
     padding: 0 0.75rem;
-    background-position-x: -250px !important;
+    background-position: center right !important;
   }
   ._marquee_section .wrapper_img .wrapper_img_card ._heading {
     display: block;

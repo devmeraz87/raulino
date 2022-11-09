@@ -3,6 +3,14 @@
     ._hero {
         background-position: center right !important;
 
+        &._about_page {
+            background-position:  center center !important;
+
+            ._about_heading {
+                font-size: 60px;
+            }
+        }
+
         ._hero_content {
 
             ._section_title {
@@ -92,6 +100,10 @@
 
         &._about_page {
             background-position:  center center !important;
+
+            ._about_heading {
+                font-size: 55px;
+            }
         }
 
         ._hero_content {
@@ -128,7 +140,7 @@
         background-position: right top !important;
 
         &._about_page {
-            background-position:  center center !important;
+            background-position:  56% center !important;
             
             ._about_heading {
                 font-size: 38px;
@@ -178,10 +190,11 @@
 @media only screen and (min-width: 501px) and (max-width: 600px) {
     ._hero {
 
-        background-position: center right !important;
+        background-position: 220% center !important;
 
         &._about_page {
-            background-position:  center center !important;
+            background-position:  56% center !important;
+            
             ._about_heading {
                 font-size: 38px;
                 padding-top: 25rem;

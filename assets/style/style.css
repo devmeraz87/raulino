@@ -947,7 +947,7 @@ h1, h2, h3, h4, h5 {
   font-size: 60px;
   margin-bottom: 2rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   ._about_doctor ._about_doctor_details ._details_content ._section_heading {
     font-size: 50px;
   }
@@ -986,14 +986,15 @@ h1, h2, h3, h4, h5 {
 }
 @media only screen and (max-width: 768px) {
   ._about_doctor ._about_doctor_details ._details_content ._counters ._counter {
-    grid-template-columns: 0.6fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
+    font-size: 14px;
   }
 }
 ._about_doctor ._about_doctor_details ._details_content ._counters ._counter ._counter_number {
   font-size: 60px;
   font-family: "prata";
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   ._about_doctor ._about_doctor_details ._details_content ._counters ._counter ._counter_number {
     font-size: 50px;
   }
@@ -1539,6 +1540,7 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 2.5rem;
   color: #fff;
   text-align: center;
+  cursor: default;
 }
 @media only screen and (max-width: 991px) {
   ._testimonials ._testimoniasl_container .swiper .swiper-slide ._slide_content ._main_context {

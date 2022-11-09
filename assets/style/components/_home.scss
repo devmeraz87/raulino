@@ -102,7 +102,7 @@
                 font-size: 60px;
                 margin-bottom: 2rem;
 
-                @media only screen and (max-width: 1024px) {
+                @media only screen and (max-width: 1100px) {
                     font-size: 50px;
                 }
                 @media only screen and (max-width: 991px) {
@@ -132,14 +132,15 @@
                         grid-template-columns: 0.50fr 1fr;
                     }
                     @media only screen and (max-width: 768px) {
-                        grid-template-columns: 0.60fr 1fr;
+                        grid-template-columns: 0.50fr 1fr;
+                        font-size: 14px;
                     }
 
                     ._counter_number {
                         font-size: 60px;
                         font-family: "prata";
 
-                        @media only screen and (max-width: 1024px) {
+                        @media only screen and (max-width: 1100px) {
                             font-size: 50px;
                         }
                         @media only screen and (max-width: 991px) {
