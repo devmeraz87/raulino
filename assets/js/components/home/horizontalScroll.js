@@ -161,6 +161,7 @@ window.addEventListener("load", function () {
       gsap.set(hero_title, { perspective: 800 });
       const hero_title_splitText = new SplitText(hero_title, {type: "words, chars"});
       gsap.from(hero_title_splitText.chars, {
+        delay: 5,
         duration: 0.5,
         opacity: 0,
         scale: 1,
@@ -180,6 +181,7 @@ window.addEventListener("load", function () {
       gsap.set(hero_heading, { perspective: 800 });
       const hero_hading_splitText = new SplitText(hero_heading, {type: "words, chars"});
       gsap.from(hero_hading_splitText.chars, {
+        delay: 5,
         duration: 0.5,
         opacity: 0,
         scale: 1,
@@ -199,6 +201,7 @@ window.addEventListener("load", function () {
       gsap.set(hero_lead, { perspective: 800 });
       const hero_lead_splitText = new SplitText(hero_lead, {type: "words, chars"});
       gsap.from(hero_lead_splitText.chars, {
+        delay: 5,
         duration: 0.5,
         opacity: 0,
         scale: 1,
@@ -212,6 +215,26 @@ window.addEventListener("load", function () {
             console.log("reverted sucessfully");
         }
       })
+
+
+      const hero_btn = this.document.querySelector("#_js_hero_btn");
+      gsap.from(hero_btn, {
+        delay: 5.5,
+        duration: 1,
+        opacity: 0, 
+        y: 100,
+        ease: "Back.InOut",
+      })
+
+      const hero_circle = this.document.querySelector("#_js_hero_circle");
+      gsap.from(hero_circle, {
+        delay: 5.5,
+        duration: 1,
+        opacity: 0, 
+        y: 100,
+        ease: "Back.InOut",
+      })
+    
 
       // >> about Dorctor after hero
       // >> title

@@ -29,6 +29,7 @@
             text-transform: uppercase;
             font-family: "prata";
             white-space: pre-wrap;
+            color: #6C6056;
 
             span {
                 flex-shrink: 0;
@@ -60,12 +61,12 @@
 
             ._heading {
                 font-size: 55px;
-                color: #fff;
+                color: #F1EAE3;
             }
 
             ._lead {
                 font-size: 18px;
-                color: #fff;
+                color: #b49b86;
             }
 
             ._btn {
@@ -73,7 +74,7 @@
                 padding: 0.75rem 2.5rem;
                 border: 1px solid;
                 border-radius: 50px;
-                color: #fff;
+                color: #F1EAE3;
                 text-transform: uppercase;
             }
 

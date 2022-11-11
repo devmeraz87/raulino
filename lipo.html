@@ -13,7 +13,7 @@
 
     <title>Project || RauliNo </title>
 </head>
-<body style="background-color: #fff;">
+<body style="background-color: #F1EAE3;">
 
 
     <!-- // >> Loading Start // -->
@@ -40,7 +40,7 @@
                         <ul id="_offCanvaSplitText" class="_links">
                             <li class="_links_item"><a data-cursor="-icon" href="/">Home</a></li>
                             <li class="_links_item"><a data-cursor="-icon" href="/about.html">Dr. Eduardo Raulino</a></li>
-                            <li class="_links_item"><a data-cursor="-icon" href="/lipo.html">Lipo Ultra HD Ugraft</a></li>
+                            <li class="_links_item"><a data-cursor="-icon" class="_active"  href="/lipo.html">Lipo Ultra HD Ugraft</a></li>
                             <li class="_links_item"><a data-cursor="-icon" href="/">Agendar consulta</a></li>
                         </ul>
                         <div class="_offCanvaContact">
@@ -66,6 +66,7 @@
             </div>
         </div>
     </div>
+    <!-- // >> Offcanva end -->
 
     <!-- // >> MainNav start // -->
     <nav class="mainNav">
@@ -99,11 +100,9 @@
 
 
 
+<!-- // >> Smooth scrolling container -->
 <main class="lipo_smooth_scrollingWrapper">
 
-    <div style="position: fixed; top: 120px; left: 20px; color: #fff;" class="window-width-and-height">
-
-    </div>
 
     <!-- // >> Hero showcase start  -->
     <div class="_hero h-screen w-full" style="background: url(./assets/img/showcase/showcase.png);">
@@ -125,7 +124,6 @@
         </div>
     </div>
     <!-- // >> Hero shwocase End ? -->
-
 
     
     <!-- // >> Ultra Hd Ugraft start / -->
@@ -185,14 +183,12 @@
     </div>
     <!-- // >> Lipo ultra hd end / -->
 
-    <!-- // >> Lipo Gallery  ========================================================================== -->
-    <!-- // >> Lipo Gallery  ========================================================================== -->
-    <!-- // >> Lipo Gallery  ========================================================================== -->
+
     <!-- // >> Lipo gallery / -->
     <div class="_lipo_gallery" style="background: url(./assets/img/all/about_video_bg.png) no-repeat center center/cover;">
         <div class="py-24 md:py-32">
             <div class="_container px-6  2xl:px-3">
-                <div class="grid grid-cols-2 lg:grid-cols-3">
+                <div data-scroll data-scroll-speed=".5" class="grid grid-cols-2 lg:grid-cols-3">
                     <div class="grid_item">
                         <a href="#">
                             <img src="./assets/img/lipo_ultra_hd/Lipo_grid/Lipo_grid_img_1.png" alt="">
@@ -230,12 +226,9 @@
     <!-- // >> Lipo Grid end /  -->
 
 
-    <!-- // >> LipoCarousel  ========================================================================== -->
-    <!-- // >> LipoCarousel  ========================================================================== -->
-    <!-- // >> LipoCarousel  ========================================================================== -->
     <!-- // >> Lipo Carousel start / -->
     <div class="_section_carousel pt-28">
-        <div class="_lipo_carousel_header">
+        <div data-scroll data-scroll-speed=".5" class="_lipo_carousel_header">
                 <div class="_container px-6 lg:px-3 m-auto text-center mb-10">
                     <p id="lipoCarosuel_title" class="_title">Saiba tudo sobre a lipoaspiracao UltraHD Ugraft</p>
                     <h1 id="lipoCarosuel_heading" class="_heading flex flex-col">
@@ -244,7 +237,7 @@
                     </h1>
                 </div>
         </div>
-        <div class="_section_carousel_container">
+        <div data-scroll data-scroll-speed=".5" class="_section_carousel_container">
             <div class="carousel_indicator">
                 <button data-cursor="-icon" class="carousel_dot carousel_dot__active">01.</button>
                 <button data-cursor="-icon" class="carousel_dot">02.</button>
@@ -324,14 +317,10 @@
 
 
 
+    <!-- // >> Footer Start /  -->
+    <footer class="_footer px-0 md:px-6">
 
-    <!-- // >> Footer  ========================================================================== -->
-    <!-- // >> Footer  ========================================================================== -->
-    <!-- // >> Footer  ========================================================================== -->
-        <!-- // >> Footer Start /  -->
-        <footer class="_footer px-0 md:px-6">
-
-            <!-- // >> Tsttimonail section start ? -->
+        <!-- // >> Tsttimonail section start ? -->
         <div class="_testimonials pt-24 md:pt-28 pb-6 lg:pt-26 xl:pt-28 2xl:px-3">
             <div class="max-w-screen-2xl m-auto md:px-3">
                 <div class="_content">
@@ -398,74 +387,79 @@
                 </div>
             </div>
         </div>
-            <!-- // >> Tsttimonail section End ? -->
+        <!-- // >> Tsttimonail section End ? -->
+
+        <div class="_custome_footer_container">
+            <hr class="_footer_section_horizontal">
+        </div>
+
+        <!-- // >> Roulino start ? -->
+        <div class="_roulino">
+            <div class="max-w-screen-2xl m-auto px-3">
+                <div class="_roulino_context flex flex-col items-center justify-center  py-14">
+                    <div class="_logo mb-10">
+                        <img src="./assets/img/logo/Logo Dr.png" alt="">
+                    </div>
+                    <div class="_text flex flex-col text-center">
+                        <span>A Clinica Raulino conta com alguns dos melhores cirugioes plasticos da brasil, que utilisam os</span>
+                        <span>equipaments da mains alta qualidade para garantir a sua seguranca.</span>
+                    </div>
+                </div>
+            </div>
             <div class="_custome_footer_container">
                 <hr class="_footer_section_horizontal">
             </div>
-            <!-- // >> Roulino start ? -->
-            <div class="_roulino">
-                <div class="max-w-screen-2xl m-auto px-3">
-                    <div class="_roulino_context flex flex-col items-center justify-center  py-14">
-                        <div class="_logo mb-10">
-                            <img src="./assets/img/logo/Logo Dr.png" alt="">
-                        </div>
-                        <div class="_text flex flex-col text-center">
-                            <span>A Clinica Raulino conta com alguns dos melhores cirugioes plasticos da brasil, que utilisam os</span>
-                            <span>equipaments da mains alta qualidade para garantir a sua seguranca.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="_custome_footer_container">
-                    <hr class="_footer_section_horizontal">
-                </div>
-            </div>
-            <!-- // >> Roulino End ? -->
+        </div>
+        <!-- // >> Roulino End ? -->
     
-            <!-- // >> footer Address start / -->
-            <div class="_footer_address">
-                <div class="max-w-screen-2xl m-auto px-0 md:px-3">
-                <div class="_custome_footer_container">
-                    <div class="grid grid-cols-2 gap-5 md:gap-2 py-14">
-                        <div>
-                            <div class="_title">Atendimento</div>
-                            <ul>
-                                <li>(47) 99670-0099</li>
-                                <li>Seg - Sex, 08:00 - 17:00</li>
-                                <li>Fechado aos finais de semana</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div class="_title">Consultorio Praia Brava</div>
-                            <ul>
-                                <li>Av. Osvaldo Reis, 3385</li>
-                                <li>Edificio Riviera concept, Sala 1807</li>
-                                <li>Praia Brava - Itajai (SC)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <!-- // >> footer address end / -->
+        <!-- // >> footer Address start / -->
+        <div class="_footer_address">
+            <div class="max-w-screen-2xl m-auto px-0 md:px-3">
             <div class="_custome_footer_container">
-                <hr class="_footer_section_horizontal">
-            </div>
-            <!-- // >> footer social start / -->
-            <div class="_footer_social py-20">
-                <div class="max-w-screen-2xl m-auto px-3">
-                    <div class="flex items-center justify-center">
-                        <a data-cursor="-icon" href="#" class="flex items-center justify-center h-16 w-16 p-1 mx-4">
-                            <img src="./assets/img/social/facebook.png" alt="">
-                        </a>
-                        <a data-cursor="-icon" href="#" class="flex items-center justify-center h-16 w-16 p-1 mx-4">
-                            <img src="./assets/img/social/instagram.png" alt="">
-                        </a>
+                <div class="grid grid-cols-2 gap-5 md:gap-2 py-14">
+                    <div>
+                        <div class="_title">Atendimento</div>
+                        <ul>
+                            <li>(47) 99670-0099</li>
+                            <li>Seg - Sex, 08:00 - 17:00</li>
+                            <li>Fechado aos finais de semana</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="_title">Consultorio Praia Brava</div>
+                        <ul>
+                            <li>Av. Osvaldo Reis, 3385</li>
+                            <li>Edificio Riviera concept, Sala 1807</li>
+                            <li>Praia Brava - Itajai (SC)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- // >> footer social end / -->
+            </div>
+        </div>
+        <!-- // >> footer address end / -->
+
+        <div class="_custome_footer_container">
+            <hr class="_footer_section_horizontal">
+        </div>
+
+        <!-- // >> footer social start / -->
+        <div class="_footer_social py-20">
+            <div class="max-w-screen-2xl m-auto px-3">
+                <div class="flex items-center justify-center">
+                    <a data-cursor="-icon" href="#" class="flex items-center justify-center h-16 w-16 p-1 mx-4">
+                        <img src="./assets/img/social/facebook.png" alt="">
+                    </a>
+                    <a data-cursor="-icon" href="#" class="flex items-center justify-center h-16 w-16 p-1 mx-4">
+                        <img src="./assets/img/social/instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- // >> footer social end / -->
     
-        </footer>
+    </footer>
+    <!-- // >> Footer ENd  -->
 
 </main>
 
@@ -478,21 +472,12 @@
 
     <!-- // >> Gsap Plugins // -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Flip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Observer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/EaselPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/MotionPathPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/PixiPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/EasePack.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CustomEase.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
+    <!-- // >> Loco Scroll -->
+    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
 
-    
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
@@ -500,7 +485,7 @@
     <script src="./assets/js/pakeges/SplitText.min.js"></script>
 
     <!-- // >> Mouse follower pakeges / -->
-    <!-- <script src="./assets/js/pakeges/mouseFollower.js"></script> -->
+    <script src="./assets/js/pakeges/mouseFollower.js"></script>
     <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 
 
@@ -510,13 +495,10 @@
     <script src="./assets/js/components/all/offcanva.js"></script>
     <script src="./assets/js/components/all/heroCircleLogoTween.js"></script>
     <script src="./assets/js/components/all/hideSomthingScrollPosition.js"></script>
-    <script src="./assets//js/components//all/testimonial.js"></script>
+    <script src="./assets/js/components/all/testimonial.js"></script>
     
-    <!-- // From Home js / -->
+    <!-- // From Lipo js / -->
     <script src="./assets/js/components/lipo/lipoCarosuel.js"></script>
-
-    <!-- <script src="./assets/js/components/all/video_player.js"></script> -->
-    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
     <script src="./assets/js/components/lipo/lipoSmoothScrolling.js"></script>
     <script src="./assets/js/components/all/contextMenu.js"></script>
 

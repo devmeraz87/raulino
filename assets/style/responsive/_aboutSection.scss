@@ -188,17 +188,23 @@
 
 
 @media only screen and (max-width: 768px) {
-    
-    ._about_doctor {
-        width: 70% !important;
+    ._about {
+
+            ._about_doctor {
+                width: 70% !important;
+            }
     }
 }
 
 @media only screen and (max-width: 450px) {
     
-    ._about_doctor {
-        width: 100% !important;
+    ._about  {
+
+        ._about_doctor {
+            width: 100% !important;
+        }
     }
+  
 }
 
 

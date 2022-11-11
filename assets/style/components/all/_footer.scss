@@ -13,7 +13,7 @@
 
             ._text {
                 font-family: "poppins";
-                color: #b3a9a2;
+                color: #F1EAE3;
             }
         }
     }
@@ -27,7 +27,7 @@
             font-family: "poppins";
             font-size: 100;
             margin-bottom: 1rem;
-            color: #755842;
+            color: #D9C4B0;
         }
 
         ul {
@@ -35,7 +35,7 @@
                 margin-bottom: 0.5rem;
                 font-family: "poppins";
                 font-size: 14px;
-                color: #b3a9a2;
+                color: #F1EAE3;
             }
         }
     }
@@ -98,7 +98,7 @@
                         font-size: 40px;
                         font-family: "prata";
                         margin-bottom: 2.5rem;
-                        color: #fff;
+                        color: #F1EAE3;
                         text-align: center;
                         cursor: default;
 
@@ -127,13 +127,14 @@
                     ._name {
                         font-family: "poppins";
                         font-size: 16px;
-                        color: #fff;
+                        color: #6C6056;
         
                         a {
                             font-size: 19px;
                             font-weight: bold;
                             text-decoration: none;
-                            color: #fff;
+                            color: #F1EAE3;
+                            font-weight: 100;
                         }
                     }
                 }
@@ -176,7 +177,12 @@
                 }
                 
                 &.swiper-pagination-bullet-active {
-                    box-shadow: 0 0 0 0.25rem rgb(255, 195, 106);
+                    box-shadow: 2px 5px 25px #d9c4b09d;
+
+                    img {
+                        box-shadow: 0 0 0 0.25rem #D9C4B0;
+                        border-radius: 50%;
+                    }
                 }
 
                 img {
