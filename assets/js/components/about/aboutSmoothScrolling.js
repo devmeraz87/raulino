@@ -48,33 +48,30 @@ const scroller = new LocomotiveScroll({
 
 
 
-  var aboutTimeLine = gsap.timeline(),
-  aboutHeroHeadingSplitText = new SplitText("#aboutHeroSplitText", { type: "chars" }),
-  aoboutHeroHeadingSplitTextCharecter = aboutHeroHeadingSplitText.chars; //an array of all the divs that wrap each character
+  // var aboutTimeLine = gsap.timeline(),
+  // aboutHeroHeadingSplitText = new SplitText("#aboutHeroSplitText", { type: "chars" }),
+  // aoboutHeroHeadingSplitTextCharecter = aboutHeroHeadingSplitText.chars; //an array of all the divs that wrap each character
   
-  gsap.set("#aboutHeroSplitText", { perspective: 800 });
+  // gsap.set("#aboutHeroSplitText", { perspective: 800 });
   
   
-  aboutTimeLine.from(aoboutHeroHeadingSplitTextCharecter, {
-    delay: 4,
-    duration: 0.5,
-    opacity: 0,
-    scale: 1,
-    y: 2,
-    rotationX: -10,
-    transformOrigin: "0% 50% -50",
-    ease: "Back.InOut",
-    stagger: 0.02
-  });
+  // aboutTimeLine.from(aoboutHeroHeadingSplitTextCharecter, {
+  //   delay: 4,
+  //   duration: 0.5,
+  //   opacity: 0,
+  //   scale: 1,
+  //   y: 2,
+  //   rotationX: -10,
+  //   transformOrigin: "0% 50% -50",
+  //   ease: "Back.InOut",
+  //   stagger: 0.02
+  // });
   
   // >> =======================================================================================================================================
   // >>                                              Animate About section                                                                   //
   // >> =======================================================================================================================================
   let  aboutSplitText = new SplitText("#aboutSplitText", { type: "chars" }),
     aboutSplitTextChar = aboutSplitText.chars; //an array of all the divs that wrap each character
-  
-  
-//   gsap.set("#aboutSplitText", { perspective: 800, y: 20 });
   
   gsap.from(aboutSplitTextChar, {
       scrollTrigger: {

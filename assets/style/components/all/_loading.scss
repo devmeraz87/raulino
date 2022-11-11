@@ -21,13 +21,26 @@
 
     ._loading_name {
         background-color: #15151d;
+        
 
         h1 {
             padding: 8px 0;
-            border-bottom: 2px solid coral;
             font-size: 22px;
             color: #fff;
             text-transform: uppercase;
+        }
+
+        ._loading_bar {
+            width: 120px; 
+            height: 1px; 
+            background-color: black;
+
+            #progress{
+                height:1px;
+                background:#fff;
+                width:0;              
+                transition: 0.5s;
+              }
         }
     }
 

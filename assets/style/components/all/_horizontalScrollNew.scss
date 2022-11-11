@@ -76,6 +76,7 @@
         white-space: pre-wrap;
         text-transform: uppercase;
         font-family: "prata";
+        color: #6C6056;
   
   
         .line {
@@ -83,7 +84,7 @@
           width: 100px;
           margin-left: 3rem;
           margin-right: 3rem;
-          background-color: black;
+          background-color: #dba375;
         }
       }
   
@@ -101,7 +102,7 @@
   
   
     img {
-      max-height: 450px;
+      max-height: 70%;
       margin-bottom: 2rem;
     }
   }
@@ -114,7 +115,7 @@
     padding-left: 12rem;
   
     img {
-      max-height: 450px;
+      max-height: 70%;
       margin-top: 2rem;
     }
   }
@@ -122,6 +123,7 @@
   ._bottom_img_text, ._top_img_text {
     font-size: 20px;
     line-height: 1.2;
+    color: #6C6056;
   }
   
   ._center_2_img {

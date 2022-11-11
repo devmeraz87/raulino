@@ -45,82 +45,82 @@ window.addEventListener("load", () => {
       
       // >> Lipo split text start / 
 
-      // >> hero title
-      const hero_title = document.querySelector("#_js_hero_title_splittext")
-      gsap.set(hero_title, { perspective: 800 });
-      const hero_title_splitText = new SplitText(hero_title, {type: "words, chars"});
-      gsap.from(hero_title_splitText.chars, {
-        delay: 1.5,
-        duration: 1,
-        opacity: 0,
-        scale: 1,
-        y: 2,
-        rotationX: -10,
-        transformOrigin: "0% 50% -50",
-        ease: "Back.InOut",
-        stagger: 0.01,
-        onComplete: () => {
-            hero_title_splitText.revert();
-        }
-      })
+      // // >> hero title
+      // const hero_title = document.querySelector("#_js_hero_title_splittext")
+      // gsap.set(hero_title, { perspective: 800 });
+      // const hero_title_splitText = new SplitText(hero_title, {type: "words, chars"});
+      // gsap.from(hero_title_splitText.chars, {
+      //   delay: 1.5,
+      //   duration: 1,
+      //   opacity: 0,
+      //   scale: 1,
+      //   y: 2,
+      //   rotationX: -10,
+      //   transformOrigin: "0% 50% -50",
+      //   ease: "Back.InOut",
+      //   stagger: 0.01,
+      //   onComplete: () => {
+      //       hero_title_splitText.revert();
+      //   }
+      // })
 
-      // >> hero heading //
-      const hero_heading  = document.querySelector("#_js_hero_heading_splittext");
-      gsap.set(hero_heading, { perspective: 800 });
-      const hero_hading_splitText = new SplitText(hero_heading, {type: "words, chars"});
-      gsap.from(hero_hading_splitText.chars, {
-        delay: 1.5,
-        duration: 1,
-        opacity: 0,
-        scale: 1,
-        y: 2,
-        rotationX: -10,
-        transformOrigin: "0% 50% -50",
-        ease: "Back.InOut",
-        stagger: 0.01,
-        onComplete: () => {
-            hero_hading_splitText.revert();
-          }
-      })
+      // // >> hero heading //
+      // const hero_heading  = document.querySelector("#_js_hero_heading_splittext");
+      // gsap.set(hero_heading, { perspective: 800 });
+      // const hero_hading_splitText = new SplitText(hero_heading, {type: "words, chars"});
+      // gsap.from(hero_hading_splitText.chars, {
+      //   delay: 1.5,
+      //   duration: 1,
+      //   opacity: 0,
+      //   scale: 1,
+      //   y: 2,
+      //   rotationX: -10,
+      //   transformOrigin: "0% 50% -50",
+      //   ease: "Back.InOut",
+      //   stagger: 0.01,
+      //   onComplete: () => {
+      //       hero_hading_splitText.revert();
+      //     }
+      // })
 
-      // >> hero lead //
-      const hero_lead  = document.querySelector("#_js_hero_lead_splittext");
-      gsap.set(hero_lead, { perspective: 800 });
-      const hero_lead_splitText = new SplitText(hero_lead, {type: "words, chars"});
-      gsap.from(hero_lead_splitText.chars, {
-        delay: 0.5,
-        delay: 1.5,
-        duration: 1,
-        opacity: 0,
-        scale: 1,
-        y: 2,
-        rotationX: -10,
-        transformOrigin: "0% 50% -50",
-        ease: "Back.InOut",
-        stagger: 0.01,
-        onComplete: () => {
-            hero_lead_splitText.revert();
-        }
-      })
+      // // >> hero lead //
+      // const hero_lead  = document.querySelector("#_js_hero_lead_splittext");
+      // gsap.set(hero_lead, { perspective: 800 });
+      // const hero_lead_splitText = new SplitText(hero_lead, {type: "words, chars"});
+      // gsap.from(hero_lead_splitText.chars, {
+      //   delay: 0.5,
+      //   delay: 1.5,
+      //   duration: 1,
+      //   opacity: 0,
+      //   scale: 1,
+      //   y: 2,
+      //   rotationX: -10,
+      //   transformOrigin: "0% 50% -50",
+      //   ease: "Back.InOut",
+      //   stagger: 0.01,
+      //   onComplete: () => {
+      //       hero_lead_splitText.revert();
+      //   }
+      // })
       
 
-      const hero_btn = this.document.querySelector("#_js_hero_btn");
-      gsap.from(hero_btn, {
-        delay: 1,
-        duration: 1,
-        opacity: 0, 
-        y: 100,
-        ease: "Back.InOut",
-      })
+      // const hero_btn = this.document.querySelector("#_js_hero_btn");
+      // gsap.from(hero_btn, {
+      //   delay: 1,
+      //   duration: 1,
+      //   opacity: 0, 
+      //   y: 100,
+      //   ease: "Back.InOut",
+      // })
 
-      const hero_circle = this.document.querySelector("#_js_hero_circle");
-      gsap.from(hero_circle, {
-        delay: 1,
-        duration: 1,
-        opacity: 0, 
-        y: 100,
-        ease: "Back.InOut",
-      })
+      // const hero_circle = this.document.querySelector("#_js_hero_circle");
+      // gsap.from(hero_circle, {
+      //   delay: 1,
+      //   duration: 1,
+      //   opacity: 0, 
+      //   y: 100,
+      //   ease: "Back.InOut",
+      // })
     
       // >> ultra hd start 
       
