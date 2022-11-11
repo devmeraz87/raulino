@@ -5,6 +5,7 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
     function id(v){ return document.getElementById(v); }
     function loadbar() {
       var prog = id("progress"),
+          starter = id("starter"),
           img = document.images,
           c = 0,
           tot = img.length;
@@ -13,6 +14,7 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
       function imgLoaded(){
         c += 1;
         var perc = ((100/tot*c) << 0) +"%";
+        starter.innerHTML = "Eduardo";
         prog.style.width = perc;
         if(c===tot) return doneLoading();
       }
@@ -30,7 +32,7 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
             gsap.set("#aboutHeroSplitText", { perspective: 800 });
             
             aboutTimeLine.from(aoboutHeroHeadingSplitTextCharecter, {
-              delay: 4,
+              delay: 5,
               duration: 0.5,
               opacity: 0,
               scale: 1,

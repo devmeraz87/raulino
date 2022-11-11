@@ -4,18 +4,20 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
 (function(){
     function id(v){ return document.getElementById(v); }
     function loadbar() {
-      var prog = id("progress"),
-          img = document.images,
-          c = 0,
-          tot = img.length;
-      if(tot == 0) return doneLoading();
-  
-      function imgLoaded(){
-        c += 1;
-        var perc = ((100/tot*c) << 0) +"%";
-        prog.style.width = perc;
-        if(c===tot) return doneLoading();
-      }
+        var prog = id("progress"),
+        starter = id("starter"),
+        img = document.images,
+        c = 0,
+        tot = img.length;
+    if(tot == 0) return doneLoading();
+
+    function imgLoaded(){
+      c += 1;
+      var perc = ((100/tot*c) << 0) +"%";
+      starter.innerHTML = "Eduardo";
+      prog.style.width = perc;
+      if(c===tot) return doneLoading();
+    }
       function doneLoading(){
         setTimeout(function(){ 
             // >> remove loader
@@ -40,7 +42,6 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
                 stagger: 0.02,
                 onComplete: () => {
                     hero_title_splitText.revert();
-                    console.log("reverted sucessfully");
                 }
             })
 
@@ -60,7 +61,6 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
                 stagger: 0.02,
                 onComplete: () => {
                     hero_hading_splitText.revert();
-                    console.log("reverted sucessfully");
                 }
             })
 
@@ -80,7 +80,6 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
                 stagger: 0.02,
                 onComplete: () => {
                     hero_lead_splitText.revert();
-                    console.log("reverted sucessfully");
                 }
             })
 

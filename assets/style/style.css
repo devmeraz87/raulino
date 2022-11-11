@@ -1082,6 +1082,29 @@ h1, h2, h3, h4, h5 {
 ._horizontal_section_vertical ._content ._vertical_figure_4 ._figure_video_container video {
   box-shadow: 2px 5px 20px #999;
 }
+._horizontal_section_vertical ._content ._vertical_figure_4 ._figure_video_container ._video_play_btn_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+._horizontal_section_vertical ._content ._vertical_figure_4 ._figure_video_container ._video_play_btn_container ._play_btn img {
+  height: 80px;
+}
+@media only screen and (max-width: 500px) {
+  ._horizontal_section_vertical ._content ._vertical_figure_4 ._figure_video_container ._video_play_btn_container ._play_btn img {
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  ._horizontal_section_vertical ._content ._vertical_figure_4 ._figure_video_container ._video_play_btn_container ._play_btn img {
+    height: 40px;
+  }
+}
 
 ._hero ._hero_content ._about_heading {
   font-size: 76px;
@@ -1095,22 +1118,26 @@ h1, h2, h3, h4, h5 {
 ._my_details ._my_details_context ._details ._my_details_title {
   font-family: "poppins";
   margin-bottom: 2rem;
+  color: #6C6056;
 }
 ._my_details ._my_details_context ._details ._my_details_heading {
   font-size: 55px;
   font-family: "prata";
   margin-bottom: 2rem;
+  color: #2E2A28;
 }
 ._my_details ._my_details_context ._details ._lead {
   font-family: "poppins";
   line-height: 2;
   font-size: 17px;
+  color: #686059;
 }
 ._my_details ._my_details_context ._details .my_details_btn {
   display: inline-block;
   padding: 0.5rem 1.5rem;
   border: 1px solid;
   border-radius: 30px;
+  color: #6C6056;
 }
 
 ._about_video ._about_video_context ._video_thumb ._video_context ._video_context_heading {
@@ -1118,30 +1145,34 @@ h1, h2, h3, h4, h5 {
   font-family: "prate";
   text-align: center;
   margin-bottom: 3rem;
-  color: #fff;
+  color: #F1EAE3;
 }
 
 ._Experience ._experience_content_header ._title {
   font-family: "poppins";
+  font-size: 17px;
+  color: #6C6056;
 }
 ._Experience ._experience_content_header ._experience_content_heading {
   font-size: 55px;
   font-family: "prata";
+  color: #2E2A28;
 }
 ._Experience ._collaps .collapsible .accordion_content {
-  border-top: 1px solid #d88f74;
+  border-top: 1px solid #BF9B7A;
 }
 ._Experience ._collaps .collapsible .accordion_content:last-child {
-  border-bottom: 1px solid #d88f74;
+  border-bottom: 1px solid #BF9B7A;
 }
 ._Experience ._collaps .collapsible .accordion_content .collapsible-header {
   padding: 30px 0;
   font-family: "poppins";
   font-size: 22px;
   cursor: pointer;
+  color: #6C6056;
 }
 ._Experience ._collaps .collapsible .accordion_content .collapsible-header i {
-  color: #d88f74;
+  color: #6E6258;
 }
 ._Experience ._collaps .collapsible .accordion_content .collapsible-header i svg {
   height: 30px;
@@ -1581,12 +1612,28 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   height: 100%;
   opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
 }
 ._video_player ._video_player_video video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (max-width: 991px) and (min-aspect-ratio: 16/9) {
+  ._video_player ._video_player_video video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 991px) and (min-aspect-ratio: 16/9) {
+  ._video_player ._video_player_video video {
+    width: auto;
+    height: 100%;
+  }
 }
 
 ._close_btn {

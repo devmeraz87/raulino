@@ -441,6 +441,7 @@
     padding: 0.75rem 0;
     position: static;
     box-shadow: none;
+    background-color: transparent;
   }
   ._section_carousel ._section_carousel_container .carousel_caption .carousel_caption_content .craousel_heading {
     font-size: 24px;

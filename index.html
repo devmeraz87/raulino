@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/img/home/doctor-img.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style/tailwind.style.css">
     <link rel="stylesheet" href="./assets/style/style.css">
@@ -24,7 +24,7 @@
     <!-- // >> Loading Start // -->
     <div class="_loading">
         <div id="_first_loading" class="_loading_name flex flex-col">
-            <h1>Eduardo</h1>
+            <h1 id="starter"></h1>
             <div class="_loading_bar">
                 <div id="progress"></div>
             </div>
@@ -207,7 +207,7 @@
                                 <span id="video_section_marquee_text" >e elimina o excesso de gordura</span>
                             </h1>
                             <div class="_play_button_box">
-                               <button class="_play_button" src="./assets/video/video.mp4" role="button">
+                               <button class="_play_button _js_play_button" src="./assets/video/video.mp4" role="button">
                                     <img src="./assets/img/all/play_btn.png" alt="">
                                </button>
                             </div>
@@ -260,7 +260,7 @@
                 </div>
                 <div class="_video">
                     <div class="_play_button_container">
-                        <button class="_play_btn">
+                        <button class="_play_btn _js_play_button">
                             <img src="./assets/img/all/play_btn.png" alt="">
                         </button>
                     </div>
@@ -309,7 +309,12 @@
                         <img src="./assets/img/home/photo-section-img-4.png" alt="">
                     </div>
                     <div class="_figure_video_container">
-                        <video src="./assets/video/video.mp4"></video>
+                        <video src="./assets/video/video.mp4" autoplay loop playsinline></video>
+                        <div class="_video_play_btn_container">
+                            <button class="_play_btn _js_play_button">
+                                <img src="./assets/img/all/play_btn.png" alt="">
+                            </button>
+                        </div>
                     </div>
                 </figure>
             </div>
@@ -534,8 +539,6 @@
 <!-- // >> Video player end -->
 
 
-    <!-- // >> TailWindCss config / -->
-    <script src="./tailwind.config.js"></script>
 
     <!-- // >> Gsap Plugins // -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>

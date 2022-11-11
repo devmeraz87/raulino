@@ -7,10 +7,10 @@ const btnBurger = document.querySelector("._burger_btn");
 const offCanva = document.querySelector("._offCanva");
 
 // >> get offcanva links
-let offCanvaSplitText = new SplitText("#_offCanvaSplitText", { type: "chars" }),
-  offCanvaSplitTextChar = offCanvaSplitText.chars;
+// let offCanvaSplitText = new SplitText("#_offCanvaSplitText", { type: "chars" }),
+//   offCanvaSplitTextChar = offCanvaSplitText.chars;
 
-gsap.set("#_offCanvaSplitText", { perspective: 800 });
+// gsap.set("#_offCanvaSplitText", { perspective: 800 });
 
 
 // >> Toggle Menu
@@ -23,6 +23,8 @@ btnBurger.addEventListener("click", () => {
         offCanva.classList.add("_active");
         btnBurger.classList.add("_active");
         body.classList.add("_document_locked");
+
+
 
         gsap.to("#_gsap_offCanva_links", {
             y: "0",
@@ -48,6 +50,11 @@ btnBurger.addEventListener("click", () => {
         })
 
 
+        let offCanvaSplitText = new SplitText("#_offCanvaSplitText", { type: "chars" }),
+             offCanvaSplitTextChar = offCanvaSplitText.chars;
+
+            gsap.set("#_offCanvaSplitText", { perspective: 800 });        
+
         // >> Animate offCanva text /
         gsap.from(offCanvaSplitTextChar, {
             delay: 1,
@@ -58,7 +65,10 @@ btnBurger.addEventListener("click", () => {
             rotationX: -10,
             transformOrigin: "0% 50% -50",
             ease: "Back.InOut",
-            stagger: 0.01
+            stagger: 0.01,
+            onComplete: () => {
+                offCanvaSplitText.revert();
+            }
           })
 
         menuOpen = true;
@@ -94,3 +104,8 @@ btnBurger.addEventListener("click", () => {
         menuOpen = false;
     }
 })
+
+
+// >> Please don't Remove this
+const style = ["color: #eee", "background: #111", "padding: 8px", "margin-bottom: 3px", "border-radius: 3px"].join(";");
+console.log("%cMasterpiece by EMON MERAZ SAMIUL ⚡", style);

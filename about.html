@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/img/home/doctor-img.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/style/tailwind.style.css">
     <link rel="stylesheet" href="./assets/style/style.css">
@@ -19,7 +19,7 @@
     <!-- // >> Loading Start // -->
     <div class="_loading">
         <div id="_first_loading" class="_loading_name flex flex-col">
-            <h1>Eduardo</h1>
+            <h1 id="starter"></h1>
             <div class="_loading_bar">
                 <div id="progress"></div>
             </div>
@@ -38,11 +38,11 @@
                 <div id="_gsap_offCanvaRight" class="_offCanva_right_element" style="background: url(./assets/img/offcanva/offcanva.png);"></div>
             </div>
             <div id="_gsap_offCanva_links" class="_offCanva_links">
-                <div class="_container px-3">
+                <div class="_container">
                     <div class="_offCanva_links_content">
                         <ul id="_offCanvaSplitText" class="_links">
                             <li class="_links_item"><a data-cursor="-icon" href="/">Home</a></li>
-                            <li class="_links_item"><a data-cursor="-icon" href="/about.html">Dr. Eduardo Raulino</a></li>
+                            <li class="_links_item"><a data-cursor="-icon" class="_active" href="/about.html">Dr. Eduardo Raulino</a></li>
                             <li class="_links_item"><a data-cursor="-icon" href="/lipo.html">Lipo Ultra HD Ugraft</a></li>
                             <li class="_links_item"><a data-cursor="-icon" href="/">Agendar consulta</a></li>
                         </ul>
@@ -196,7 +196,7 @@
                             <span>transformacao!</span>
                         </div>
                         <div class="_play_button_box">
-                            <button class="_play_button" src="./assets/video/video.mp4">
+                            <button class="_play_button _js_play_button" src="./assets/video/video.mp4">
                                 <img style="max-height: 90px;" src="./assets/img/all/play_btn.png" alt="">
                             </button>
                         </div>
@@ -529,23 +529,11 @@
 
 
 
-    <!-- // >> TailWindCss config / -->
-    <script src="./tailwind.config.js"></script>
 
     <!-- // >> Gsap Plugins // -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Flip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Observer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/EaselPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/MotionPathPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/PixiPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/EasePack.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CustomEase.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
 
     <!-- // >> Loco scroll -->
@@ -567,15 +555,12 @@
     <script src="./assets/js/components/all/cursor.js"></script>
     <script src="./assets/js/components/all/offcanva.js"></script>
     <script src="./assets/js/components/all/hideSomthingScrollPosition.js"></script>
-    <script src="./assets/js/components/all/wrapperImgScale.js"></script>
     <script src="./assets/js/components/all/testimonial.js"></script>
     <script src="./assets/js/components/all/video_player.js"></script>
     <script src="./assets/js/components/about/aboutCollaps.js"></script>
     
     <!-- // From Home js / -->
-    <script src="./assets/js/components//about/aboutSplitTextAnimationFunction.js"></script>
     <script src="./assets/js/components/about/aboutMarquee.js"></script>
-    <!-- <script src="./assets/js/components/home/homeHorizontalScroll.js"></script> -->
     <script src="./assets/js/components/about/about_preloader.js"></script>
     <script src="./assets/js/components/about/aboutSmoothScrolling.js"></script>
     <script src="./assets/js/components/all/contextMenu.js"></script>

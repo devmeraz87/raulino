@@ -2,7 +2,7 @@
 const videoOverlayEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.652,0.422 0.696,0.463 0.78,1 1,1 ");
 
 const VideoPlayerSection = document.querySelector("._video_player");
-const playBtns = document.querySelectorAll("._play_button");
+const playBtns = document.querySelectorAll("._js_play_button");
 const videoTag = document.querySelector("._video_tag");
 const cloesBtn = document.querySelector("._close_btn");
 
@@ -11,10 +11,6 @@ playBtns.forEach(playBtn => {
 
     // >> _
     VideoPlayerSection.classList.add("_active");
-    // videoTag.setAttribute("autoplay", "autoplay");
-    // videoTag.setAttribute("loop", "loop");
-    // videoTag.setAttribute("playsinline", "playsinline");
-    // videoTag.setAttribute("muted", "false")
 
       gsap.to("._overlay_inner", {
         duration: 1.5,

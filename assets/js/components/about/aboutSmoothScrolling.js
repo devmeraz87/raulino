@@ -34,6 +34,8 @@ const scroller = new LocomotiveScroll({
     pinType: pageContainer.style.transform ? "transform" : "fixed" });
 
 
+
+
     // >> Animate wrapper image
     gsap.to(".wrapper_img_card", {
         scrollTrigger: {
@@ -47,26 +49,6 @@ const scroller = new LocomotiveScroll({
     })
 
 
-
-  // var aboutTimeLine = gsap.timeline(),
-  // aboutHeroHeadingSplitText = new SplitText("#aboutHeroSplitText", { type: "chars" }),
-  // aoboutHeroHeadingSplitTextCharecter = aboutHeroHeadingSplitText.chars; //an array of all the divs that wrap each character
-  
-  // gsap.set("#aboutHeroSplitText", { perspective: 800 });
-  
-  
-  // aboutTimeLine.from(aoboutHeroHeadingSplitTextCharecter, {
-  //   delay: 4,
-  //   duration: 0.5,
-  //   opacity: 0,
-  //   scale: 1,
-  //   y: 2,
-  //   rotationX: -10,
-  //   transformOrigin: "0% 50% -50",
-  //   ease: "Back.InOut",
-  //   stagger: 0.02
-  // });
-  
   // >> =======================================================================================================================================
   // >>                                              Animate About section                                                                   //
   // >> =======================================================================================================================================
@@ -88,7 +70,10 @@ const scroller = new LocomotiveScroll({
       rotationX: -10,
       transformOrigin: "0% 50% -50",
       ease: "Back.InOut",
-      stagger: 0.01
+      stagger: 0.01,
+      onComplete: () => {
+        aboutSplitText.revert();
+      }
   })
   
   
@@ -100,7 +85,7 @@ const scroller = new LocomotiveScroll({
   let  myDetailsSplitText = new SplitText("#myDetailsSplitText", { type: "chars" }),
     myDetailsSplitTextChar = myDetailsSplitText.chars; //an array of all the divs that wrap each character
   
-  gsap.set("#myDetailsSplitTextt", { perspective: 800 });
+  gsap.set("#myDetailsSplitText", { perspective: 800 });
   
   gsap.from(myDetailsSplitTextChar, {
       scrollTrigger: {
@@ -115,7 +100,10 @@ const scroller = new LocomotiveScroll({
       rotationX: -10,
       transformOrigin: "0% 50% -50",
       ease: "Back.InOut",
-      stagger: 0.01
+      stagger: 0.01,
+      onComplete: () => {
+        myDetailsSplitText.revert();
+      }
   })
   
   
@@ -141,7 +129,10 @@ const scroller = new LocomotiveScroll({
       rotationX: -10,
       transformOrigin: "0% 50% -50",
       ease: "Back.InOut",
-      stagger: 0.01
+      stagger: 0.01,
+      onComplete: () => {
+        aboutSectionSplitText.revert();
+      }
   })
   
   
@@ -167,7 +158,10 @@ const scroller = new LocomotiveScroll({
       rotationX: -10,
       transformOrigin: "0% 50% -50",
       ease: "Back.InOut",
-      stagger: 0.01
+      stagger: 0.01,
+      onComplete: () => {
+        experienceSectionSplitText.revert();
+      }
   })
   
   
@@ -190,7 +184,10 @@ const scroller = new LocomotiveScroll({
       rotationX: -10,
       transformOrigin: "0% 50% -50",
       ease: "Back.InOut",
-      stagger: 0.01
+      stagger: 0.01,
+      onComplete: () => {
+        experienceSectionSplitText2.revert();
+      }
   })
   
   
@@ -219,8 +216,10 @@ const scroller = new LocomotiveScroll({
       rotationX: -10,
       transformOrigin: "0% 50% -50",
       ease: "Back.InOut",
-      stagger: 0.01
+      stagger: 0.01,
+      onComplete: () => {
+        wrapperImgSectionSplitText.revert();
+      }
   })
-
-
+  
 })
