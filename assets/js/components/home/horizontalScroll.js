@@ -43,10 +43,10 @@ window.addEventListener("load", function () {
         
       // Pinning and horizontal scrolling
       let horizontalSection = document.querySelector(".horizontal-scroll");
-       let pinWrap = horizontalSection.querySelector(".pin-wrap");
-       let pinWrapWidth = pinWrap.offsetWidth;
-       let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-       let scrollTween = gsap.to(pinWrap, {
+      let pinWrap = horizontalSection.querySelector(".pin-wrap");
+      let pinWrapWidth = pinWrap.offsetWidth;
+      let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+      let scrollTween = gsap.to(pinWrap, {
           scrollTrigger: {
             scroller: "[data-scroll-container]",
             scrub: true,
@@ -58,11 +58,11 @@ window.addEventListener("load", function () {
           },
           x: -horizontalScrollLength,
           ease: "none" 
-        });
+      });
   
   
         //  _First figure
-        gsap.to("._figure", {
+      gsap.to("._figure", {
           xPercent: 100,
           scale: 5,
           duration: 2,
@@ -73,9 +73,9 @@ window.addEventListener("load", function () {
             delay: 3,
             scrub: true
           }
-        });
+      });
   
-        setTimeout(() => {
+      setTimeout(() => {
           //  _First figure
           gsap.to("._figure", {
             xPercent: -110,
@@ -89,10 +89,10 @@ window.addEventListener("load", function () {
               scrub: true
             }
           });
-        }, 3000);
+      }, 3000);
   
         // >> Scalse figure inner // >> impossible to scale up figure form so in do inner
-        gsap.to("._figure_inner", {
+      gsap.to("._figure_inner", {
           duration: 2,
           scrollTrigger: {
             scroller: "[data-scroll-container]",
@@ -105,7 +105,7 @@ window.addEventListener("load", function () {
           scale: 1,
           ease: "none",
           y: 0
-        })
+      })
   
       // });
     
@@ -153,15 +153,12 @@ window.addEventListener("load", function () {
 
   
   
-      
-      ScrollTrigger.addEventListener("refresh", () => { 
-        scroller.update()
-      });
-    
-      ScrollTrigger.refresh();
+   
+
 
       // >> Home split text start / 
       const hero_title = document.querySelector("#_js_hero_title_splittext")
+      gsap.set(hero_title, { perspective: 800 });
       const hero_title_splitText = new SplitText(hero_title, {type: "words, chars"});
       gsap.from(hero_title_splitText.chars, {
         duration: 0.5,
@@ -180,6 +177,7 @@ window.addEventListener("load", function () {
 
       // >> hero heading //
       const hero_heading  = document.querySelector("#_js_hero_heading_splittext");
+      gsap.set(hero_heading, { perspective: 800 });
       const hero_hading_splitText = new SplitText(hero_heading, {type: "words, chars"});
       gsap.from(hero_hading_splitText.chars, {
         duration: 0.5,
@@ -198,6 +196,7 @@ window.addEventListener("load", function () {
 
       // >> hero lead //
       const hero_lead  = document.querySelector("#_js_hero_lead_splittext");
+      gsap.set(hero_lead, { perspective: 800 });
       const hero_lead_splitText = new SplitText(hero_lead, {type: "words, chars"});
       gsap.from(hero_lead_splitText.chars, {
         duration: 0.5,
@@ -217,6 +216,7 @@ window.addEventListener("load", function () {
       // >> about Dorctor after hero
       // >> title
       const about_title  = document.querySelector("#_js_about_title_splittext");
+      gsap.set(about_title, { perspective: 800 });
       const about_title_splitText = new SplitText(about_title, {type: "words, chars"});
       gsap.from(about_title_splitText.chars, {
         duration: 0.5,
@@ -241,6 +241,7 @@ window.addEventListener("load", function () {
 
       // >> heading
       const about_heading  = document.querySelector("#_js_about_heading_splittext");
+      gsap.set(about_heading, { perspective: 800 });
       const about_heading_splitText = new SplitText(about_heading, {type: "words, chars"});
       gsap.from(about_heading_splitText.chars, {
         duration: 0.5,
@@ -265,6 +266,7 @@ window.addEventListener("load", function () {
 
       // >> doctor name
       const about_doctor_name  = document.querySelector("#_js_about_doctor_name_splittext");
+      gsap.set(about_doctor_name, { perspective: 800 });
       const about_doctor_name_splitText = new SplitText(about_doctor_name, {type: "words, chars"});
       gsap.from(about_doctor_name_splitText.chars, {
         delay: 0.5,
@@ -314,6 +316,7 @@ window.addEventListener("load", function () {
       // >> wrapper card 
       // >> heading
       const wrapper_card_heading = this.document.querySelector("#_js_wrapper_img_card_heading_splittext")
+      gsap.set(wrapper_card_heading, { perspective: 800 });
       const wrapper_card_heading_splitText = new SplitText(wrapper_card_heading, {type: "words, chars"});
       gsap.from(wrapper_card_heading_splitText.chars, {
         duration: .5,
@@ -335,6 +338,7 @@ window.addEventListener("load", function () {
 
       // >> lead
       const wrapper_card_lead = this.document.querySelector("#_js_wrapper_img_card_lead_splittext")
+      gsap.set(wrapper_card_lead, { perspective: 800 });
       const wrapper_card_lead_splitText = new SplitText(wrapper_card_lead, {type: "words, chars"});
       gsap.from(wrapper_card_lead_splitText.chars, {
         duration: .5,
@@ -355,6 +359,113 @@ window.addEventListener("load", function () {
       })
 
 
+      // >> video section  /
+      const video_section_heading = this.document.querySelector("#_js_video_heading_splittext");
+      gsap.set(video_section_heading, { perspective: 800 });
+      const video_section_heading_splittext = new SplitText(video_section_heading, {type: "words, chars"});
+      gsap.from(video_section_heading_splittext.chars, {
+        duration: .5,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+          scrollTrigger: {
+              scroller: "[data-scroll-container]",
+              trigger: "#_js_video_heading_splittext",
+          },
+          onComplete: () => {
+            video_section_heading_splittext.revert();
+          }
+      })
+
+
+      // >> my details section  /
+
+      // >> title
+      const mydetails_section_title = this.document.querySelector("#_js_mydetails_section_title_splittext");
+      gsap.set(mydetails_section_title, { perspective: 800 });
+      const mydetails_section_title_splittext = new SplitText(mydetails_section_title, {type: "words, chars"});
+      gsap.from(mydetails_section_title_splittext.chars, {
+        duration: .7,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+          scrollTrigger: {
+              scroller: "[data-scroll-container]",
+              trigger: "#_js_mydetails_section_title_splittext",
+          },
+          onComplete: () => {
+            mydetails_section_title_splittext.revert();
+          }
+      })
+
+      
+      // >> heading /
+      const mydetails_section_heading = this.document.querySelector("#_js_mydetails_section_heading_splittext");
+      gsap.set(mydetails_section_heading, { perspective: 800 });
+      const mydetails_section_heading_splittext = new SplitText(mydetails_section_heading, {type: "words, chars"});
+      gsap.from(mydetails_section_heading_splittext.chars, {
+        delay: 0.6,
+        duration: .7,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+          scrollTrigger: {
+              scroller: "[data-scroll-container]",
+              trigger: "#_js_mydetails_section_title_splittext",
+          },
+          onComplete: () => {
+            mydetails_section_heading_splittext.revert();
+          }
+      })
+
+
+      // >> counters /
+      const mydetails_section_counters = this.document.querySelector("#_js_mydetails_section_counters_splittext");
+      gsap.set(mydetails_section_counters, { perspective: 800 });
+      const mydetails_section_counters_splittext = new SplitText(mydetails_section_counters, {type: "words, chars"});
+      gsap.from(mydetails_section_counters_splittext.chars, {
+        delay: 0.7,
+        duration: .5,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+          scrollTrigger: {
+              scroller: "[data-scroll-container]",
+              trigger: "#_js_mydetails_section_title_splittext",
+          },
+          onComplete: () => {
+            mydetails_section_counters_splittext.revert();
+            console.log("complete");
+          }
+      })
+
+
+
+
+
+        // >> Refresh scroll trigger
+        // ScrollTrigger.addEventListener("refresh", () => { 
+        //  scroller.update()
+        // });
+      
+        // ScrollTrigger.refresh();
+  
 
 });
     

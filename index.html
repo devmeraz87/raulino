@@ -192,7 +192,7 @@
                     <div class="_video_card w-full" style="background: url(./assets/img/home/video_thumb.png) no-repeat center center/cover;">
                         <div class="_overlay"></div>
                         <div class="_context h-full w-full flex items-center justify-center flex-col">
-                            <h1 class="_section_card_heading block lg:flex lg:flex-col">
+                            <h1 id="_js_video_heading_splittext" class="_section_card_heading block lg:flex lg:flex-col">
                                 <span id="video_section_marquee_text" >Alipoaspiração Ugraft define sua</span>
                                 <span id="video_section_marquee_text" >musculatura, cria sombras e relevos</span>
                                 <span id="video_section_marquee_text" >e elimina o excesso de gordura</span>
@@ -251,7 +251,9 @@
                 </div>
                 <div class="_video">
                     <div class="_play_button_container">
-                        <button class="_play_btn">x</button>
+                        <button class="_play_btn">
+                            <img src="./assets/img/all/play_btn.png" alt="">
+                        </button>
                     </div>
                     <div class="_video_container">
                         <video src="./assets/video/video.mp4" autoplay loop muted>x</video>
@@ -318,15 +320,15 @@
         <div class="_about_doctor_details">
             <div class="_container">
                 <div class="_details_content">
-                    <div class="_section_title">
+                    <div id="_js_mydetails_section_title_splittext" class="_section_title">
                         <span>Dr Eduardo Raulino, Cirurgiao plastico membro da sociedade</span>
                         <span>Brasileira de cirurgia plastica, formado em Sao Paulo e exterior.</span>
                     </div>
-                    <h1 class="_section_heading">
-                        <span id="doctor_section_splitText" >Cirurgiao plastico com mais de</span>
-                        <span id="doctor_section_splitText" >15 anos de especialidade.</span>
+                    <h1 id="_js_mydetails_section_heading_splittext" class="_section_heading">
+                        <span>Cirurgiao plastico com mais de</span>
+                        <span>15 anos de especialidade.</span>
                     </h1>
-                    <div class="_counters">
+                    <div id="_js_mydetails_section_counters_splittext" class="_counters">
                         <div class="_counter">
                             <span class="_counter_number">+ 3.589 </span>
                             <span >Proteses de mama</span>
@@ -543,6 +545,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CustomEase.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> 
 
+    <!-- // >> locomotive scroll / -->
+    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
+    
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
@@ -564,16 +569,12 @@
     <script src="./assets//js/components//all/testimonial.js"></script>
     <script src="./assets/js/components/all/video_player.js"></script>
     
-    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
 
     <!-- // From Home js / -->
-    <!-- <script src="./assets/js/components/home/homeSplitTextAnimationFunction.js"></script> -->
     <script src="./assets/js/components/home/homeMarquee.js"></script>
-    <!-- <script src="./assets/js/components/home/homeHorizontalScroll.js"></script> -->
     <script src="./assets/js/components/home/horizontalScroll.js"></script>
     <script src="./assets/js/components/all/contextMenu.js"></script>
 
-    <script src="./assets/js/components/all/splitText.js"></script>
 
 </body>
 </html>

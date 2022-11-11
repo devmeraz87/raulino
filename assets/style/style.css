@@ -9,11 +9,11 @@
   font-style: normal;
 }
 ::-moz-selection {
-  background: rgba(67, 217, 255, 0.521);
+  background-color: rgba(59, 130, 246, 0.5);
   backdrop-filter: blur(10px);
 }
 ::selection {
-  background: rgba(67, 217, 255, 0.521);
+  background-color: rgba(59, 130, 246, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -848,9 +848,16 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   justify-content: center;
 }
+._video ._play_button_container ._play_btn {
+  cursor: pointer;
+}
+._video ._play_button_container ._play_btn img {
+  height: 80px;
+}
 ._video ._video_container {
   height: 100%;
   max-width: 1000px;
+  pointer-events: none;
 }
 ._video ._video_container video {
   height: 100%;

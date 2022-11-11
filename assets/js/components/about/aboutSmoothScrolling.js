@@ -48,9 +48,9 @@ const scroller = new LocomotiveScroll({
 
 
 
-    var aboutTimeLine = gsap.timeline(),
-    aboutHeroHeadingSplitText = new SplitText("#aboutHeroSplitText", { type: "chars" }),
-    aoboutHeroHeadingSplitTextCharecter = aboutHeroHeadingSplitText.chars; //an array of all the divs that wrap each character
+  var aboutTimeLine = gsap.timeline(),
+  aboutHeroHeadingSplitText = new SplitText("#aboutHeroSplitText", { type: "chars" }),
+  aoboutHeroHeadingSplitTextCharecter = aboutHeroHeadingSplitText.chars; //an array of all the divs that wrap each character
   
   gsap.set("#aboutHeroSplitText", { perspective: 800 });
   
@@ -82,8 +82,6 @@ const scroller = new LocomotiveScroll({
         trigger: "._about_content",
         start: "top 80%",
         end: "+=800",
-        // markers: true,
-        // scrub: true
       },
   
       duration: 0.5,
@@ -111,7 +109,6 @@ const scroller = new LocomotiveScroll({
       scrollTrigger: {
         scroller: "[data-scroll-container]",
         trigger: "._details",
-          // markers: true,
       },
   
       duration: 0.5,
@@ -138,7 +135,6 @@ const scroller = new LocomotiveScroll({
       scrollTrigger: {
         scroller: "[data-scroll-container]",
         trigger: "._video_thumb",
-          // markers: true,
       },
   
       duration: 0.5,
@@ -165,7 +161,6 @@ const scroller = new LocomotiveScroll({
         scroller: "[data-scroll-container]",
         trigger: "#experienceSectionSplitText",
         end: "+=500",
-          // markers: true,
       },
   
       duration: 0.5,
@@ -189,7 +184,6 @@ const scroller = new LocomotiveScroll({
       scrollTrigger: {
         scroller: "[data-scroll-container]",
         trigger: ".collapsible",
-          // markers: true,
       },
   
       duration: 0.5,
@@ -219,7 +213,6 @@ const scroller = new LocomotiveScroll({
         trigger: ".wrapper_img_card_content",
         start: "top 70%",
         end: "+=1000",
-          // markers: true,
       },
   
       duration: 0.5,

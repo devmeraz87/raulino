@@ -329,7 +329,7 @@
     font-size: 12px;
   }
 }
-@media only screen and (min-width: 375px) and (max-width: 768px) {
+@media only screen and (min-width: 360px) and (max-width: 768px) {
   ._ultra_hd_ugraft ._ultra_hd_ugraft_content {
     padding: 5rem 0;
   }
@@ -531,7 +531,7 @@
   }
   ._Experience ._experience_content .collapsible .collapsible-header {
     padding: 1rem 0 !important;
-    font-size: 15px !important;
+    font-size: 14px !important;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {

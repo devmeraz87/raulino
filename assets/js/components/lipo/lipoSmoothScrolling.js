@@ -31,238 +31,265 @@ window.addEventListener("load", () => {
             height: window.innerHeight };
     
         },
-        pinType: pageContainer.style.transform ? "transform" : "fixed" });
+      pinType: pageContainer.style.transform ? "transform" : "fixed" });
 
-//         ScrollTrigger.addEventListener("refresh", () => { 
-//             scroller.update()
-//         });
+      // ScrollTrigger.addEventListener("refresh", () => { 
+      //   scroller.update()
+      // });
 
-// ScrollTrigger.refresh();
+      // ScrollTrigger.refresh();
     
-    //     // >> Animate wrapper image
-    //     gsap.to(".wrapper_img_card", {
-    //         scrollTrigger: {
-    //             scroller: "[data-scroll-container]",
-    //             trigger: ".wrapper_img_card",
-    //             scrub: true
-    //         },
+
     
-    //         scale: 0.97,
-    //         duration: 5,
-    //         y: -100
-    //     })
+
+      
+      // >> Lipo split text start / 
+
+      // >> hero title
+      const hero_title = document.querySelector("#_js_hero_title_splittext")
+      gsap.set(hero_title, { perspective: 800 });
+      const hero_title_splitText = new SplitText(hero_title, {type: "words, chars"});
+      gsap.from(hero_title_splitText.chars, {
+        delay: 1.5,
+        duration: 1,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+        onComplete: () => {
+            hero_title_splitText.revert();
+        }
+      })
+
+      // >> hero heading //
+      const hero_heading  = document.querySelector("#_js_hero_heading_splittext");
+      gsap.set(hero_heading, { perspective: 800 });
+      const hero_hading_splitText = new SplitText(hero_heading, {type: "words, chars"});
+      gsap.from(hero_hading_splitText.chars, {
+        delay: 1.5,
+        duration: 1,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+        onComplete: () => {
+            hero_hading_splitText.revert();
+          }
+      })
+
+      // >> hero lead //
+      const hero_lead  = document.querySelector("#_js_hero_lead_splittext");
+      gsap.set(hero_lead, { perspective: 800 });
+      const hero_lead_splitText = new SplitText(hero_lead, {type: "words, chars"});
+      gsap.from(hero_lead_splitText.chars, {
+        delay: 0.5,
+        delay: 1.5,
+        duration: 1,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+        onComplete: () => {
+            hero_lead_splitText.revert();
+        }
+      })
+      
+
+      const hero_btn = this.document.querySelector("#_js_hero_btn");
+      gsap.from(hero_btn, {
+        delay: 1,
+        duration: 1,
+        opacity: 0, 
+        y: 100,
+        ease: "Back.InOut",
+      })
+
+      const hero_circle = this.document.querySelector("#_js_hero_circle");
+      gsap.from(hero_circle, {
+        delay: 1,
+        duration: 1,
+        opacity: 0, 
+        y: 100,
+        ease: "Back.InOut",
+      })
     
-    
-    //     var aboutTimeLine = gsap.timeline(),
-    //     aboutHeroHeadingSplitText = new SplitText("#aboutHeroSplitText", { type: "chars" }),
-    //     aoboutHeroHeadingSplitTextCharecter = aboutHeroHeadingSplitText.chars; //an array of all the divs that wrap each character
+      // >> ultra hd start 
       
-    //   gsap.set("#aboutHeroSplitText", { perspective: 800 });
+      // >> ultra hd title 0
+      const ultrahd_title = document.querySelector("#ultra_hd_title")
+      gsap.set(ultrahd_title, { perspective: 800 });
+      const ultra_hd_title_splitText = new SplitText(ultrahd_title, {type: "words, chars"});
+      gsap.from(ultra_hd_title_splitText.chars, {
+        delay: 0.5,
+        duration: 1,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+        scrollTrigger: {
+          trigger: "#ultra_hd_title",
+          scroller: "[data-scroll-container]"
+        },
+        onComplete: () => {
+          ultra_hd_title_splitText.revert();
+        }
+      });
+
+      // >> ultra hd heading 1
+      const ultrahd_heading = document.querySelector("#ultra_hd_heading")
+      gsap.set(ultrahd_heading, { perspective: 800 });
+      const ultra_hd_heading_splitText = new SplitText(ultrahd_heading, {type: "words, chars"});
+      gsap.from(ultra_hd_heading_splitText.chars, {
+        delay: 0.5,
+        duration: 1,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+        scrollTrigger: {
+          trigger: "#ultra_hd_heading",
+          scroller: "[data-scroll-container]"
+        },
+        onComplete: () => {
+          ultra_hd_heading_splitText.revert();
+        }
+      });
+
+      // >> ultra hd heading 2
+      const ultrahd_heading_2 = document.querySelector("#ultra_hd_heading_2")
+      gsap.set(ultrahd_heading_2, { perspective: 800 });
+      const ultra_hd_heading_2_splitText = new SplitText(ultrahd_heading_2, {type: "words, chars"});
+      gsap.from(ultra_hd_heading_2_splitText.chars, {
+        delay: 0.5,
+        duration: 1,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+        scrollTrigger: {
+          trigger: "#ultra_hd_heading_2",
+          scroller: "[data-scroll-container]"
+        },
+        onComplete: () => {
+          ultra_hd_heading_2_splitText.revert();
+        }
+      });
       
-      
-    //   aboutTimeLine.from(aoboutHeroHeadingSplitTextCharecter, {
-    //     delay: 4,
-    //     duration: 0.5,
-    //     opacity: 0,
-    //     scale: 1,
-    //     y: 2,
-    //     rotationX: -10,
-    //     transformOrigin: "0% 50% -50",
-    //     ease: "Back.InOut",
-    //     stagger: 0.02
-    //   });
-      
-    //   // >> =======================================================================================================================================
-    //   // >>                                              Animate About section                                                                   //
-    //   // >> =======================================================================================================================================
-    //   let  aboutSplitText = new SplitText("#aboutSplitText", { type: "chars" }),
-    //     aboutSplitTextChar = aboutSplitText.chars; //an array of all the divs that wrap each character
-      
-    //   gsap.set("#aboutSplitText", { perspective: 800 });
-      
-    //   gsap.from(aboutSplitTextChar, {
-    //       scrollTrigger: {
-    //         scroller: "[data-scroll-container]",
-    //         trigger: "._about_content",
-    //         start: "top 80%",
-    //         end: "+=800",
-    //         // markers: true,
-    //       },
-      
-    //       duration: 0.5,
-    //       opacity: 0,
-    //       scale: 1,
-    //       y: 2,
-    //       rotationX: -10,
-    //       transformOrigin: "0% 50% -50",
-    //       ease: "Back.InOut",
-    //       stagger: 0.001
-    //   })
-      
-      
-      
-      
-    //   // >> =======================================================================================================================================
-    //   // >>                                              Animate myDetails section                                                                  //
-    //   // >> =======================================================================================================================================
-    //   let  myDetailsSplitText = new SplitText("#myDetailsSplitText", { type: "chars" }),
-    //     myDetailsSplitTextChar = myDetailsSplitText.chars; //an array of all the divs that wrap each character
-      
-    //   gsap.set("#myDetailsSplitTextt", { perspective: 800 });
-      
-    //   gsap.from(myDetailsSplitTextChar, {
-    //       scrollTrigger: {
-    //         scroller: "[data-scroll-container]",
-    //         trigger: "._details",
-    //           // markers: true,
-    //       },
-      
-    //       duration: 0.5,
-    //       opacity: 0,
-    //       scale: 1,
-    //       y: 2,
-    //       rotationX: -10,
-    //       transformOrigin: "0% 50% -50",
-    //       ease: "Back.InOut",
-    //       stagger: 0.01
-    //   })
-      
-      
-      
-    //   // >> =======================================================================================================================================
-    //   // >>                                              Animate video section                                                                   //
-    //   // >> =======================================================================================================================================
-    //   let  aboutSectionSplitText = new SplitText("#aboutVideoSplitText", { type: "chars" }),
-    //   aboutSectionSplitTextChar = aboutSectionSplitText.chars; //an array of all the divs that wrap each character
-      
-    //   gsap.set("#aboutVideoSplitText", { perspective: 800 });
-      
-    //   gsap.from(aboutSectionSplitTextChar, {
-    //       scrollTrigger: {
-    //         scroller: "[data-scroll-container]",
-    //         trigger: "._video_thumb",
-    //           // markers: true,
-    //       },
-      
-    //       duration: 0.5,
-    //       opacity: 0,
-    //       scale: 1,
-    //       y: 2,
-    //       rotationX: -10,
-    //       transformOrigin: "0% 50% -50",
-    //       ease: "Back.InOut",
-    //       stagger: 0.01
-    //   })
-      
-      
-    //   // >> =======================================================================================================================================
-    //   // >>                                              Animate Expereance section                                                                   //
-    //   // >> =======================================================================================================================================
-    //   let  experienceSectionSplitText = new SplitText("#experienceSectionSplitText", { type: "chars" }),
-    //   experienceSectionSplitTextChar = experienceSectionSplitText.chars; //an array of all the divs that wrap each character
-      
-    //   gsap.set("#experienceSectionSplitText", { perspective: 800 });
-      
-    //   gsap.from(experienceSectionSplitTextChar, {
-    //       scrollTrigger: {
-    //         scroller: "[data-scroll-container]",
-    //         trigger: "#experienceSectionSplitText",
-    //         end: "+=500",
-    //           // markers: true,
-    //       },
-      
-    //       duration: 0.5,
-    //       opacity: 0,
-    //       scale: 1,
-    //       y: 2,
-    //       rotationX: -10,
-    //       transformOrigin: "0% 50% -50",
-    //       ease: "Back.InOut",
-    //       stagger: 0.01
-    //   })
-      
-      
-    //   // >> Animate Accordion
-    //   let  experienceSectionSplitText2 = new SplitText("#experienceSectionSplitText2", { type: "chars" }),
-    //   experienceSectionSplitTextChar2 = experienceSectionSplitText2.chars; //an array of all the divs that wrap each character
-      
-    //   gsap.set("#experienceSectionSplitText2", { perspective: 800 });
-      
-    //   gsap.from(experienceSectionSplitTextChar2, {
-    //       scrollTrigger: {
-    //         scroller: "[data-scroll-container]",
-    //         trigger: ".collapsible",
-    //           // markers: true,
-    //       },
-      
-    //       duration: 0.5,
-    //       opacity: 0,
-    //       scale: 1,
-    //       y: 2,
-    //       rotationX: -10,
-    //       transformOrigin: "0% 50% -50",
-    //       ease: "Back.InOut",
-    //       stagger: 0.01
-    //   })
-      
-      
-      
-      
-    //   // >> =======================================================================================================================================
-    //   // >>                                              Animate Expereance section                                                                   //
-    //   // >> =======================================================================================================================================
-    //   let  wrapperImgSectionSplitText = new SplitText("#wrapperImgSectionSplitText", { type: "chars" }),
-    //   wrapperImgSectionSplitTextChar = wrapperImgSectionSplitText.chars; //an array of all the divs that wrap each character
-      
-    //   gsap.set("#wrapperImgSectionSplitText", { perspective: 800 });
-      
-    //   gsap.from(wrapperImgSectionSplitTextChar, {
-    //       scrollTrigger: {
-    //         scroller: "[data-scroll-container]",
-    //         trigger: ".wrapper_img_card_content",
-    //         start: "top 70%",
-    //         end: "+=1000",
-    //           // markers: true,
-    //       },
-      
-    //       duration: 0.5,
-    //       opacity: 0,
-    //       scale: 1,
-    //       y: 2,
-    //       rotationX: -10,
-    //       transformOrigin: "0% 50% -50",
-    //       ease: "Back.InOut",
-    //       stagger: 0.01
-    //   })
-    
-    
-    })
+
+      // >> ultra hd title 1
+      const ultrahd_details_title_1 = document.querySelector("#ultra_hd_title_1")
+      gsap.set(ultrahd_details_title_1, { perspective: 800 });
+      const ultra_hd_details_title_1_splitText = new SplitText(ultrahd_details_title_1, {type: "words, chars"});
+      gsap.from(ultra_hd_details_title_1_splitText.chars, {
+        delay: 0.5,
+        duration: 0.7,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+        scrollTrigger: {
+          trigger: "#ultra_hd_heading",
+          scroller: "[data-scroll-container]"
+        },
+        onComplete: () => {
+          ultra_hd_details_title_1_splitText.revert();
+        }
+      });
 
 
+      // >> ultra hd title 2
+      const ultrahd_details_title_2 = document.querySelector("#ultra_hd_title_2")
+      gsap.set(ultrahd_details_title_2, { perspective: 800 });
+      const ultra_hd_details_title_2_splitText = new SplitText(ultrahd_details_title_2, {type: "words, chars"});
+      gsap.from(ultra_hd_details_title_2_splitText.chars, {
+        delay: 0.5,
+        duration: .7,
+        opacity: 0,
+        scale: 1,
+        y: 2,
+        rotationX: -10,
+        transformOrigin: "0% 50% -50",
+        ease: "Back.InOut",
+        stagger: 0.01,
+        scrollTrigger: {
+          trigger: "#ultra_hd_title_1",
+          scroller: "[data-scroll-container]"
+        },
+        onComplete: () => {
+          ultra_hd_details_title_2_splitText.revert();
+        }
+      });
+      
 
-// gsap.registerPlugin(ScrollTrigger);
+        // >> ultra hd 
+        const lipoCarosuel_title = document.querySelector("#lipoCarosuel_title")
+        gsap.set(lipoCarosuel_title, { perspective: 800 });
+        const lipoCarosuel_title_splitText = new SplitText(lipoCarosuel_title, {type: "words, chars"});
+        gsap.from(lipoCarosuel_title_splitText.chars, {
+          delay: 0.5,
+          duration: .7,
+          opacity: 0,
+          scale: 1,
+          y: 2,
+          rotationX: -10,
+          transformOrigin: "0% 50% -50",
+          ease: "Back.InOut",
+          stagger: 0.01,
+          scrollTrigger: {
+            trigger: "#lipoCarosuel_title",
+            scroller: "[data-scroll-container]"
+          },
+          onComplete: () => {
+            lipoCarosuel_title_splitText.revert();
+          }
+        });
 
-// const locoScroll = new LocomotiveScroll({
-//   el: document.querySelector(".lipo_smooth_scrollingWrapper"),
-//   smooth: true
-// });
-// locoScroll.on("scroll", ScrollTrigger.update);
-// ScrollTrigger.scrollerProxy(".lipo_smooth_scrollingWrapper", {
-//   scrollTop(value) {
-//     return arguments.length
-//       ? locoScroll.scrollTo(value, 0, 0)
-//       : locoScroll.scroll.instance.scroll.y;
-//   },
-//   getBoundingClientRect() {
-//     return {
-//       top: 0,
-//       left: 0,
-//       width: window.innerWidth,
-//       height: window.innerHeight
-//     };
-//   },
-//   pinType: document.querySelector(".lipo_smooth_scrollingWrapper").style.transform
-//     ? "transform"
-//     : "fixed"
-// });
+        // >> ultra hd 
+        const lipoCarosuel_heading = document.querySelector("#lipoCarosuel_heading")
+        gsap.set(lipoCarosuel_heading, { perspective: 800 });
+        const lipoCarosuel_heading_splitText = new SplitText(lipoCarosuel_heading, {type: "words, chars"});
+        gsap.from(lipoCarosuel_heading_splitText.chars, {
+          delay: 0.5,
+          duration: .7,
+          opacity: 0,
+          scale: 1,
+          y: 2,
+          rotationX: -10,
+          transformOrigin: "0% 50% -50",
+          ease: "Back.InOut",
+          stagger: 0.01,
+          scrollTrigger: {
+            trigger: "#lipoCarosuel_title",
+            scroller: "[data-scroll-container]"
+          },
+          onComplete: () => {
+            lipoCarosuel_heading_splitText.revert();
+          }
+        });
+           
+
+      
+})
+
 

@@ -168,13 +168,19 @@
       justify-content: center;
   
       ._play_btn {
+        cursor: pointer;
+
         
+        img {
+          height: 80px;
+        }
       }
     }
   
     ._video_container {
       height: 100%;
       max-width: 1000px;
+      pointer-events: none;
   
       
       video {
