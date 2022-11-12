@@ -540,6 +540,21 @@
     width: 90px;
   }
 }
+@media only screen and (max-width: 500px) {
+  ._about_video ._about_video_context ._video_thumb {
+    width: 100%;
+  }
+  ._about_video ._about_video_context ._video_thumb ._video_context {
+    padding: 6rem 0;
+  }
+  ._about_video ._about_video_context ._video_thumb ._video_context ._video_context_heading {
+    font-size: 28px !important;
+  }
+  ._about_video ._about_video_context ._video_thumb ._video_context ._play_button {
+    height: 60px !important;
+    width: 60px !important;
+  }
+}
 @media only screen and (min-width: 360px) and (max-width: 768px) {
   ._my_details ._my_details_context ._grid ._doctor_img {
     margin-bottom: 2rem;
