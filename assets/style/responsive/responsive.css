@@ -420,9 +420,13 @@
   ._section_carousel {
     padding-top: 5rem;
   }
+  ._section_carousel ._lipo_carousel_header ._title {
+    font-size: 15px;
+  }
   ._section_carousel ._lipo_carousel_header ._heading {
     font-size: 28px;
     display: block;
+    margin-bottom: 1.5rem;
   }
   ._section_carousel .carousel_indicator {
     margin-right: 0;
@@ -956,7 +960,7 @@
   ._marquee_section .wrapper_img .wrapper_img_card {
     height: 70vh;
     padding: 0 0.75rem;
-    background-position-x: -450px !important;
+    background-position: center right !important;
   }
   ._marquee_section .wrapper_img .wrapper_img_card ._heading {
     display: block;
@@ -989,7 +993,7 @@
   ._marquee_section .wrapper_img .wrapper_img_card {
     height: 70vh;
     padding: 0 0.75rem;
-    background-position-x: -500px !important;
+    background-position: center right !important;
   }
   ._marquee_section .wrapper_img .wrapper_img_card ._heading {
     display: block;

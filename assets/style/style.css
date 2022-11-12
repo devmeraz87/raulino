@@ -20,6 +20,7 @@
 
 body {
   cursor: default;
+  background-color: #F1EAE3;
 }
 
 ._container {
@@ -1112,6 +1113,9 @@ h1, h2, h3, h4, h5 {
   line-height: 1.2;
 }
 
+._my_details ._my_details_context ._doctor_img img {
+  box-shadow: 2px 5px 20px rgba(105, 97, 90, 0.4039215686);
+}
 ._my_details ._my_details_context ._details {
   margin-left: 3rem;
 }
@@ -1623,6 +1627,12 @@ h1, h2, h3, h4, h5 {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media only screen and (max-width: 991px) {
+  ._video_player ._video_player_video video {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+}
 @media only screen and (max-width: 991px) and (min-aspect-ratio: 16/9) {
   ._video_player ._video_player_video video {
     width: 100%;
@@ -1652,6 +1662,13 @@ h1, h2, h3, h4, h5 {
   border-radius: 50%;
   cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+  ._close_btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 40% !important;
+  }
+}
 ._close_btn i {
   display: flex;
   align-items: center;
@@ -1661,4 +1678,10 @@ h1, h2, h3, h4, h5 {
 ._close_btn i svg {
   height: 32px;
   width: 32px;
+}
+@media only screen and (max-width: 768px) {
+  ._close_btn i svg {
+    height: 25px;
+    width: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */

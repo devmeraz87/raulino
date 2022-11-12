@@ -9,6 +9,8 @@ const cloesBtn = document.querySelector("._close_btn");
 playBtns.forEach(playBtn => {
   playBtn.addEventListener("click", () => {
 
+    videoTag.setAttribute("loop", true);
+
     // >> _
     VideoPlayerSection.classList.add("_active");
 
@@ -46,6 +48,8 @@ playBtns.forEach(playBtn => {
 cloesBtn.addEventListener("click", () => {
  // >> _
  VideoPlayerSection.classList.remove("_active");
+
+ videoTag.removeAttribute("loop", true);
 
   gsap.to("._overlay_inner", {
     duration: 1,
