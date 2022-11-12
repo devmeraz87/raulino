@@ -182,11 +182,18 @@
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
+
+    ._my_details_heading {
+        font-size: 28px !important;
+        margin-bottom: 1rem;
+    }
+
+
     ._about_video {
 
         ._about_video_context {
-
+            padding: 5rem 0;
 
             ._video_thumb {
                 width: 100%;
@@ -207,6 +214,10 @@
                 }
             }
         }
+    }
+
+    ._experience_content_heading {
+        font-size: 28px !important; 
     }
 }
 

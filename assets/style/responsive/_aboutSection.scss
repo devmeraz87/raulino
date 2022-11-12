@@ -208,6 +208,22 @@
 }
 
 
+@media only screen and (max-width: 400px) {
+    
+    ._about  {
+
+        ._about_heading {
+            display: block;
+            font-size: 28px !important;
+        }
+    }
+  
+}
+
+
+
+
+
 @media only screen and (min-width: 360px) and (max-width: 768px) {
     
     // >> About section top
@@ -231,8 +247,7 @@
 
             ._about_heading {
                 display: block;
-                font-size: 27px;
-                padding: 0.75rem;
+                font-size: 30px;
             }
 
             ._about_doctor {

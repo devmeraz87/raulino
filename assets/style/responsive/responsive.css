@@ -540,7 +540,14 @@
     width: 90px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
+  ._my_details_heading {
+    font-size: 28px !important;
+    margin-bottom: 1rem;
+  }
+  ._about_video ._about_video_context {
+    padding: 5rem 0;
+  }
   ._about_video ._about_video_context ._video_thumb {
     width: 100%;
   }
@@ -553,6 +560,9 @@
   ._about_video ._about_video_context ._video_thumb ._video_context ._play_button {
     height: 60px !important;
     width: 60px !important;
+  }
+  ._experience_content_heading {
+    font-size: 28px !important;
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 768px) {
@@ -699,6 +709,12 @@
     width: 100% !important;
   }
 }
+@media only screen and (max-width: 400px) {
+  ._about ._about_heading {
+    display: block;
+    font-size: 28px !important;
+  }
+}
 @media only screen and (min-width: 360px) and (max-width: 768px) {
   ._about._home_page ._about_content {
     padding-bottom: 4rem;
@@ -712,8 +728,7 @@
   }
   ._about ._about_content ._about_heading {
     display: block;
-    font-size: 27px;
-    padding: 0.75rem;
+    font-size: 30px;
   }
   ._about ._about_content ._about_doctor {
     align-items: center;
@@ -1041,7 +1056,7 @@
   ._marquee_section .wrapper_img .wrapper_img_card {
     height: 70vh;
     padding: 0 0.75rem;
-    background-position-x: -550px !important;
+    background-position: center right !important;
   }
   ._marquee_section .wrapper_img .wrapper_img_card ._heading {
     display: block;
